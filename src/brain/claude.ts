@@ -1,7 +1,7 @@
 import Anthropic from '@anthropic-ai/sdk';
 import type { BetaRequestMCPServerURLDefinition } from '@anthropic-ai/sdk/resources/beta/messages/messages';
 import { Shortcuts } from '@basmilius/homey-common';
-import { DEFAULT_MAX_TOKENS, DEFAULT_MODEL, SETTING_API_KEY, SETTING_DEFAULT_MODEL, SETTING_MAX_TOKENS } from '../const';
+import { DEFAULT_MAX_TOKENS, DEFAULT_MODEL, SETTING_API_KEY, SETTING_DEFAULT_MODEL, SETTING_DEFAULT_SYSTEM_PROMPT, SETTING_MAX_TOKENS } from '../const';
 import type { ClaudeApp, ConversationMessage } from '../types';
 
 /**
@@ -48,6 +48,9 @@ export default class Claude extends Shortcuts<ClaudeApp> {
         const resolvedMaxTokens = maxTokens
             ?? (this.settings.get(SETTING_MAX_TOKENS) as number | null ?? DEFAULT_MAX_TOKENS);
 
+        const resolvedSystemPrompt = systemPrompt
+            ?? (this.settings.get(SETTING_DEFAULT_SYSTEM_PROMPT) as string | null ?? undefined);
+
         const params: Anthropic.MessageCreateParamsNonStreaming = {
             model: resolvedModel,
             max_tokens: resolvedMaxTokens,
@@ -55,8 +58,8 @@ export default class Claude extends Shortcuts<ClaudeApp> {
             stream: false
         };
 
-        if (systemPrompt) {
-            params.system = systemPrompt;
+        if (resolvedSystemPrompt) {
+            params.system = resolvedSystemPrompt;
         }
 
         return params;

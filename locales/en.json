@@ -37,6 +37,11 @@
       "connecting": "Opening authentication...",
       "waiting": "Waiting for authentication...",
       "error": "Authentication failed: {{error}}"
+    },
+    "system_prompt": {
+      "title": "Default System Prompt",
+      "description": "An optional system prompt that is sent with every request. Use this to give Claude a persona or set behavioural guidelines. Leave empty to use no system prompt.",
+      "placeholder": "You are a helpful home assistant..."
     }
   }
 }

@@ -34,6 +34,18 @@
             </select>
         </FormGroup>
 
+        <FormGroup :title="t('settings.system_prompt.title')">
+            <template #before>
+                <p :class="$style.description">{{ t('settings.system_prompt.description') }}</p>
+            </template>
+
+            <FormTextarea
+                v-model="defaultSystemPrompt"
+                :label="t('settings.system_prompt.title')"
+                :placeholder="t('settings.system_prompt.placeholder')"
+                :rows="5"/>
+        </FormGroup>
+
         <FormGroup :title="t('settings.max_tokens.title')">
             <template #before>
                 <p :class="$style.description">{{ t('settings.max_tokens.description') }}</p>
@@ -108,7 +120,7 @@
     lang="ts"
     setup>
     import { onMounted, ref } from 'vue';
-    import { ButtonPrimary, ButtonTransparent, Form, FormGroup, FormInput, Top } from './components';
+    import { ButtonPrimary, ButtonTransparent, Form, FormGroup, FormInput, FormTextarea, Top } from './components';
     import { useTranslate } from './composables';
 
     const MODELS = [
@@ -121,6 +133,7 @@
 
     const apiKey = ref('');
     const defaultModel = ref('claude-haiku-4-5-20251001');
+    const defaultSystemPrompt = ref('');
     const maxTokensStr = ref('1024');
     const isSaving = ref(false);
     const isTesting = ref(false);
@@ -140,6 +153,7 @@
 
         apiKey.value = settings.apiKey ?? '';
         defaultModel.value = settings.defaultModel ?? 'claude-haiku-4-5-20251001';
+        defaultSystemPrompt.value = settings.defaultSystemPrompt ?? '';
         maxTokensStr.value = String(settings.maxTokens ?? 1024);
         homeyMcpConnected.value = mcpStatus.connected;
 
@@ -156,6 +170,7 @@
             await Promise.all([
                 Homey.api('PUT', '/settings', {key: 'claude-api-key', value: apiKey.value}),
                 Homey.api('PUT', '/settings', {key: 'claude-default-model', value: defaultModel.value}),
+                Homey.api('PUT', '/settings', {key: 'claude-default-system-prompt', value: defaultSystemPrompt.value || null}),
                 ...(isNaN(maxTokens) || maxTokens <= 0 ? [] : [
                     Homey.api('PUT', '/settings', {key: 'claude-max-tokens', value: maxTokens})
                 ])
@@ -245,6 +260,7 @@
     type Settings = {
         apiKey: string | null;
         defaultModel: string | null;
+        defaultSystemPrompt: string | null;
         maxTokens: number | null;
     };
 </script>

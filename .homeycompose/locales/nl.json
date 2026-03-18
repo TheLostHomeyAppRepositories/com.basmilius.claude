@@ -14,6 +14,11 @@
             "title": "Standaard model",
             "description": "Het Claude-model dat standaard wordt gebruikt. Individuele flow-kaarten kunnen dit overschrijven."
         },
+        "system_prompt": {
+            "title": "Standaard systeem-prompt",
+            "description": "Een optionele systeem-prompt die met elk verzoek meegestuurd wordt. Gebruik dit om Claude een rol te geven of gedragsrichtlijnen in te stellen. Laat leeg om geen systeem-prompt te gebruiken.",
+            "placeholder": "Je bent een behulpzame huisassistent..."
+        },
         "max_tokens": {
             "title": "Maximale tokens",
             "description": "Maximaal aantal tokens in het antwoord van Claude. Hogere waarden staan langere antwoorden toe."

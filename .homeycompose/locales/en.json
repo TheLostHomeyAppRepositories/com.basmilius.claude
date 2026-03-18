@@ -14,6 +14,11 @@
             "title": "Default Model",
             "description": "The Claude model to use by default. Individual flow cards can override this."
         },
+        "system_prompt": {
+            "title": "Default System Prompt",
+            "description": "An optional system prompt that is sent with every request. Use this to give Claude a persona or set behavioural guidelines. Leave empty to use no system prompt.",
+            "placeholder": "You are a helpful home assistant..."
+        },
         "max_tokens": {
             "title": "Max Tokens",
             "description": "Maximum number of tokens in Claude's response. Higher values allow longer responses."

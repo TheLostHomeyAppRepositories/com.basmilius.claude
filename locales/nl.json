@@ -37,6 +37,11 @@
       "connecting": "Authenticatie openen...",
       "waiting": "Wachten op authenticatie...",
       "error": "Authenticatie mislukt: {{error}}"
+    },
+    "system_prompt": {
+      "title": "Standaard systeem-prompt",
+      "description": "Een optionele systeem-prompt die met elk verzoek meegestuurd wordt. Gebruik dit om Claude een rol te geven of gedragsrichtlijnen in te stellen. Laat leeg om geen systeem-prompt te gebruiken.",
+      "placeholder": "Je bent een behulpzame huisassistent..."
     }
   }
 }

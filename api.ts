@@ -1,6 +1,6 @@
 import Anthropic from '@anthropic-ai/sdk';
 import type { ApiRequest } from '@basmilius/homey-common';
-import { DEFAULT_MAX_TOKENS, DEFAULT_MODEL, HOMEY_MCP_AUTH_ENDPOINT, SETTING_API_KEY, SETTING_DEFAULT_MODEL, SETTING_MAX_TOKENS } from './src/const';
+import { DEFAULT_MAX_TOKENS, DEFAULT_MODEL, HOMEY_MCP_AUTH_ENDPOINT, SETTING_API_KEY, SETTING_DEFAULT_MODEL, SETTING_DEFAULT_SYSTEM_PROMPT, SETTING_MAX_TOKENS } from './src/const';
 import type { ClaudeApp } from './src/types';
 
 type AppRequest<TBody = never> = ApiRequest<ClaudeApp, TBody>;
@@ -19,6 +19,7 @@ module.exports = {
         return {
             apiKey: homey.settings.get(SETTING_API_KEY) ?? null,
             defaultModel: homey.settings.get(SETTING_DEFAULT_MODEL) ?? DEFAULT_MODEL,
+            defaultSystemPrompt: homey.settings.get(SETTING_DEFAULT_SYSTEM_PROMPT) ?? null,
             maxTokens: homey.settings.get(SETTING_MAX_TOKENS) ?? DEFAULT_MAX_TOKENS
         };
     },
