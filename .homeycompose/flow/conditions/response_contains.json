@@ -2,15 +2,48 @@
     "id": "response_contains",
     "title": {
         "en": "Text contains",
-        "nl": "Tekst bevat"
+        "nl": "Tekst bevat",
+        "de": "Text enthält",
+        "fr": "Le texte contient",
+        "it": "Il testo contiene",
+        "sv": "Text innehåller",
+        "no": "Teksten inneholder",
+        "es": "El texto contiene",
+        "da": "Teksten indeholder",
+        "ru": "Текст содержит",
+        "pl": "Tekst zawiera",
+        "ko": "텍스트 포함",
+        "ar": "النص يحتوي على"
     },
     "titleFormatted": {
         "en": "[[text]] contains !{{|not }}[[needle]]",
-        "nl": "[[text]] bevat !{{|niet }}[[needle]]"
+        "nl": "[[text]] bevat !{{|niet }}[[needle]]",
+        "de": "[[text]] enthält !{{|nicht }}[[needle]]",
+        "fr": "[[text]] contient !{{|pas }}[[needle]]",
+        "it": "[[text]] contiene !{{|non }}[[needle]]",
+        "sv": "[[text]] innehåller !{{|inte }}[[needle]]",
+        "no": "[[text]] inneholder !{{|ikke }}[[needle]]",
+        "es": "[[text]] contiene !{{|no }}[[needle]]",
+        "da": "[[text]] indeholder !{{|ikke }}[[needle]]",
+        "ru": "[[text]] содержит !{{|не }}[[needle]]",
+        "pl": "[[text]] zawiera !{{|nie }}[[needle]]",
+        "ko": "[[text]] 포함 !{{|안 }}[[needle]]",
+        "ar": "[[text]] يحتوي !{{|لا }}[[needle]]"
     },
     "hint": {
         "en": "Checks if a text contains a given word or phrase (case-insensitive). Useful for checking Claude's responses.",
-        "nl": "Controleert of een tekst een bepaald woord of zin bevat (hoofdletterongevoelig). Handig voor het controleren van Claude-antwoorden."
+        "nl": "Controleert of een tekst een bepaald woord of zin bevat (hoofdletterongevoelig). Handig voor het controleren van Claude-antwoorden.",
+        "de": "Prüft, ob ein Text ein bestimmtes Wort oder eine bestimmte Phrase enthält (Groß-/Kleinschreibung ignoriert). Nützlich für die Überprüfung von Claudes Antworten.",
+        "fr": "Vérifie si un texte contient un mot ou une phrase donné (insensible à la casse). Utile pour vérifier les réponses de Claude.",
+        "it": "Controlla se un testo contiene una parola o frase specificata (senza distinzione maiuscole/minuscole). Utile per verificare le risposte di Claude.",
+        "sv": "Kontrollerar om en text innehåller ett givet ord eller fras (skiftlägesokänslig). Användbart för att kontrollera Claudes svar.",
+        "no": "Sjekker om en tekst inneholder et gitt ord eller frase (ikke skiller mellom store og små bokstaver). Nyttig for å sjekke Claudes svar.",
+        "es": "Comprueba si un texto contiene una palabra o frase dada (sin distinción de mayúsculas). Útil para verificar las respuestas de Claude.",
+        "da": "Kontrollerer, om en tekst indeholder et givet ord eller sætning (ikke skriftstørrelsesfølsom). Nyttigt til at kontrollere Claudes svar.",
+        "ru": "Проверяет, содержит ли текст заданное слово или фразу (без учёта регистра). Полезно для проверки ответов Claude.",
+        "pl": "Sprawdza, czy tekst zawiera podane słowo lub frazę (bez rozróżnienia wielkości liter). Przydatne do sprawdzania odpowiedzi Claude.",
+        "ko": "텍스트에 주어진 단어나 구문이 포함되어 있는지 확인합니다(대소문자 구분 없음). Claude의 응답을 확인하는 데 유용합니다.",
+        "ar": "يتحقق مما إذا كان النص يحتوي على كلمة أو عبارة معينة (غير حساس لحالة الأحرف). مفيد للتحقق من ردود Claude."
     },
     "args": [
         {
@@ -18,11 +51,33 @@
             "name": "text",
             "title": {
                 "en": "Text",
-                "nl": "Tekst"
+                "nl": "Tekst",
+                "de": "Text",
+                "fr": "Texte",
+                "it": "Testo",
+                "sv": "Text",
+                "no": "Tekst",
+                "es": "Texto",
+                "da": "Tekst",
+                "ru": "Текст",
+                "pl": "Tekst",
+                "ko": "텍스트",
+                "ar": "النص"
             },
             "placeholder": {
                 "en": "The text to search in",
-                "nl": "De tekst om in te zoeken"
+                "nl": "De tekst om in te zoeken",
+                "de": "Der Text, in dem gesucht werden soll",
+                "fr": "Le texte dans lequel chercher",
+                "it": "Il testo in cui cercare",
+                "sv": "Texten att söka i",
+                "no": "Teksten å søke i",
+                "es": "El texto en el que buscar",
+                "da": "Teksten at søge i",
+                "ru": "Текст для поиска",
+                "pl": "Tekst do przeszukania",
+                "ko": "검색할 텍스트",
+                "ar": "النص المراد البحث فيه"
             }
         },
         {
@@ -30,11 +85,33 @@
             "name": "needle",
             "title": {
                 "en": "Word or phrase",
-                "nl": "Woord of zin"
+                "nl": "Woord of zin",
+                "de": "Wort oder Satz",
+                "fr": "Mot ou phrase",
+                "it": "Parola o frase",
+                "sv": "Ord eller fras",
+                "no": "Ord eller setning",
+                "es": "Palabra o frase",
+                "da": "Ord eller sætning",
+                "ru": "Слово или фраза",
+                "pl": "Słowo lub fraza",
+                "ko": "단어 또는 구문",
+                "ar": "كلمة أو عبارة"
             },
             "placeholder": {
                 "en": "yes",
-                "nl": "ja"
+                "nl": "ja",
+                "de": "ja",
+                "fr": "oui",
+                "it": "sì",
+                "sv": "ja",
+                "no": "ja",
+                "es": "sí",
+                "da": "ja",
+                "ru": "да",
+                "pl": "tak",
+                "ko": "예",
+                "ar": "نعم"
             }
         }
     ]

@@ -2,15 +2,48 @@
     "id": "conversation_message",
     "title": {
         "en": "Send conversation message",
-        "nl": "Stuur gespreksbericht"
+        "nl": "Stuur gespreksbericht",
+        "de": "Gesprächsnachricht senden",
+        "fr": "Envoyer un message de conversation",
+        "it": "Invia messaggio conversazione",
+        "sv": "Skicka konversationsmeddelande",
+        "no": "Send samtalemelding",
+        "es": "Enviar mensaje de conversación",
+        "da": "Send samtalebesked",
+        "ru": "Отправить сообщение в разговор",
+        "pl": "Wyślij wiadomość konwersacji",
+        "ko": "대화 메시지 보내기",
+        "ar": "إرسال رسالة محادثة"
     },
     "titleFormatted": {
         "en": "Say to [[conversation_id]]: [[message]]",
-        "nl": "Zeg tegen [[conversation_id]]: [[message]]"
+        "nl": "Zeg tegen [[conversation_id]]: [[message]]",
+        "de": "Sage zu [[conversation_id]]: [[message]]",
+        "fr": "Dire à [[conversation_id]] : [[message]]",
+        "it": "Di' a [[conversation_id]]: [[message]]",
+        "sv": "Säg till [[conversation_id]]: [[message]]",
+        "no": "Si til [[conversation_id]]: [[message]]",
+        "es": "Decir a [[conversation_id]]: [[message]]",
+        "da": "Sig til [[conversation_id]]: [[message]]",
+        "ru": "Сказать [[conversation_id]]: [[message]]",
+        "pl": "Powiedz do [[conversation_id]]: [[message]]",
+        "ko": "[[conversation_id]]에게 말하기: [[message]]",
+        "ar": "قل لـ [[conversation_id]]: [[message]]"
     },
     "hint": {
         "en": "Sends a message in a named conversation. Previous messages in the same conversation are remembered.",
-        "nl": "Stuurt een bericht in een benoemd gesprek. Eerdere berichten in hetzelfde gesprek worden onthouden."
+        "nl": "Stuurt een bericht in een benoemd gesprek. Eerdere berichten in hetzelfde gesprek worden onthouden.",
+        "de": "Sendet eine Nachricht in einem benannten Gespräch. Frühere Nachrichten im selben Gespräch werden gespeichert.",
+        "fr": "Envoie un message dans une conversation nommée. Les messages précédents de la même conversation sont mémorisés.",
+        "it": "Invia un messaggio in una conversazione denominata. I messaggi precedenti nella stessa conversazione vengono ricordati.",
+        "sv": "Skickar ett meddelande i en namngiven konversation. Tidigare meddelanden i samma konversation sparas.",
+        "no": "Sender en melding i en navngitt samtale. Tidligere meldinger i samme samtale huskes.",
+        "es": "Envía un mensaje en una conversación con nombre. Los mensajes anteriores de la misma conversación se recuerdan.",
+        "da": "Sender en besked i en navngiven samtale. Tidligere beskeder i samme samtale huskes.",
+        "ru": "Отправляет сообщение в именованный разговор. Предыдущие сообщения в том же разговоре сохраняются.",
+        "pl": "Wysyła wiadomość w nazwanej konwersacji. Poprzednie wiadomości w tej samej konwersacji są zapamiętywane.",
+        "ko": "명명된 대화에서 메시지를 보냅니다. 같은 대화의 이전 메시지가 기억됩니다.",
+        "ar": "يرسل رسالة في محادثة مُسمَّاة. يتم تذكر الرسائل السابقة في نفس المحادثة."
     },
     "args": [
         {
@@ -18,11 +51,33 @@
             "name": "conversation_id",
             "title": {
                 "en": "Conversation name",
-                "nl": "Gespreksnaam"
+                "nl": "Gespreksnaam",
+                "de": "Gesprächsname",
+                "fr": "Nom de la conversation",
+                "it": "Nome della conversazione",
+                "sv": "Konversationsnamn",
+                "no": "Samtalenavn",
+                "es": "Nombre de la conversación",
+                "da": "Samtalenavn",
+                "ru": "Имя разговора",
+                "pl": "Nazwa konwersacji",
+                "ko": "대화 이름",
+                "ar": "اسم المحادثة"
             },
             "placeholder": {
                 "en": "my-conversation",
-                "nl": "mijn-gesprek"
+                "nl": "mijn-gesprek",
+                "de": "mein-gespräch",
+                "fr": "ma-conversation",
+                "it": "mia-conversazione",
+                "sv": "min-konversation",
+                "no": "min-samtale",
+                "es": "mi-conversación",
+                "da": "min-samtale",
+                "ru": "мой-разговор",
+                "pl": "moja-rozmowa",
+                "ko": "내-대화",
+                "ar": "محادثتي"
             }
         },
         {
@@ -30,11 +85,33 @@
             "name": "message",
             "title": {
                 "en": "Message",
-                "nl": "Bericht"
+                "nl": "Bericht",
+                "de": "Nachricht",
+                "fr": "Message",
+                "it": "Messaggio",
+                "sv": "Meddelande",
+                "no": "Melding",
+                "es": "Mensaje",
+                "da": "Besked",
+                "ru": "Сообщение",
+                "pl": "Wiadomość",
+                "ko": "메시지",
+                "ar": "رسالة"
             },
             "placeholder": {
                 "en": "What did I just say?",
-                "nl": "Wat heb ik net gezegd?"
+                "nl": "Wat heb ik net gezegd?",
+                "de": "Was habe ich gerade gesagt?",
+                "fr": "Qu'est-ce que je viens de dire ?",
+                "it": "Cosa ho appena detto?",
+                "sv": "Vad sa jag nyss?",
+                "no": "Hva sa jeg nettopp?",
+                "es": "¿Qué acabo de decir?",
+                "da": "Hvad sagde jeg lige?",
+                "ru": "Что я только что сказал?",
+                "pl": "Co właśnie powiedziałem?",
+                "ko": "방금 무슨 말을 했나요?",
+                "ar": "ماذا قلت للتو؟"
             }
         }
     ],
@@ -44,11 +121,33 @@
             "type": "string",
             "title": {
                 "en": "Response",
-                "nl": "Antwoord"
+                "nl": "Antwoord",
+                "de": "Antwort",
+                "fr": "Réponse",
+                "it": "Risposta",
+                "sv": "Svar",
+                "no": "Svar",
+                "es": "Respuesta",
+                "da": "Svar",
+                "ru": "Ответ",
+                "pl": "Odpowiedź",
+                "ko": "응답",
+                "ar": "رد"
             },
             "example": {
                 "en": "You said hello.",
-                "nl": "Je zei hallo."
+                "nl": "Je zei hallo.",
+                "de": "Du hast hallo gesagt.",
+                "fr": "Vous avez dit bonjour.",
+                "it": "Hai detto ciao.",
+                "sv": "Du sa hej.",
+                "no": "Du sa hei.",
+                "es": "Dijiste hola.",
+                "da": "Du sagde hej.",
+                "ru": "Вы сказали привет.",
+                "pl": "Powiedziałeś cześć.",
+                "ko": "안녕이라고 말씀하셨습니다.",
+                "ar": "قلت مرحباً."
             }
         },
         {
@@ -56,11 +155,33 @@
             "type": "string",
             "title": {
                 "en": "Model used",
-                "nl": "Gebruikte model"
+                "nl": "Gebruikte model",
+                "de": "Verwendetes Modell",
+                "fr": "Modèle utilisé",
+                "it": "Modello utilizzato",
+                "sv": "Använd modell",
+                "no": "Brukt modell",
+                "es": "Modelo utilizado",
+                "da": "Brugt model",
+                "ru": "Используемая модель",
+                "pl": "Użyty model",
+                "ko": "사용된 모델",
+                "ar": "النموذج المستخدم"
             },
             "example": {
                 "en": "claude-haiku-4-5-20251001",
-                "nl": "claude-haiku-4-5-20251001"
+                "nl": "claude-haiku-4-5-20251001",
+                "de": "claude-haiku-4-5-20251001",
+                "fr": "claude-haiku-4-5-20251001",
+                "it": "claude-haiku-4-5-20251001",
+                "sv": "claude-haiku-4-5-20251001",
+                "no": "claude-haiku-4-5-20251001",
+                "es": "claude-haiku-4-5-20251001",
+                "da": "claude-haiku-4-5-20251001",
+                "ru": "claude-haiku-4-5-20251001",
+                "pl": "claude-haiku-4-5-20251001",
+                "ko": "claude-haiku-4-5-20251001",
+                "ar": "claude-haiku-4-5-20251001"
             }
         }
     ]

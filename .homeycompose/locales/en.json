@@ -7,7 +7,7 @@
         "subtitle": "Configure your Claude AI integration",
         "api_key": {
             "title": "API Key",
-            "description": "Your Anthropic API key. You can find or create one at console.anthropic.com.",
+            "description": "Your Anthropic API key. You can find or create one at platform.claude.com.",
             "placeholder": "sk-ant-..."
         },
         "model": {

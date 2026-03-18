@@ -2,15 +2,48 @@
     "id": "ask_with_homey",
     "title": {
         "en": "Ask Claude with Homey context",
-        "nl": "Stel Claude een vraag met Homey-context"
+        "nl": "Stel Claude een vraag met Homey-context",
+        "de": "Claude mit Homey-Kontext fragen",
+        "fr": "Demander à Claude avec le contexte Homey",
+        "it": "Chiedi a Claude con il contesto Homey",
+        "sv": "Fråga Claude med Homey-kontext",
+        "no": "Spør Claude med Homey-kontekst",
+        "es": "Preguntar a Claude con contexto de Homey",
+        "da": "Spørg Claude med Homey-kontekst",
+        "ru": "Спросить Claude с контекстом Homey",
+        "pl": "Zapytaj Claude z kontekstem Homey",
+        "ko": "Homey 컨텍스트로 Claude에게 질문",
+        "ar": "اسأل Claude مع سياق Homey"
     },
     "titleFormatted": {
         "en": "Ask Claude (Homey): [[question]]",
-        "nl": "Vraag Claude (Homey): [[question]]"
+        "nl": "Vraag Claude (Homey): [[question]]",
+        "de": "Frage Claude (Homey): [[question]]",
+        "fr": "Demande à Claude (Homey) : [[question]]",
+        "it": "Chiedi a Claude (Homey): [[question]]",
+        "sv": "Fråga Claude (Homey): [[question]]",
+        "no": "Spør Claude (Homey): [[question]]",
+        "es": "Pregunta a Claude (Homey): [[question]]",
+        "da": "Spørg Claude (Homey): [[question]]",
+        "ru": "Спросить Claude (Homey): [[question]]",
+        "pl": "Zapytaj Claude (Homey): [[question]]",
+        "ko": "Claude에게 질문 (Homey): [[question]]",
+        "ar": "اسأل Claude (Homey): [[question]]"
     },
     "hint": {
         "en": "Asks Claude a question and gives it access to your Homey devices and flows via MCP. Requires Homey MCP authentication in the app settings.",
-        "nl": "Stelt Claude een vraag en geeft het toegang tot je Homey-apparaten en flows via MCP. Vereist Homey MCP-authenticatie in de app-instellingen."
+        "nl": "Stelt Claude een vraag en geeft het toegang tot je Homey-apparaten en flows via MCP. Vereist Homey MCP-authenticatie in de app-instellingen.",
+        "de": "Stellt Claude eine Frage und gibt ihm Zugriff auf deine Homey-Geräte und Flows über MCP. Erfordert Homey MCP-Authentifizierung in den App-Einstellungen.",
+        "fr": "Pose une question à Claude et lui donne accès à vos appareils et flux Homey via MCP. Nécessite l'authentification Homey MCP dans les paramètres de l'application.",
+        "it": "Pone una domanda a Claude e gli dà accesso ai dispositivi e flussi Homey tramite MCP. Richiede l'autenticazione Homey MCP nelle impostazioni dell'app.",
+        "sv": "Ställer en fråga till Claude och ger den åtkomst till dina Homey-enheter och flöden via MCP. Kräver Homey MCP-autentisering i appinställningarna.",
+        "no": "Stiller Claude et spørsmål og gir det tilgang til Homey-enhetene og flyene dine via MCP. Krever Homey MCP-autentisering i appinnstillingene.",
+        "es": "Hace una pregunta a Claude y le da acceso a tus dispositivos y flujos de Homey a través de MCP. Requiere autenticación Homey MCP en la configuración de la app.",
+        "da": "Stiller Claude et spørgsmål og giver det adgang til dine Homey-enheder og flows via MCP. Kræver Homey MCP-godkendelse i appindstillingerne.",
+        "ru": "Задаёт Claude вопрос и предоставляет ему доступ к устройствам и потокам Homey через MCP. Требует аутентификации Homey MCP в настройках приложения.",
+        "pl": "Zadaje Claude pytanie i daje mu dostęp do urządzeń i przepływów Homey przez MCP. Wymaga uwierzytelnienia Homey MCP w ustawieniach aplikacji.",
+        "ko": "Claude에게 질문하고 MCP를 통해 Homey 기기와 플로우에 액세스할 수 있게 합니다. 앱 설정에서 Homey MCP 인증이 필요합니다.",
+        "ar": "يسأل Claude سؤالاً ويمنحه الوصول إلى أجهزة Homey وتدفقاتك عبر MCP. يتطلب مصادقة Homey MCP في إعدادات التطبيق."
     },
     "args": [
         {
@@ -18,11 +51,33 @@
             "name": "question",
             "title": {
                 "en": "Question",
-                "nl": "Vraag"
+                "nl": "Vraag",
+                "de": "Frage",
+                "fr": "Question",
+                "it": "Domanda",
+                "sv": "Fråga",
+                "no": "Spørsmål",
+                "es": "Pregunta",
+                "da": "Spørgsmål",
+                "ru": "Вопрос",
+                "pl": "Pytanie",
+                "ko": "질문",
+                "ar": "سؤال"
             },
             "placeholder": {
                 "en": "Which lights are currently on?",
-                "nl": "Welke lampen zijn momenteel aan?"
+                "nl": "Welke lampen zijn momenteel aan?",
+                "de": "Welche Lichter sind gerade an?",
+                "fr": "Quelles lumières sont actuellement allumées ?",
+                "it": "Quali luci sono attualmente accese?",
+                "sv": "Vilka lampor är för närvarande tända?",
+                "no": "Hvilke lys er for øyeblikket på?",
+                "es": "¿Qué luces están encendidas actualmente?",
+                "da": "Hvilke lys er i øjeblikket tændt?",
+                "ru": "Какой свет сейчас включён?",
+                "pl": "Które światła są teraz włączone?",
+                "ko": "현재 켜져 있는 조명은 무엇인가요?",
+                "ar": "ما الأضواء التي تضيء حالياً؟"
             }
         }
     ],
@@ -32,11 +87,33 @@
             "type": "string",
             "title": {
                 "en": "Answer",
-                "nl": "Antwoord"
+                "nl": "Antwoord",
+                "de": "Antwort",
+                "fr": "Réponse",
+                "it": "Risposta",
+                "sv": "Svar",
+                "no": "Svar",
+                "es": "Respuesta",
+                "da": "Svar",
+                "ru": "Ответ",
+                "pl": "Odpowiedź",
+                "ko": "답변",
+                "ar": "إجابة"
             },
             "example": {
                 "en": "The living room light and kitchen light are currently on.",
-                "nl": "De woonkamerlamp en keukenlamp zijn momenteel aan."
+                "nl": "De woonkamerlamp en keukenlamp zijn momenteel aan.",
+                "de": "Das Wohnzimmerlicht und das Küchenlicht sind momentan an.",
+                "fr": "La lumière du salon et la lumière de la cuisine sont actuellement allumées.",
+                "it": "La luce del soggiorno e la luce della cucina sono attualmente accese.",
+                "sv": "Vardagsrumslampan och köksampan är för närvarande tända.",
+                "no": "Stuelyset og kjøkkenlyset er for øyeblikket på.",
+                "es": "La luz de la sala y la luz de la cocina están encendidas actualmente.",
+                "da": "Stuelyset og køkkenlyset er i øjeblikket tændt.",
+                "ru": "Свет в гостиной и кухне сейчас включён.",
+                "pl": "Lampa w salonie i lampa w kuchni są teraz włączone.",
+                "ko": "현재 거실 조명과 주방 조명이 켜져 있습니다.",
+                "ar": "مصباح غرفة المعيشة والمطبخ مضاءان حالياً."
             }
         },
         {
@@ -44,11 +121,33 @@
             "type": "string",
             "title": {
                 "en": "Model used",
-                "nl": "Gebruikte model"
+                "nl": "Gebruikte model",
+                "de": "Verwendetes Modell",
+                "fr": "Modèle utilisé",
+                "it": "Modello utilizzato",
+                "sv": "Använd modell",
+                "no": "Brukt modell",
+                "es": "Modelo utilizado",
+                "da": "Brugt model",
+                "ru": "Используемая модель",
+                "pl": "Użyty model",
+                "ko": "사용된 모델",
+                "ar": "النموذج المستخدم"
             },
             "example": {
                 "en": "claude-haiku-4-5-20251001",
-                "nl": "claude-haiku-4-5-20251001"
+                "nl": "claude-haiku-4-5-20251001",
+                "de": "claude-haiku-4-5-20251001",
+                "fr": "claude-haiku-4-5-20251001",
+                "it": "claude-haiku-4-5-20251001",
+                "sv": "claude-haiku-4-5-20251001",
+                "no": "claude-haiku-4-5-20251001",
+                "es": "claude-haiku-4-5-20251001",
+                "da": "claude-haiku-4-5-20251001",
+                "ru": "claude-haiku-4-5-20251001",
+                "pl": "claude-haiku-4-5-20251001",
+                "ko": "claude-haiku-4-5-20251001",
+                "ar": "claude-haiku-4-5-20251001"
             }
         }
     ]

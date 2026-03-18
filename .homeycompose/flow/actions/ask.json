@@ -2,15 +2,48 @@
     "id": "ask",
     "title": {
         "en": "Ask Claude a question",
-        "nl": "Stel Claude een vraag"
+        "nl": "Stel Claude een vraag",
+        "de": "Claude eine Frage stellen",
+        "fr": "Poser une question à Claude",
+        "it": "Fai una domanda a Claude",
+        "sv": "Ställ en fråga till Claude",
+        "no": "Still Claude et spørsmål",
+        "es": "Hacer una pregunta a Claude",
+        "da": "Stil Claude et spørgsmål",
+        "ru": "Задать вопрос Claude",
+        "pl": "Zadaj pytanie Claude",
+        "ko": "Claude에게 질문하기",
+        "ar": "اسأل Claude سؤالاً"
     },
     "titleFormatted": {
         "en": "Ask Claude: [[question]]",
-        "nl": "Vraag Claude: [[question]]"
+        "nl": "Vraag Claude: [[question]]",
+        "de": "Frage Claude: [[question]]",
+        "fr": "Demande à Claude : [[question]]",
+        "it": "Chiedi a Claude: [[question]]",
+        "sv": "Fråga Claude: [[question]]",
+        "no": "Spør Claude: [[question]]",
+        "es": "Pregunta a Claude: [[question]]",
+        "da": "Spørg Claude: [[question]]",
+        "ru": "Спросить Claude: [[question]]",
+        "pl": "Zapytaj Claude: [[question]]",
+        "ko": "Claude에게 질문: [[question]]",
+        "ar": "اسأل Claude: [[question]]"
     },
     "hint": {
         "en": "Asks Claude a question and returns the answer as a token. Uses the default model from settings.",
-        "nl": "Stelt Claude een vraag en geeft het antwoord terug als token. Gebruikt het standaard model uit de instellingen."
+        "nl": "Stelt Claude een vraag en geeft het antwoord terug als token. Gebruikt het standaard model uit de instellingen.",
+        "de": "Stellt Claude eine Frage und gibt die Antwort als Token zurück. Verwendet das Standardmodell aus den Einstellungen.",
+        "fr": "Pose une question à Claude et retourne la réponse sous forme de token. Utilise le modèle par défaut des paramètres.",
+        "it": "Pone una domanda a Claude e restituisce la risposta come token. Usa il modello predefinito dalle impostazioni.",
+        "sv": "Ställer en fråga till Claude och returnerar svaret som ett token. Använder standardmodellen från inställningarna.",
+        "no": "Stiller Claude et spørsmål og returnerer svaret som et token. Bruker standardmodellen fra innstillingene.",
+        "es": "Hace una pregunta a Claude y devuelve la respuesta como token. Usa el modelo predeterminado de la configuración.",
+        "da": "Stiller Claude et spørgsmål og returnerer svaret som et token. Bruger standardmodellen fra indstillingerne.",
+        "ru": "Задаёт Claude вопрос и возвращает ответ в виде токена. Использует модель по умолчанию из настроек.",
+        "pl": "Zadaje Claude pytanie i zwraca odpowiedź jako token. Używa domyślnego modelu z ustawień.",
+        "ko": "Claude에게 질문하고 답변을 토큰으로 반환합니다. 설정의 기본 모델을 사용합니다.",
+        "ar": "يسأل Claude سؤالاً ويعيد الإجابة كرمز. يستخدم النموذج الافتراضي من الإعدادات."
     },
     "args": [
         {
@@ -18,11 +51,33 @@
             "name": "question",
             "title": {
                 "en": "Question",
-                "nl": "Vraag"
+                "nl": "Vraag",
+                "de": "Frage",
+                "fr": "Question",
+                "it": "Domanda",
+                "sv": "Fråga",
+                "no": "Spørsmål",
+                "es": "Pregunta",
+                "da": "Spørgsmål",
+                "ru": "Вопрос",
+                "pl": "Pytanie",
+                "ko": "질문",
+                "ar": "سؤال"
             },
             "placeholder": {
                 "en": "What is the capital of France?",
-                "nl": "Wat is de hoofdstad van Frankrijk?"
+                "nl": "Wat is de hoofdstad van Frankrijk?",
+                "de": "Was ist die Hauptstadt von Frankreich?",
+                "fr": "Quelle est la capitale de la France ?",
+                "it": "Qual è la capitale della Francia?",
+                "sv": "Vad är huvudstaden i Frankrike?",
+                "no": "Hva er hovedstaden i Frankrike?",
+                "es": "¿Cuál es la capital de Francia?",
+                "da": "Hvad er Frankrigs hovedstad?",
+                "ru": "Какова столица Франции?",
+                "pl": "Jaka jest stolica Francji?",
+                "ko": "프랑스의 수도는 어디인가요?",
+                "ar": "ما هي عاصمة فرنسا؟"
             }
         }
     ],
@@ -32,11 +87,33 @@
             "type": "string",
             "title": {
                 "en": "Answer",
-                "nl": "Antwoord"
+                "nl": "Antwoord",
+                "de": "Antwort",
+                "fr": "Réponse",
+                "it": "Risposta",
+                "sv": "Svar",
+                "no": "Svar",
+                "es": "Respuesta",
+                "da": "Svar",
+                "ru": "Ответ",
+                "pl": "Odpowiedź",
+                "ko": "답변",
+                "ar": "إجابة"
             },
             "example": {
                 "en": "Paris is the capital of France.",
-                "nl": "Parijs is de hoofdstad van Frankrijk."
+                "nl": "Parijs is de hoofdstad van Frankrijk.",
+                "de": "Paris ist die Hauptstadt von Frankreich.",
+                "fr": "Paris est la capitale de la France.",
+                "it": "Parigi è la capitale della Francia.",
+                "sv": "Paris är Frankrikes huvudstad.",
+                "no": "Paris er Frankrikes hovedstad.",
+                "es": "París es la capital de Francia.",
+                "da": "Paris er Frankrigs hovedstad.",
+                "ru": "Париж — столица Франции.",
+                "pl": "Paryż jest stolicą Francji.",
+                "ko": "파리는 프랑스의 수도입니다.",
+                "ar": "باريس هي عاصمة فرنسا."
             }
         },
         {
@@ -44,11 +121,33 @@
             "type": "string",
             "title": {
                 "en": "Model used",
-                "nl": "Gebruikte model"
+                "nl": "Gebruikte model",
+                "de": "Verwendetes Modell",
+                "fr": "Modèle utilisé",
+                "it": "Modello utilizzato",
+                "sv": "Använd modell",
+                "no": "Brukt modell",
+                "es": "Modelo utilizado",
+                "da": "Brugt model",
+                "ru": "Используемая модель",
+                "pl": "Użyty model",
+                "ko": "사용된 모델",
+                "ar": "النموذج المستخدم"
             },
             "example": {
                 "en": "claude-haiku-4-5-20251001",
-                "nl": "claude-haiku-4-5-20251001"
+                "nl": "claude-haiku-4-5-20251001",
+                "de": "claude-haiku-4-5-20251001",
+                "fr": "claude-haiku-4-5-20251001",
+                "it": "claude-haiku-4-5-20251001",
+                "sv": "claude-haiku-4-5-20251001",
+                "no": "claude-haiku-4-5-20251001",
+                "es": "claude-haiku-4-5-20251001",
+                "da": "claude-haiku-4-5-20251001",
+                "ru": "claude-haiku-4-5-20251001",
+                "pl": "claude-haiku-4-5-20251001",
+                "ko": "claude-haiku-4-5-20251001",
+                "ar": "claude-haiku-4-5-20251001"
             }
         }
     ]

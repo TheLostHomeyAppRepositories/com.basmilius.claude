@@ -2,15 +2,48 @@
     "id": "translate",
     "title": {
         "en": "Translate text",
-        "nl": "Vertaal tekst"
+        "nl": "Vertaal tekst",
+        "de": "Text übersetzen",
+        "fr": "Traduire du texte",
+        "it": "Traduci testo",
+        "sv": "Översätt text",
+        "no": "Oversett tekst",
+        "es": "Traducir texto",
+        "da": "Oversæt tekst",
+        "ru": "Перевести текст",
+        "pl": "Przetłumacz tekst",
+        "ko": "텍스트 번역",
+        "ar": "ترجمة النص"
     },
     "titleFormatted": {
         "en": "Translate [[text]] to [[target_language]]",
-        "nl": "Vertaal [[text]] naar [[target_language]]"
+        "nl": "Vertaal [[text]] naar [[target_language]]",
+        "de": "Übersetze [[text]] nach [[target_language]]",
+        "fr": "Traduire [[text]] en [[target_language]]",
+        "it": "Traduci [[text]] in [[target_language]]",
+        "sv": "Översätt [[text]] till [[target_language]]",
+        "no": "Oversett [[text]] til [[target_language]]",
+        "es": "Traducir [[text]] a [[target_language]]",
+        "da": "Oversæt [[text]] til [[target_language]]",
+        "ru": "Перевести [[text]] на [[target_language]]",
+        "pl": "Przetłumacz [[text]] na [[target_language]]",
+        "ko": "[[text]]을 [[target_language]]로 번역",
+        "ar": "ترجم [[text]] إلى [[target_language]]"
     },
     "hint": {
         "en": "Translates text to the specified language using Claude. Uses the default model from settings.",
-        "nl": "Vertaalt tekst naar de opgegeven taal met Claude. Gebruikt het standaard model uit de instellingen."
+        "nl": "Vertaalt tekst naar de opgegeven taal met Claude. Gebruikt het standaard model uit de instellingen.",
+        "de": "Übersetzt Text in die angegebene Sprache mit Claude. Verwendet das Standardmodell aus den Einstellungen.",
+        "fr": "Traduit du texte dans la langue spécifiée avec Claude. Utilise le modèle par défaut des paramètres.",
+        "it": "Traduce testo nella lingua specificata con Claude. Usa il modello predefinito dalle impostazioni.",
+        "sv": "Översätter text till det angivna språket med Claude. Använder standardmodellen från inställningarna.",
+        "no": "Oversetter tekst til det angitte språket med Claude. Bruker standardmodellen fra innstillingene.",
+        "es": "Traduce texto al idioma especificado con Claude. Usa el modelo predeterminado de la configuración.",
+        "da": "Oversætter tekst til det angivne sprog med Claude. Bruger standardmodellen fra indstillingerne.",
+        "ru": "Переводит текст на указанный язык с помощью Claude. Использует модель по умолчанию из настроек.",
+        "pl": "Tłumaczy tekst na podany język za pomocą Claude. Używa domyślnego modelu z ustawień.",
+        "ko": "Claude를 사용하여 텍스트를 지정된 언어로 번역합니다. 설정의 기본 모델을 사용합니다.",
+        "ar": "يترجم النص إلى اللغة المحددة باستخدام Claude. يستخدم النموذج الافتراضي من الإعدادات."
     },
     "args": [
         {
@@ -18,11 +51,33 @@
             "name": "text",
             "title": {
                 "en": "Text to translate",
-                "nl": "Te vertalen tekst"
+                "nl": "Te vertalen tekst",
+                "de": "Zu übersetzender Text",
+                "fr": "Texte à traduire",
+                "it": "Testo da tradurre",
+                "sv": "Text att översätta",
+                "no": "Tekst å oversette",
+                "es": "Texto a traducir",
+                "da": "Tekst at oversætte",
+                "ru": "Текст для перевода",
+                "pl": "Tekst do przetłumaczenia",
+                "ko": "번역할 텍스트",
+                "ar": "النص المراد ترجمته"
             },
             "placeholder": {
                 "en": "Hello, how are you?",
-                "nl": "Hallo, hoe gaat het?"
+                "nl": "Hallo, hoe gaat het?",
+                "de": "Hallo, wie geht es dir?",
+                "fr": "Bonjour, comment allez-vous ?",
+                "it": "Ciao, come stai?",
+                "sv": "Hej, hur mår du?",
+                "no": "Hei, hvordan har du det?",
+                "es": "Hola, ¿cómo estás?",
+                "da": "Hej, hvordan har du det?",
+                "ru": "Привет, как дела?",
+                "pl": "Cześć, jak się masz?",
+                "ko": "안녕하세요, 어떻게 지내세요?",
+                "ar": "مرحباً، كيف حالك؟"
             }
         },
         {
@@ -30,11 +85,33 @@
             "name": "target_language",
             "title": {
                 "en": "Target language",
-                "nl": "Doeltaal"
+                "nl": "Doeltaal",
+                "de": "Zielsprache",
+                "fr": "Langue cible",
+                "it": "Lingua di destinazione",
+                "sv": "Målspråk",
+                "no": "Målspråk",
+                "es": "Idioma de destino",
+                "da": "Målsprog",
+                "ru": "Целевой язык",
+                "pl": "Język docelowy",
+                "ko": "대상 언어",
+                "ar": "اللغة المستهدفة"
             },
             "placeholder": {
                 "en": "Dutch",
-                "nl": "Engels"
+                "nl": "Engels",
+                "de": "Englisch",
+                "fr": "Anglais",
+                "it": "Inglese",
+                "sv": "Engelska",
+                "no": "Engelsk",
+                "es": "Inglés",
+                "da": "Engelsk",
+                "ru": "Английский",
+                "pl": "Angielski",
+                "ko": "영어",
+                "ar": "الإنجليزية"
             }
         }
     ],
@@ -44,11 +121,33 @@
             "type": "string",
             "title": {
                 "en": "Translation",
-                "nl": "Vertaling"
+                "nl": "Vertaling",
+                "de": "Übersetzung",
+                "fr": "Traduction",
+                "it": "Traduzione",
+                "sv": "Översättning",
+                "no": "Oversettelse",
+                "es": "Traducción",
+                "da": "Oversættelse",
+                "ru": "Перевод",
+                "pl": "Tłumaczenie",
+                "ko": "번역",
+                "ar": "ترجمة"
             },
             "example": {
                 "en": "Hallo, hoe gaat het?",
-                "nl": "Hello, how are you?"
+                "nl": "Hello, how are you?",
+                "de": "Hallo, wie geht es dir?",
+                "fr": "Bonjour, comment allez-vous ?",
+                "it": "Ciao, come stai?",
+                "sv": "Hej, hur mår du?",
+                "no": "Hei, hvordan har du det?",
+                "es": "Hola, ¿cómo estás?",
+                "da": "Hej, hvordan har du det?",
+                "ru": "Привет, как дела?",
+                "pl": "Cześć, jak się masz?",
+                "ko": "안녕하세요, 어떻게 지내세요?",
+                "ar": "مرحباً، كيف حالك؟"
             }
         },
         {
@@ -56,11 +155,33 @@
             "type": "string",
             "title": {
                 "en": "Model used",
-                "nl": "Gebruikte model"
+                "nl": "Gebruikte model",
+                "de": "Verwendetes Modell",
+                "fr": "Modèle utilisé",
+                "it": "Modello utilizzato",
+                "sv": "Använd modell",
+                "no": "Brukt modell",
+                "es": "Modelo utilizado",
+                "da": "Brugt model",
+                "ru": "Используемая модель",
+                "pl": "Użyty model",
+                "ko": "사용된 모델",
+                "ar": "النموذج المستخدم"
             },
             "example": {
                 "en": "claude-haiku-4-5-20251001",
-                "nl": "claude-haiku-4-5-20251001"
+                "nl": "claude-haiku-4-5-20251001",
+                "de": "claude-haiku-4-5-20251001",
+                "fr": "claude-haiku-4-5-20251001",
+                "it": "claude-haiku-4-5-20251001",
+                "sv": "claude-haiku-4-5-20251001",
+                "no": "claude-haiku-4-5-20251001",
+                "es": "claude-haiku-4-5-20251001",
+                "da": "claude-haiku-4-5-20251001",
+                "ru": "claude-haiku-4-5-20251001",
+                "pl": "claude-haiku-4-5-20251001",
+                "ko": "claude-haiku-4-5-20251001",
+                "ar": "claude-haiku-4-5-20251001"
             }
         }
     ]

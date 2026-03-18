@@ -1,0 +1,47 @@
+{
+    "notification": {
+        "welcome": "**Claude**에 오신 것을 환영합니다! 앱 설정으로 이동하여 Anthropic API 키를 구성하세요."
+    },
+    "settings": {
+        "title": "Claude",
+        "subtitle": "Claude AI 통합을 설정하세요",
+        "api_key": {
+            "title": "API 키",
+            "description": "Anthropic API 키입니다. platform.claude.com에서 찾거나 만들 수 있습니다.",
+            "placeholder": "sk-ant-..."
+        },
+        "model": {
+            "title": "기본 모델",
+            "description": "기본으로 사용할 Claude 모델입니다. 개별 플로우 카드에서 이를 재정의할 수 있습니다."
+        },
+        "system_prompt": {
+            "title": "기본 시스템 프롬프트",
+            "description": "모든 요청과 함께 전송되는 선택적 시스템 프롬프트입니다. Claude에 역할을 부여하거나 행동 지침을 설정하는 데 사용하세요. 시스템 프롬프트를 사용하지 않으려면 비워 두세요.",
+            "placeholder": "당신은 유용한 가정 도우미입니다..."
+        },
+        "max_tokens": {
+            "title": "최대 토큰",
+            "description": "Claude 응답의 최대 토큰 수입니다. 값이 높을수록 더 긴 응답이 가능합니다."
+        },
+        "save": {
+            "button": "설정 저장",
+            "success": "설정이 저장되었습니다!",
+            "error": "저장 실패: {{error}}"
+        },
+        "test": {
+            "button": "연결 테스트",
+            "success": "연결 성공!",
+            "error": "연결 실패: {{error}}"
+        },
+        "homey_mcp": {
+            "title": "Homey MCP",
+            "description": "MCP를 통해 Homey에 연결하여 Claude가 기기와 플로우에 액세스할 수 있도록 하세요. 그런 다음 \"Homey 컨텍스트로 Claude에게 질문\" 플로우 카드를 사용하세요.",
+            "connect": "Homey에 연결",
+            "disconnect": "연결 해제",
+            "connected": "Homey MCP에 연결됨",
+            "connecting": "인증 열기...",
+            "waiting": "인증 대기 중...",
+            "error": "인증 실패: {{error}}"
+        }
+    }
+}

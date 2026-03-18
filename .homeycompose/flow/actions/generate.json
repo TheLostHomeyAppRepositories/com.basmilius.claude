@@ -2,15 +2,48 @@
     "id": "generate",
     "title": {
         "en": "Generate text",
-        "nl": "Genereer tekst"
+        "nl": "Genereer tekst",
+        "de": "Text generieren",
+        "fr": "Générer du texte",
+        "it": "Genera testo",
+        "sv": "Generera text",
+        "no": "Generer tekst",
+        "es": "Generar texto",
+        "da": "Generer tekst",
+        "ru": "Сгенерировать текст",
+        "pl": "Generuj tekst",
+        "ko": "텍스트 생성",
+        "ar": "توليد نص"
     },
     "titleFormatted": {
         "en": "Generate: [[prompt]]",
-        "nl": "Genereer: [[prompt]]"
+        "nl": "Genereer: [[prompt]]",
+        "de": "Generiere: [[prompt]]",
+        "fr": "Générer : [[prompt]]",
+        "it": "Genera: [[prompt]]",
+        "sv": "Generera: [[prompt]]",
+        "no": "Generer: [[prompt]]",
+        "es": "Generar: [[prompt]]",
+        "da": "Generer: [[prompt]]",
+        "ru": "Сгенерировать: [[prompt]]",
+        "pl": "Generuj: [[prompt]]",
+        "ko": "생성: [[prompt]]",
+        "ar": "توليد: [[prompt]]"
     },
     "hint": {
         "en": "Generates text based on a prompt using Claude. Uses the default model from settings.",
-        "nl": "Genereert tekst op basis van een prompt met Claude. Gebruikt het standaard model uit de instellingen."
+        "nl": "Genereert tekst op basis van een prompt met Claude. Gebruikt het standaard model uit de instellingen.",
+        "de": "Generiert Text basierend auf einem Prompt mit Claude. Verwendet das Standardmodell aus den Einstellungen.",
+        "fr": "Génère du texte basé sur un prompt avec Claude. Utilise le modèle par défaut des paramètres.",
+        "it": "Genera testo basato su un prompt con Claude. Usa il modello predefinito dalle impostazioni.",
+        "sv": "Genererar text baserat på en prompt med Claude. Använder standardmodellen från inställningarna.",
+        "no": "Genererer tekst basert på en prompt med Claude. Bruker standardmodellen fra innstillingene.",
+        "es": "Genera texto basado en un prompt con Claude. Usa el modelo predeterminado de la configuración.",
+        "da": "Genererer tekst baseret på en prompt med Claude. Bruger standardmodellen fra indstillingerne.",
+        "ru": "Генерирует текст на основе промпта с помощью Claude. Использует модель по умолчанию из настроек.",
+        "pl": "Generuje tekst na podstawie promptu z Claude. Używa domyślnego modelu z ustawień.",
+        "ko": "Claude를 사용하여 프롬프트를 기반으로 텍스트를 생성합니다. 설정의 기본 모델을 사용합니다.",
+        "ar": "يولّد نصاً بناءً على موجه باستخدام Claude. يستخدم النموذج الافتراضي من الإعدادات."
     },
     "args": [
         {
@@ -18,11 +51,33 @@
             "name": "prompt",
             "title": {
                 "en": "Prompt",
-                "nl": "Prompt"
+                "nl": "Prompt",
+                "de": "Prompt",
+                "fr": "Prompt",
+                "it": "Prompt",
+                "sv": "Prompt",
+                "no": "Prompt",
+                "es": "Prompt",
+                "da": "Prompt",
+                "ru": "Промпт",
+                "pl": "Prompt",
+                "ko": "프롬프트",
+                "ar": "موجه"
             },
             "placeholder": {
                 "en": "Write a short poem about the rain.",
-                "nl": "Schrijf een kort gedicht over de regen."
+                "nl": "Schrijf een kort gedicht over de regen.",
+                "de": "Schreibe ein kurzes Gedicht über den Regen.",
+                "fr": "Écris un court poème sur la pluie.",
+                "it": "Scrivi una breve poesia sulla pioggia.",
+                "sv": "Skriv en kort dikt om regnet.",
+                "no": "Skriv et kort dikt om regnet.",
+                "es": "Escribe un poema corto sobre la lluvia.",
+                "da": "Skriv et kort digt om regnen.",
+                "ru": "Напишите короткое стихотворение о дожде.",
+                "pl": "Napisz krótki wiersz o deszczu.",
+                "ko": "비에 관한 짧은 시를 써주세요.",
+                "ar": "اكتب قصيدة قصيرة عن المطر."
             }
         }
     ],
@@ -32,11 +87,33 @@
             "type": "string",
             "title": {
                 "en": "Generated text",
-                "nl": "Gegenereerde tekst"
+                "nl": "Gegenereerde tekst",
+                "de": "Generierter Text",
+                "fr": "Texte généré",
+                "it": "Testo generato",
+                "sv": "Genererad text",
+                "no": "Generert tekst",
+                "es": "Texto generado",
+                "da": "Genereret tekst",
+                "ru": "Сгенерированный текст",
+                "pl": "Wygenerowany tekst",
+                "ko": "생성된 텍스트",
+                "ar": "النص المُولَّد"
             },
             "example": {
                 "en": "The rain falls softly on the window pane.",
-                "nl": "De regen tikt zacht op het raam."
+                "nl": "De regen tikt zacht op het raam.",
+                "de": "Der Regen fällt sanft auf die Fensterscheibe.",
+                "fr": "La pluie tombe doucement sur la vitre.",
+                "it": "La pioggia cade dolcemente sul vetro della finestra.",
+                "sv": "Regnet faller mjukt mot fönsterglaset.",
+                "no": "Regnet faller mykt mot vindusruten.",
+                "es": "La lluvia cae suavemente sobre el cristal de la ventana.",
+                "da": "Regnen falder blidt på vinduesruden.",
+                "ru": "Дождь мягко падает на оконное стекло.",
+                "pl": "Deszcz pada delikatnie na szybę okienną.",
+                "ko": "빗물이 창문 유리에 부드럽게 떨어집니다.",
+                "ar": "تسقط المطر بهدوء على زجاج النافذة."
             }
         },
         {
@@ -44,11 +121,33 @@
             "type": "string",
             "title": {
                 "en": "Model used",
-                "nl": "Gebruikte model"
+                "nl": "Gebruikte model",
+                "de": "Verwendetes Modell",
+                "fr": "Modèle utilisé",
+                "it": "Modello utilizzato",
+                "sv": "Använd modell",
+                "no": "Brukt modell",
+                "es": "Modelo utilizado",
+                "da": "Brugt model",
+                "ru": "Используемая модель",
+                "pl": "Użyty model",
+                "ko": "사용된 모델",
+                "ar": "النموذج المستخدم"
             },
             "example": {
                 "en": "claude-haiku-4-5-20251001",
-                "nl": "claude-haiku-4-5-20251001"
+                "nl": "claude-haiku-4-5-20251001",
+                "de": "claude-haiku-4-5-20251001",
+                "fr": "claude-haiku-4-5-20251001",
+                "it": "claude-haiku-4-5-20251001",
+                "sv": "claude-haiku-4-5-20251001",
+                "no": "claude-haiku-4-5-20251001",
+                "es": "claude-haiku-4-5-20251001",
+                "da": "claude-haiku-4-5-20251001",
+                "ru": "claude-haiku-4-5-20251001",
+                "pl": "claude-haiku-4-5-20251001",
+                "ko": "claude-haiku-4-5-20251001",
+                "ar": "claude-haiku-4-5-20251001"
             }
         }
     ]

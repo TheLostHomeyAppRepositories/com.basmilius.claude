@@ -2,15 +2,48 @@
     "id": "summarize",
     "title": {
         "en": "Summarize text",
-        "nl": "Vat tekst samen"
+        "nl": "Vat tekst samen",
+        "de": "Text zusammenfassen",
+        "fr": "Résumer du texte",
+        "it": "Riassumi testo",
+        "sv": "Sammanfatta text",
+        "no": "Oppsummer tekst",
+        "es": "Resumir texto",
+        "da": "Opsummer tekst",
+        "ru": "Резюмировать текст",
+        "pl": "Podsumuj tekst",
+        "ko": "텍스트 요약",
+        "ar": "تلخيص النص"
     },
     "titleFormatted": {
         "en": "Summarize [[text]] in [[language]]",
-        "nl": "Vat [[text]] samen in [[language]]"
+        "nl": "Vat [[text]] samen in [[language]]",
+        "de": "Fasse [[text]] in [[language]] zusammen",
+        "fr": "Résumer [[text]] en [[language]]",
+        "it": "Riassumi [[text]] in [[language]]",
+        "sv": "Sammanfatta [[text]] på [[language]]",
+        "no": "Oppsummer [[text]] på [[language]]",
+        "es": "Resumir [[text]] en [[language]]",
+        "da": "Opsummer [[text]] på [[language]]",
+        "ru": "Резюмировать [[text]] на [[language]]",
+        "pl": "Podsumuj [[text]] w [[language]]",
+        "ko": "[[text]]을 [[language]]로 요약",
+        "ar": "لخّص [[text]] بـ [[language]]"
     },
     "hint": {
         "en": "Summarizes a text using Claude. Uses the default model from settings.",
-        "nl": "Vat een tekst samen met Claude. Gebruikt het standaard model uit de instellingen."
+        "nl": "Vat een tekst samen met Claude. Gebruikt het standaard model uit de instellingen.",
+        "de": "Fasst einen Text mit Claude zusammen. Verwendet das Standardmodell aus den Einstellungen.",
+        "fr": "Résume un texte avec Claude. Utilise le modèle par défaut des paramètres.",
+        "it": "Riassume un testo con Claude. Usa il modello predefinito dalle impostazioni.",
+        "sv": "Sammanfattar en text med Claude. Använder standardmodellen från inställningarna.",
+        "no": "Oppsummerer en tekst med Claude. Bruker standardmodellen fra innstillingene.",
+        "es": "Resume un texto con Claude. Usa el modelo predeterminado de la configuración.",
+        "da": "Opsummerer en tekst med Claude. Bruger standardmodellen fra indstillingerne.",
+        "ru": "Резюмирует текст с помощью Claude. Использует модель по умолчанию из настроек.",
+        "pl": "Podsumowuje tekst za pomocą Claude. Używa domyślnego modelu z ustawień.",
+        "ko": "Claude를 사용하여 텍스트를 요약합니다. 설정의 기본 모델을 사용합니다.",
+        "ar": "يلخّص نصاً باستخدام Claude. يستخدم النموذج الافتراضي من الإعدادات."
     },
     "args": [
         {
@@ -18,11 +51,33 @@
             "name": "text",
             "title": {
                 "en": "Text to summarize",
-                "nl": "Tekst om samen te vatten"
+                "nl": "Tekst om samen te vatten",
+                "de": "Zusammenzufassender Text",
+                "fr": "Texte à résumer",
+                "it": "Testo da riassumere",
+                "sv": "Text att sammanfatta",
+                "no": "Tekst å oppsummere",
+                "es": "Texto a resumir",
+                "da": "Tekst at opsummere",
+                "ru": "Текст для резюмирования",
+                "pl": "Tekst do podsumowania",
+                "ko": "요약할 텍스트",
+                "ar": "النص المراد تلخيصه"
             },
             "placeholder": {
                 "en": "Paste the text you want to summarize here.",
-                "nl": "Plak hier de tekst die je wilt samenvatten."
+                "nl": "Plak hier de tekst die je wilt samenvatten.",
+                "de": "Füge hier den Text ein, den du zusammenfassen möchtest.",
+                "fr": "Collez ici le texte que vous souhaitez résumer.",
+                "it": "Incolla qui il testo che vuoi riassumere.",
+                "sv": "Klistra in texten du vill sammanfatta här.",
+                "no": "Lim inn teksten du vil oppsummere her.",
+                "es": "Pega aquí el texto que quieres resumir.",
+                "da": "Indsæt her den tekst, du vil opsummere.",
+                "ru": "Вставьте здесь текст, который нужно резюмировать.",
+                "pl": "Wklej tutaj tekst, który chcesz podsumować.",
+                "ko": "요약하려는 텍스트를 여기에 붙여넣으세요.",
+                "ar": "الصق هنا النص الذي تريد تلخيصه."
             }
         },
         {
@@ -30,56 +85,144 @@
             "name": "language",
             "title": {
                 "en": "Summary language",
-                "nl": "Taal van de samenvatting"
+                "nl": "Taal van de samenvatting",
+                "de": "Sprache der Zusammenfassung",
+                "fr": "Langue du résumé",
+                "it": "Lingua del riassunto",
+                "sv": "Sammanfattningens språk",
+                "no": "Oppsummeringsspråk",
+                "es": "Idioma del resumen",
+                "da": "Resuméets sprog",
+                "ru": "Язык резюме",
+                "pl": "Język podsumowania",
+                "ko": "요약 언어",
+                "ar": "لغة الملخص"
             },
             "values": [
                 {
                     "id": "same",
                     "label": {
                         "en": "Same as input",
-                        "nl": "Zelfde als invoer"
+                        "nl": "Zelfde als invoer",
+                        "de": "Wie Eingabe",
+                        "fr": "Comme l'entrée",
+                        "it": "Come l'input",
+                        "sv": "Samma som inmatning",
+                        "no": "Samme som inndata",
+                        "es": "Igual que la entrada",
+                        "da": "Samme som input",
+                        "ru": "Как входной",
+                        "pl": "Taki sam jak wejście",
+                        "ko": "입력과 동일",
+                        "ar": "نفس الإدخال"
                     }
                 },
                 {
                     "id": "English",
                     "label": {
                         "en": "English",
-                        "nl": "Engels"
+                        "nl": "Engels",
+                        "de": "Englisch",
+                        "fr": "Anglais",
+                        "it": "Inglese",
+                        "sv": "Engelska",
+                        "no": "Engelsk",
+                        "es": "Inglés",
+                        "da": "Engelsk",
+                        "ru": "Английский",
+                        "pl": "Angielski",
+                        "ko": "영어",
+                        "ar": "الإنجليزية"
                     }
                 },
                 {
                     "id": "Dutch",
                     "label": {
                         "en": "Dutch",
-                        "nl": "Nederlands"
+                        "nl": "Nederlands",
+                        "de": "Niederländisch",
+                        "fr": "Néerlandais",
+                        "it": "Olandese",
+                        "sv": "Nederländska",
+                        "no": "Nederlandsk",
+                        "es": "Neerlandés",
+                        "da": "Nederlandsk",
+                        "ru": "Нидерландский",
+                        "pl": "Niderlandzki",
+                        "ko": "네덜란드어",
+                        "ar": "الهولندية"
                     }
                 },
                 {
                     "id": "German",
                     "label": {
                         "en": "German",
-                        "nl": "Duits"
+                        "nl": "Duits",
+                        "de": "Deutsch",
+                        "fr": "Allemand",
+                        "it": "Tedesco",
+                        "sv": "Tyska",
+                        "no": "Tysk",
+                        "es": "Alemán",
+                        "da": "Tysk",
+                        "ru": "Немецкий",
+                        "pl": "Niemiecki",
+                        "ko": "독일어",
+                        "ar": "الألمانية"
                     }
                 },
                 {
                     "id": "French",
                     "label": {
                         "en": "French",
-                        "nl": "Frans"
+                        "nl": "Frans",
+                        "de": "Französisch",
+                        "fr": "Français",
+                        "it": "Francese",
+                        "sv": "Franska",
+                        "no": "Fransk",
+                        "es": "Francés",
+                        "da": "Fransk",
+                        "ru": "Французский",
+                        "pl": "Francuski",
+                        "ko": "프랑스어",
+                        "ar": "الفرنسية"
                     }
                 },
                 {
                     "id": "Spanish",
                     "label": {
                         "en": "Spanish",
-                        "nl": "Spaans"
+                        "nl": "Spaans",
+                        "de": "Spanisch",
+                        "fr": "Espagnol",
+                        "it": "Spagnolo",
+                        "sv": "Spanska",
+                        "no": "Spansk",
+                        "es": "Español",
+                        "da": "Spansk",
+                        "ru": "Испанский",
+                        "pl": "Hiszpański",
+                        "ko": "스페인어",
+                        "ar": "الإسبانية"
                     }
                 },
                 {
                     "id": "Italian",
                     "label": {
                         "en": "Italian",
-                        "nl": "Italiaans"
+                        "nl": "Italiaans",
+                        "de": "Italienisch",
+                        "fr": "Italien",
+                        "it": "Italiano",
+                        "sv": "Italienska",
+                        "no": "Italiensk",
+                        "es": "Italiano",
+                        "da": "Italiensk",
+                        "ru": "Итальянский",
+                        "pl": "Włoski",
+                        "ko": "이탈리아어",
+                        "ar": "الإيطالية"
                     }
                 }
             ]
@@ -91,11 +234,33 @@
             "type": "string",
             "title": {
                 "en": "Summary",
-                "nl": "Samenvatting"
+                "nl": "Samenvatting",
+                "de": "Zusammenfassung",
+                "fr": "Résumé",
+                "it": "Riassunto",
+                "sv": "Sammanfattning",
+                "no": "Oppsummering",
+                "es": "Resumen",
+                "da": "Opsummering",
+                "ru": "Резюме",
+                "pl": "Podsumowanie",
+                "ko": "요약",
+                "ar": "ملخص"
             },
             "example": {
                 "en": "The article discusses the impact of climate change.",
-                "nl": "Het artikel bespreekt de impact van klimaatverandering."
+                "nl": "Het artikel bespreekt de impact van klimaatverandering.",
+                "de": "Der Artikel behandelt die Auswirkungen des Klimawandels.",
+                "fr": "L'article traite de l'impact du changement climatique.",
+                "it": "L'articolo discute l'impatto del cambiamento climatico.",
+                "sv": "Artikeln diskuterar klimatförändringarnas påverkan.",
+                "no": "Artikkelen diskuterer konsekvensene av klimaendringer.",
+                "es": "El artículo analiza el impacto del cambio climático.",
+                "da": "Artiklen diskuterer klimaforandringernes indvirkning.",
+                "ru": "В статье обсуждается влияние изменения климата.",
+                "pl": "Artykuł omawia wpływ zmian klimatycznych.",
+                "ko": "기사에서는 기후 변화의 영향에 대해 논의합니다.",
+                "ar": "تناقش المقالة تأثير تغير المناخ."
             }
         },
         {
@@ -103,11 +268,33 @@
             "type": "string",
             "title": {
                 "en": "Model used",
-                "nl": "Gebruikte model"
+                "nl": "Gebruikte model",
+                "de": "Verwendetes Modell",
+                "fr": "Modèle utilisé",
+                "it": "Modello utilizzato",
+                "sv": "Använd modell",
+                "no": "Brukt modell",
+                "es": "Modelo utilizado",
+                "da": "Brugt model",
+                "ru": "Используемая модель",
+                "pl": "Użyty model",
+                "ko": "사용된 모델",
+                "ar": "النموذج المستخدم"
             },
             "example": {
                 "en": "claude-haiku-4-5-20251001",
-                "nl": "claude-haiku-4-5-20251001"
+                "nl": "claude-haiku-4-5-20251001",
+                "de": "claude-haiku-4-5-20251001",
+                "fr": "claude-haiku-4-5-20251001",
+                "it": "claude-haiku-4-5-20251001",
+                "sv": "claude-haiku-4-5-20251001",
+                "no": "claude-haiku-4-5-20251001",
+                "es": "claude-haiku-4-5-20251001",
+                "da": "claude-haiku-4-5-20251001",
+                "ru": "claude-haiku-4-5-20251001",
+                "pl": "claude-haiku-4-5-20251001",
+                "ko": "claude-haiku-4-5-20251001",
+                "ar": "claude-haiku-4-5-20251001"
             }
         }
     ]

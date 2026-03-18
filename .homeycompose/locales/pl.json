@@ -1,0 +1,47 @@
+{
+    "notification": {
+        "welcome": "Witamy w **Claude**! Przejdź do ustawień aplikacji, aby skonfigurować swój klucz API Anthropic."
+    },
+    "settings": {
+        "title": "Claude",
+        "subtitle": "Skonfiguruj integrację Claude AI",
+        "api_key": {
+            "title": "Klucz API",
+            "description": "Twój klucz API Anthropic. Możesz go znaleźć lub utworzyć na platform.claude.com.",
+            "placeholder": "sk-ant-..."
+        },
+        "model": {
+            "title": "Domyślny model",
+            "description": "Model Claude używany domyślnie. Poszczególne karty przepływu mogą to zastąpić."
+        },
+        "system_prompt": {
+            "title": "Domyślny prompt systemowy",
+            "description": "Opcjonalny prompt systemowy wysyłany z każdym żądaniem. Użyj go, aby nadać Claude rolę lub ustawić wytyczne dotyczące zachowania. Pozostaw puste, aby nie używać promptu systemowego.",
+            "placeholder": "Jesteś pomocnym asystentem domowym..."
+        },
+        "max_tokens": {
+            "title": "Maksymalne tokeny",
+            "description": "Maksymalna liczba tokenów w odpowiedzi Claude. Wyższe wartości pozwalają na dłuższe odpowiedzi."
+        },
+        "save": {
+            "button": "Zapisz ustawienia",
+            "success": "Ustawienia zapisane!",
+            "error": "Błąd zapisu: {{error}}"
+        },
+        "test": {
+            "button": "Testuj połączenie",
+            "success": "Połączenie udane!",
+            "error": "Błąd połączenia: {{error}}"
+        },
+        "homey_mcp": {
+            "title": "Homey MCP",
+            "description": "Połącz się z Homey przez MCP, aby dać Claude dostęp do twoich urządzeń i przepływów. Następnie użyj karty przepływu \"Zapytaj Claude z kontekstem Homey\".",
+            "connect": "Połącz z Homey",
+            "disconnect": "Rozłącz",
+            "connected": "Połączono z Homey MCP",
+            "connecting": "Otwieranie uwierzytelniania...",
+            "waiting": "Oczekiwanie na uwierzytelnienie...",
+            "error": "Błąd uwierzytelniania: {{error}}"
+        }
+    }
+}

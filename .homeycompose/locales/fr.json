@@ -1,0 +1,47 @@
+{
+    "notification": {
+        "welcome": "Bienvenue dans **Claude** ! Accédez aux paramètres de l'application pour configurer votre clé API Anthropic."
+    },
+    "settings": {
+        "title": "Claude",
+        "subtitle": "Configurez votre intégration Claude AI",
+        "api_key": {
+            "title": "Clé API",
+            "description": "Votre clé API Anthropic. Vous pouvez en trouver ou en créer une sur platform.claude.com.",
+            "placeholder": "sk-ant-..."
+        },
+        "model": {
+            "title": "Modèle par défaut",
+            "description": "Le modèle Claude à utiliser par défaut. Les cartes de flux individuelles peuvent remplacer ce paramètre."
+        },
+        "system_prompt": {
+            "title": "Invite système par défaut",
+            "description": "Une invite système optionnelle envoyée avec chaque requête. Utilisez-la pour donner un rôle à Claude ou définir des directives comportementales. Laissez vide pour ne pas utiliser d'invite système.",
+            "placeholder": "Vous êtes un assistant domestique utile..."
+        },
+        "max_tokens": {
+            "title": "Tokens maximum",
+            "description": "Nombre maximum de tokens dans la réponse de Claude. Des valeurs plus élevées permettent des réponses plus longues."
+        },
+        "save": {
+            "button": "Enregistrer les paramètres",
+            "success": "Paramètres enregistrés !",
+            "error": "Échec de l'enregistrement : {{error}}"
+        },
+        "test": {
+            "button": "Tester la connexion",
+            "success": "Connexion réussie !",
+            "error": "Échec de la connexion : {{error}}"
+        },
+        "homey_mcp": {
+            "title": "Homey MCP",
+            "description": "Connectez-vous à votre Homey via MCP pour donner à Claude accès à vos appareils et flux. Ensuite, utilisez la carte de flux \"Demander à Claude avec le contexte Homey\".",
+            "connect": "Se connecter à Homey",
+            "disconnect": "Déconnecter",
+            "connected": "Connecté à Homey MCP",
+            "connecting": "Ouverture de l'authentification...",
+            "waiting": "En attente d'authentification...",
+            "error": "Authentification échouée : {{error}}"
+        }
+    }
+}

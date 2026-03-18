@@ -7,7 +7,7 @@
     "subtitle": "Stel je Claude AI-integratie in",
     "api_key": {
       "title": "API-sleutel",
-      "description": "Je Anthropic API-sleutel. Je kunt er een vinden of aanmaken op console.anthropic.com.",
+      "description": "Je Anthropic API-sleutel. Je kunt er een vinden of aanmaken op platform.claude.com.",
       "placeholder": "sk-ant-..."
     },
     "model": {

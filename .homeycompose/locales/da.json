@@ -1,0 +1,47 @@
+{
+    "notification": {
+        "welcome": "Velkommen til **Claude**! Gå til app-indstillingerne for at konfigurere din Anthropic API-nøgle."
+    },
+    "settings": {
+        "title": "Claude",
+        "subtitle": "Konfigurer din Claude AI-integration",
+        "api_key": {
+            "title": "API-nøgle",
+            "description": "Din Anthropic API-nøgle. Du kan finde eller oprette en på platform.claude.com.",
+            "placeholder": "sk-ant-..."
+        },
+        "model": {
+            "title": "Standardmodel",
+            "description": "Den Claude-model, der bruges som standard. Individuelle flowkort kan tilsidesætte dette."
+        },
+        "system_prompt": {
+            "title": "Standard systemprompt",
+            "description": "En valgfri systemprompt, der sendes med hver anmodning. Brug den til at give Claude en persona eller angive adfærdsretningslinjer. Lad den stå tom for ikke at bruge nogen systemprompt.",
+            "placeholder": "Du er en hjælpsom hjemmeassistent..."
+        },
+        "max_tokens": {
+            "title": "Maksimale tokens",
+            "description": "Maksimalt antal tokens i Claudes svar. Højere værdier tillader længere svar."
+        },
+        "save": {
+            "button": "Gem indstillinger",
+            "success": "Indstillinger gemt!",
+            "error": "Gem mislykkedes: {{error}}"
+        },
+        "test": {
+            "button": "Test forbindelse",
+            "success": "Forbindelse lykkedes!",
+            "error": "Forbindelse mislykkedes: {{error}}"
+        },
+        "homey_mcp": {
+            "title": "Homey MCP",
+            "description": "Opret forbindelse til din Homey via MCP for at give Claude adgang til dine enheder og flows. Brug derefter flowkortet \"Spørg Claude med Homey-kontekst\".",
+            "connect": "Opret forbindelse til Homey",
+            "disconnect": "Afbryd forbindelse",
+            "connected": "Forbundet til Homey MCP",
+            "connecting": "Åbner godkendelse...",
+            "waiting": "Venter på godkendelse...",
+            "error": "Godkendelse mislykkedes: {{error}}"
+        }
+    }
+}

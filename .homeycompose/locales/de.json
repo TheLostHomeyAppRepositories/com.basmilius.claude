@@ -1,0 +1,47 @@
+{
+    "notification": {
+        "welcome": "Willkommen bei **Claude**! Gehe zu den App-Einstellungen, um deinen Anthropic API-Schlüssel einzurichten."
+    },
+    "settings": {
+        "title": "Claude",
+        "subtitle": "Konfiguriere deine Claude AI-Integration",
+        "api_key": {
+            "title": "API-Schlüssel",
+            "description": "Dein Anthropic API-Schlüssel. Du kannst einen bei platform.claude.com finden oder erstellen.",
+            "placeholder": "sk-ant-..."
+        },
+        "model": {
+            "title": "Standardmodell",
+            "description": "Das Claude-Modell, das standardmäßig verwendet wird. Einzelne Flow-Karten können dies überschreiben."
+        },
+        "system_prompt": {
+            "title": "Standard-Systemprompt",
+            "description": "Ein optionaler Systemprompt, der mit jeder Anfrage gesendet wird. Verwende ihn, um Claude eine Rolle zu geben oder Verhaltensrichtlinien festzulegen. Leer lassen für keinen Systemprompt.",
+            "placeholder": "Du bist ein hilfreicher Hausassistent..."
+        },
+        "max_tokens": {
+            "title": "Maximale Tokens",
+            "description": "Maximale Anzahl von Tokens in Claudes Antwort. Höhere Werte erlauben längere Antworten."
+        },
+        "save": {
+            "button": "Einstellungen speichern",
+            "success": "Einstellungen gespeichert!",
+            "error": "Speichern fehlgeschlagen: {{error}}"
+        },
+        "test": {
+            "button": "Verbindung testen",
+            "success": "Verbindung erfolgreich!",
+            "error": "Verbindung fehlgeschlagen: {{error}}"
+        },
+        "homey_mcp": {
+            "title": "Homey MCP",
+            "description": "Verbinde dich mit deinem Homey über MCP, um Claude Zugriff auf deine Geräte und Flows zu geben. Verwende danach die Flow-Karte \"Claude mit Homey-Kontext fragen\".",
+            "connect": "Mit Homey verbinden",
+            "disconnect": "Trennen",
+            "connected": "Mit Homey MCP verbunden",
+            "connecting": "Authentifizierung wird geöffnet...",
+            "waiting": "Warte auf Authentifizierung...",
+            "error": "Authentifizierung fehlgeschlagen: {{error}}"
+        }
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "notification": {
+        "welcome": "Benvenuto in **Claude**! Vai alle impostazioni dell'app per configurare la tua chiave API Anthropic."
+    },
+    "settings": {
+        "title": "Claude",
+        "subtitle": "Configura la tua integrazione Claude AI",
+        "api_key": {
+            "title": "Chiave API",
+            "description": "La tua chiave API Anthropic. Puoi trovarne o crearne una su platform.claude.com.",
+            "placeholder": "sk-ant-..."
+        },
+        "model": {
+            "title": "Modello predefinito",
+            "description": "Il modello Claude da utilizzare per impostazione predefinita. Le singole schede flusso possono sovrascriverlo."
+        },
+        "system_prompt": {
+            "title": "Prompt di sistema predefinito",
+            "description": "Un prompt di sistema opzionale inviato con ogni richiesta. Usalo per dare a Claude un ruolo o impostare linee guida comportamentali. Lascia vuoto per non usare nessun prompt di sistema.",
+            "placeholder": "Sei un assistente domestico utile..."
+        },
+        "max_tokens": {
+            "title": "Token massimi",
+            "description": "Numero massimo di token nella risposta di Claude. Valori più alti consentono risposte più lunghe."
+        },
+        "save": {
+            "button": "Salva impostazioni",
+            "success": "Impostazioni salvate!",
+            "error": "Salvataggio non riuscito: {{error}}"
+        },
+        "test": {
+            "button": "Testa connessione",
+            "success": "Connessione riuscita!",
+            "error": "Connessione non riuscita: {{error}}"
+        },
+        "homey_mcp": {
+            "title": "Homey MCP",
+            "description": "Connettiti al tuo Homey tramite MCP per dare a Claude accesso ai tuoi dispositivi e flussi. Usa poi la scheda flusso \"Chiedi a Claude con contesto Homey\".",
+            "connect": "Connetti a Homey",
+            "disconnect": "Disconnetti",
+            "connected": "Connesso a Homey MCP",
+            "connecting": "Apertura autenticazione...",
+            "waiting": "In attesa di autenticazione...",
+            "error": "Autenticazione non riuscita: {{error}}"
+        }
+    }
+}

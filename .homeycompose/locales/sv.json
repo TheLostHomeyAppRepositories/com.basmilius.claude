@@ -1,0 +1,47 @@
+{
+    "notification": {
+        "welcome": "Välkommen till **Claude**! Gå till appinställningarna för att konfigurera din Anthropic API-nyckel."
+    },
+    "settings": {
+        "title": "Claude",
+        "subtitle": "Konfigurera din Claude AI-integration",
+        "api_key": {
+            "title": "API-nyckel",
+            "description": "Din Anthropic API-nyckel. Du kan hitta eller skapa en på platform.claude.com.",
+            "placeholder": "sk-ant-..."
+        },
+        "model": {
+            "title": "Standardmodell",
+            "description": "Claude-modellen som används som standard. Enskilda flödeskort kan åsidosätta detta."
+        },
+        "system_prompt": {
+            "title": "Standard-systemprompt",
+            "description": "En valfri systemprompt som skickas med varje begäran. Använd den för att ge Claude en persona eller ange beteenderiktlinjer. Lämna tomt för att inte använda någon systemprompt.",
+            "placeholder": "Du är en hjälpsam hemassistent..."
+        },
+        "max_tokens": {
+            "title": "Maximala tokens",
+            "description": "Maximalt antal tokens i Claudes svar. Högre värden tillåter längre svar."
+        },
+        "save": {
+            "button": "Spara inställningar",
+            "success": "Inställningar sparade!",
+            "error": "Misslyckades med att spara: {{error}}"
+        },
+        "test": {
+            "button": "Testa anslutning",
+            "success": "Anslutning lyckades!",
+            "error": "Anslutning misslyckades: {{error}}"
+        },
+        "homey_mcp": {
+            "title": "Homey MCP",
+            "description": "Anslut till din Homey via MCP för att ge Claude åtkomst till dina enheter och flöden. Använd sedan flödeskortet \"Fråga Claude med Homey-kontext\".",
+            "connect": "Anslut till Homey",
+            "disconnect": "Koppla från",
+            "connected": "Ansluten till Homey MCP",
+            "connecting": "Öppnar autentisering...",
+            "waiting": "Väntar på autentisering...",
+            "error": "Autentisering misslyckades: {{error}}"
+        }
+    }
+}

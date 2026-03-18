@@ -2,15 +2,48 @@
     "id": "conversation_clear",
     "title": {
         "en": "Clear conversation",
-        "nl": "Wis gesprek"
+        "nl": "Wis gesprek",
+        "de": "Gespräch löschen",
+        "fr": "Effacer la conversation",
+        "it": "Cancella conversazione",
+        "sv": "Rensa konversation",
+        "no": "Tøm samtale",
+        "es": "Borrar conversación",
+        "da": "Ryd samtale",
+        "ru": "Очистить разговор",
+        "pl": "Wyczyść konwersację",
+        "ko": "대화 지우기",
+        "ar": "مسح المحادثة"
     },
     "titleFormatted": {
         "en": "Clear conversation [[conversation_id]]",
-        "nl": "Wis gesprek [[conversation_id]]"
+        "nl": "Wis gesprek [[conversation_id]]",
+        "de": "Gespräch löschen [[conversation_id]]",
+        "fr": "Effacer la conversation [[conversation_id]]",
+        "it": "Cancella conversazione [[conversation_id]]",
+        "sv": "Rensa konversation [[conversation_id]]",
+        "no": "Tøm samtale [[conversation_id]]",
+        "es": "Borrar conversación [[conversation_id]]",
+        "da": "Ryd samtale [[conversation_id]]",
+        "ru": "Очистить разговор [[conversation_id]]",
+        "pl": "Wyczyść konwersację [[conversation_id]]",
+        "ko": "대화 지우기 [[conversation_id]]",
+        "ar": "مسح المحادثة [[conversation_id]]"
     },
     "hint": {
         "en": "Clears all messages from the specified conversation.",
-        "nl": "Wist alle berichten uit het opgegeven gesprek."
+        "nl": "Wist alle berichten uit het opgegeven gesprek.",
+        "de": "Löscht alle Nachrichten aus dem angegebenen Gespräch.",
+        "fr": "Efface tous les messages de la conversation spécifiée.",
+        "it": "Cancella tutti i messaggi dalla conversazione specificata.",
+        "sv": "Rensar alla meddelanden från den angivna konversationen.",
+        "no": "Tømmer alle meldinger fra den angitte samtalen.",
+        "es": "Borra todos los mensajes de la conversación especificada.",
+        "da": "Rydder alle beskeder fra den angivne samtale.",
+        "ru": "Удаляет все сообщения из указанного разговора.",
+        "pl": "Usuwa wszystkie wiadomości z określonej konwersacji.",
+        "ko": "지정된 대화에서 모든 메시지를 지웁니다.",
+        "ar": "يمسح جميع الرسائل من المحادثة المحددة."
     },
     "args": [
         {
@@ -18,11 +51,33 @@
             "name": "conversation_id",
             "title": {
                 "en": "Conversation name",
-                "nl": "Gespreksnaam"
+                "nl": "Gespreksnaam",
+                "de": "Gesprächsname",
+                "fr": "Nom de la conversation",
+                "it": "Nome della conversazione",
+                "sv": "Konversationsnamn",
+                "no": "Samtalenavn",
+                "es": "Nombre de la conversación",
+                "da": "Samtalenavn",
+                "ru": "Имя разговора",
+                "pl": "Nazwa konwersacji",
+                "ko": "대화 이름",
+                "ar": "اسم المحادثة"
             },
             "placeholder": {
                 "en": "my-conversation",
-                "nl": "mijn-gesprek"
+                "nl": "mijn-gesprek",
+                "de": "mein-gespräch",
+                "fr": "ma-conversation",
+                "it": "mia-conversazione",
+                "sv": "min-konversation",
+                "no": "min-samtale",
+                "es": "mi-conversación",
+                "da": "min-samtale",
+                "ru": "мой-разговор",
+                "pl": "moja-rozmowa",
+                "ko": "내-대화",
+                "ar": "محادثتي"
             }
         }
     ]

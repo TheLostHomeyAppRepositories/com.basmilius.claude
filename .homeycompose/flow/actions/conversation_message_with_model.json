@@ -2,15 +2,48 @@
     "id": "conversation_message_with_model",
     "title": {
         "en": "Send conversation message (choose model)",
-        "nl": "Stuur gespreksbericht (kies model)"
+        "nl": "Stuur gespreksbericht (kies model)",
+        "de": "Gesprächsnachricht senden (Modell wählen)",
+        "fr": "Envoyer un message de conversation (choisir le modèle)",
+        "it": "Invia messaggio conversazione (scegli il modello)",
+        "sv": "Skicka konversationsmeddelande (välj modell)",
+        "no": "Send samtalemelding (velg modell)",
+        "es": "Enviar mensaje de conversación (elegir modelo)",
+        "da": "Send samtalebesked (vælg model)",
+        "ru": "Отправить сообщение в разговор (выбрать модель)",
+        "pl": "Wyślij wiadomość konwersacji (wybierz model)",
+        "ko": "대화 메시지 보내기 (모델 선택)",
+        "ar": "إرسال رسالة محادثة (اختر النموذج)"
     },
     "titleFormatted": {
         "en": "Say to [[conversation_id]] ([[model]]): [[message]]",
-        "nl": "Zeg tegen [[conversation_id]] ([[model]]): [[message]]"
+        "nl": "Zeg tegen [[conversation_id]] ([[model]]): [[message]]",
+        "de": "Sage zu [[conversation_id]] ([[model]]): [[message]]",
+        "fr": "Dire à [[conversation_id]] ([[model]]) : [[message]]",
+        "it": "Di' a [[conversation_id]] ([[model]]): [[message]]",
+        "sv": "Säg till [[conversation_id]] ([[model]]): [[message]]",
+        "no": "Si til [[conversation_id]] ([[model]]): [[message]]",
+        "es": "Decir a [[conversation_id]] ([[model]]): [[message]]",
+        "da": "Sig til [[conversation_id]] ([[model]]): [[message]]",
+        "ru": "Сказать [[conversation_id]] ([[model]]): [[message]]",
+        "pl": "Powiedz do [[conversation_id]] ([[model]]): [[message]]",
+        "ko": "[[conversation_id]]에게 말하기 ([[model]]): [[message]]",
+        "ar": "قل لـ [[conversation_id]] ([[model]]): [[message]]"
     },
     "hint": {
         "en": "Sends a message in a named conversation. Previous messages are remembered. Lets you choose the model per flow card.",
-        "nl": "Stuurt een bericht in een benoemd gesprek. Eerdere berichten worden onthouden. Laat je het model per flow kaart kiezen."
+        "nl": "Stuurt een bericht in een benoemd gesprek. Eerdere berichten worden onthouden. Laat je het model per flow kaart kiezen.",
+        "de": "Sendet eine Nachricht in einem benannten Gespräch. Frühere Nachrichten werden gespeichert. Ermöglicht die Auswahl des Modells pro Flow-Karte.",
+        "fr": "Envoie un message dans une conversation nommée. Les messages précédents sont mémorisés. Vous permet de choisir le modèle par carte de flux.",
+        "it": "Invia un messaggio in una conversazione denominata. I messaggi precedenti vengono ricordati. Consente di scegliere il modello per ogni scheda flusso.",
+        "sv": "Skickar ett meddelande i en namngiven konversation. Tidigare meddelanden sparas. Låter dig välja modell per flödeskort.",
+        "no": "Sender en melding i en navngitt samtale. Tidligere meldinger huskes. Lar deg velge modell per flydkort.",
+        "es": "Envía un mensaje en una conversación con nombre. Los mensajes anteriores se recuerdan. Te permite elegir el modelo por tarjeta de flujo.",
+        "da": "Sender en besked i en navngiven samtale. Tidligere beskeder huskes. Giver dig mulighed for at vælge model pr. flowkort.",
+        "ru": "Отправляет сообщение в именованный разговор. Предыдущие сообщения сохраняются. Позволяет выбрать модель для каждой карточки потока.",
+        "pl": "Wysyła wiadomość w nazwanej konwersacji. Poprzednie wiadomości są zapamiętywane. Pozwala wybrać model dla każdej karty przepływu.",
+        "ko": "명명된 대화에서 메시지를 보냅니다. 이전 메시지가 기억됩니다. 플로우 카드별로 모델을 선택할 수 있습니다.",
+        "ar": "يرسل رسالة في محادثة مُسمَّاة. يتم تذكر الرسائل السابقة. يتيح لك اختيار النموذج لكل بطاقة تدفق."
     },
     "args": [
         {
@@ -18,11 +51,33 @@
             "name": "conversation_id",
             "title": {
                 "en": "Conversation name",
-                "nl": "Gespreksnaam"
+                "nl": "Gespreksnaam",
+                "de": "Gesprächsname",
+                "fr": "Nom de la conversation",
+                "it": "Nome della conversazione",
+                "sv": "Konversationsnamn",
+                "no": "Samtalenavn",
+                "es": "Nombre de la conversación",
+                "da": "Samtalenavn",
+                "ru": "Имя разговора",
+                "pl": "Nazwa konwersacji",
+                "ko": "대화 이름",
+                "ar": "اسم المحادثة"
             },
             "placeholder": {
                 "en": "my-conversation",
-                "nl": "mijn-gesprek"
+                "nl": "mijn-gesprek",
+                "de": "mein-gespräch",
+                "fr": "ma-conversation",
+                "it": "mia-conversazione",
+                "sv": "min-konversation",
+                "no": "min-samtale",
+                "es": "mi-conversación",
+                "da": "min-samtale",
+                "ru": "мой-разговор",
+                "pl": "moja-rozmowa",
+                "ko": "내-대화",
+                "ar": "محادثتي"
             }
         },
         {
@@ -30,11 +85,33 @@
             "name": "message",
             "title": {
                 "en": "Message",
-                "nl": "Bericht"
+                "nl": "Bericht",
+                "de": "Nachricht",
+                "fr": "Message",
+                "it": "Messaggio",
+                "sv": "Meddelande",
+                "no": "Melding",
+                "es": "Mensaje",
+                "da": "Besked",
+                "ru": "Сообщение",
+                "pl": "Wiadomość",
+                "ko": "메시지",
+                "ar": "رسالة"
             },
             "placeholder": {
                 "en": "What did I just say?",
-                "nl": "Wat heb ik net gezegd?"
+                "nl": "Wat heb ik net gezegd?",
+                "de": "Was habe ich gerade gesagt?",
+                "fr": "Qu'est-ce que je viens de dire ?",
+                "it": "Cosa ho appena detto?",
+                "sv": "Vad sa jag nyss?",
+                "no": "Hva sa jeg nettopp?",
+                "es": "¿Qué acabo de decir?",
+                "da": "Hvad sagde jeg lige?",
+                "ru": "Что я только что сказал?",
+                "pl": "Co właśnie powiedziałem?",
+                "ko": "방금 무슨 말을 했나요?",
+                "ar": "ماذا قلت للتو؟"
             }
         },
         {
@@ -42,28 +119,72 @@
             "name": "model",
             "title": {
                 "en": "Model",
-                "nl": "Model"
+                "nl": "Model",
+                "de": "Modell",
+                "fr": "Modèle",
+                "it": "Modello",
+                "sv": "Modell",
+                "no": "Modell",
+                "es": "Modelo",
+                "da": "Model",
+                "ru": "Модель",
+                "pl": "Model",
+                "ko": "모델",
+                "ar": "النموذج"
             },
             "values": [
                 {
                     "id": "claude-haiku-4-5-20251001",
                     "label": {
                         "en": "Claude Haiku 4.5",
-                        "nl": "Claude Haiku 4.5"
+                        "nl": "Claude Haiku 4.5",
+                        "de": "Claude Haiku 4.5",
+                        "fr": "Claude Haiku 4.5",
+                        "it": "Claude Haiku 4.5",
+                        "sv": "Claude Haiku 4.5",
+                        "no": "Claude Haiku 4.5",
+                        "es": "Claude Haiku 4.5",
+                        "da": "Claude Haiku 4.5",
+                        "ru": "Claude Haiku 4.5",
+                        "pl": "Claude Haiku 4.5",
+                        "ko": "Claude Haiku 4.5",
+                        "ar": "Claude Haiku 4.5"
                     }
                 },
                 {
                     "id": "claude-sonnet-4-6",
                     "label": {
                         "en": "Claude Sonnet 4.6",
-                        "nl": "Claude Sonnet 4.6"
+                        "nl": "Claude Sonnet 4.6",
+                        "de": "Claude Sonnet 4.6",
+                        "fr": "Claude Sonnet 4.6",
+                        "it": "Claude Sonnet 4.6",
+                        "sv": "Claude Sonnet 4.6",
+                        "no": "Claude Sonnet 4.6",
+                        "es": "Claude Sonnet 4.6",
+                        "da": "Claude Sonnet 4.6",
+                        "ru": "Claude Sonnet 4.6",
+                        "pl": "Claude Sonnet 4.6",
+                        "ko": "Claude Sonnet 4.6",
+                        "ar": "Claude Sonnet 4.6"
                     }
                 },
                 {
                     "id": "claude-opus-4-6",
                     "label": {
                         "en": "Claude Opus 4.6",
-                        "nl": "Claude Opus 4.6"
+                        "nl": "Claude Opus 4.6",
+                        "de": "Claude Opus 4.6",
+                        "fr": "Claude Opus 4.6",
+                        "it": "Claude Opus 4.6",
+                        "sv": "Claude Opus 4.6",
+                        "no": "Claude Opus 4.6",
+                        "es": "Claude Opus 4.6",
+                        "da": "Claude Opus 4.6",
+                        "ru": "Claude Opus 4.6",
+                        "pl": "Claude Opus 4.6",
+                        "ko": "Claude Opus 4.6",
+                        "ar": "Claude Opus 4.6"
                     }
                 }
             ]
@@ -75,11 +196,33 @@
             "type": "string",
             "title": {
                 "en": "Response",
-                "nl": "Antwoord"
+                "nl": "Antwoord",
+                "de": "Antwort",
+                "fr": "Réponse",
+                "it": "Risposta",
+                "sv": "Svar",
+                "no": "Svar",
+                "es": "Respuesta",
+                "da": "Svar",
+                "ru": "Ответ",
+                "pl": "Odpowiedź",
+                "ko": "응답",
+                "ar": "رد"
             },
             "example": {
                 "en": "You said hello.",
-                "nl": "Je zei hallo."
+                "nl": "Je zei hallo.",
+                "de": "Du hast hallo gesagt.",
+                "fr": "Vous avez dit bonjour.",
+                "it": "Hai detto ciao.",
+                "sv": "Du sa hej.",
+                "no": "Du sa hei.",
+                "es": "Dijiste hola.",
+                "da": "Du sagde hej.",
+                "ru": "Вы сказали привет.",
+                "pl": "Powiedziałeś cześć.",
+                "ko": "안녕이라고 말씀하셨습니다.",
+                "ar": "قلت مرحباً."
             }
         },
         {
@@ -87,11 +230,33 @@
             "type": "string",
             "title": {
                 "en": "Model used",
-                "nl": "Gebruikte model"
+                "nl": "Gebruikte model",
+                "de": "Verwendetes Modell",
+                "fr": "Modèle utilisé",
+                "it": "Modello utilizzato",
+                "sv": "Använd modell",
+                "no": "Brukt modell",
+                "es": "Modelo utilizado",
+                "da": "Brugt model",
+                "ru": "Используемая модель",
+                "pl": "Użyty model",
+                "ko": "사용된 모델",
+                "ar": "النموذج المستخدم"
             },
             "example": {
                 "en": "claude-haiku-4-5-20251001",
-                "nl": "claude-haiku-4-5-20251001"
+                "nl": "claude-haiku-4-5-20251001",
+                "de": "claude-haiku-4-5-20251001",
+                "fr": "claude-haiku-4-5-20251001",
+                "it": "claude-haiku-4-5-20251001",
+                "sv": "claude-haiku-4-5-20251001",
+                "no": "claude-haiku-4-5-20251001",
+                "es": "claude-haiku-4-5-20251001",
+                "da": "claude-haiku-4-5-20251001",
+                "ru": "claude-haiku-4-5-20251001",
+                "pl": "claude-haiku-4-5-20251001",
+                "ko": "claude-haiku-4-5-20251001",
+                "ar": "claude-haiku-4-5-20251001"
             }
         }
     ]

@@ -1,0 +1,47 @@
+{
+    "notification": {
+        "welcome": "Velkommen til **Claude**! Gå til appinnstillingene for å konfigurere din Anthropic API-nøkkel."
+    },
+    "settings": {
+        "title": "Claude",
+        "subtitle": "Konfigurer din Claude AI-integrasjon",
+        "api_key": {
+            "title": "API-nøkkel",
+            "description": "Din Anthropic API-nøkkel. Du kan finne eller opprette en på platform.claude.com.",
+            "placeholder": "sk-ant-..."
+        },
+        "model": {
+            "title": "Standardmodell",
+            "description": "Claude-modellen som brukes som standard. Individuelle flydkort kan overstyre dette."
+        },
+        "system_prompt": {
+            "title": "Standard systemprompt",
+            "description": "En valgfri systemprompt som sendes med hver forespørsel. Bruk den til å gi Claude en persona eller angi atferdsretningslinjer. La den stå tom for å ikke bruke noen systemprompt.",
+            "placeholder": "Du er en hjelpsom hjemmeassistent..."
+        },
+        "max_tokens": {
+            "title": "Maksimale tokens",
+            "description": "Maksimalt antall tokens i Claudes svar. Høyere verdier tillater lengre svar."
+        },
+        "save": {
+            "button": "Lagre innstillinger",
+            "success": "Innstillinger lagret!",
+            "error": "Kunne ikke lagre: {{error}}"
+        },
+        "test": {
+            "button": "Test tilkobling",
+            "success": "Tilkobling vellykket!",
+            "error": "Tilkobling mislyktes: {{error}}"
+        },
+        "homey_mcp": {
+            "title": "Homey MCP",
+            "description": "Koble til Homey via MCP for å gi Claude tilgang til enhetene og flyene dine. Bruk deretter flykortet \"Spør Claude med Homey-kontekst\".",
+            "connect": "Koble til Homey",
+            "disconnect": "Koble fra",
+            "connected": "Koblet til Homey MCP",
+            "connecting": "Åpner autentisering...",
+            "waiting": "Venter på autentisering...",
+            "error": "Autentisering mislyktes: {{error}}"
+        }
+    }
+}
