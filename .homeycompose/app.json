@@ -55,6 +55,7 @@
     "homepage": "https://bas.dev",
     "source": "https://github.com/basmilius/homey-claude",
     "support": "https://github.com/basmilius/homey-claude/issues",
+    "homeyCommunityTopicId": 152648,
     "contributing": {
         "donate": {
             "paypal": {
