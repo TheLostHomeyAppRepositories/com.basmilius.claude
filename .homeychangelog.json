@@ -5,5 +5,9 @@
     "1.1.0": {
         "en": "Added support for the Homey MCP Server.",
         "nl": "Ondersteuning toegevoegd voor de Homey MCP Server."
+    },
+    "1.2.0": {
+        "en": "Added the ability to add a default system prompt from app settings.",
+        "nl": "Ondersteuning toegevoegd voor het toevoegen van een standaard systeemprompt vanuit app instellingen."
     }
 }
