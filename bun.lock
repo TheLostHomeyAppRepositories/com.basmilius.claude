@@ -1,9 +1,9 @@
 {
   "lockfileVersion": 1,
-  "configVersion": 0,
+  "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "com.basmilius.flowbits",
+      "name": "com.basmilius.claude",
       "dependencies": {
         "@anthropic-ai/sdk": "^0.80.0",
         "@basmilius/homey-common": "^1.20.0",
