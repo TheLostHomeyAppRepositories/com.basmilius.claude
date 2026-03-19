@@ -1,0 +1,47 @@
+{
+  "notification": {
+    "welcome": "مرحباً بك في **Claude**! انتقل إلى إعدادات التطبيق لتكوين مفتاح API الخاص بـ Anthropic."
+  },
+  "settings": {
+    "title": "Claude",
+    "subtitle": "قم بتكوين تكامل Claude AI الخاص بك",
+    "api_key": {
+      "title": "مفتاح API",
+      "description": "مفتاح API الخاص بـ Anthropic. يمكنك العثور عليه أو إنشاء واحد على platform.claude.com.",
+      "placeholder": "sk-ant-..."
+    },
+    "model": {
+      "title": "النموذج الافتراضي",
+      "description": "نموذج Claude المراد استخدامه افتراضياً. يمكن لبطاقات التدفق الفردية تجاوز هذا الإعداد."
+    },
+    "system_prompt": {
+      "title": "موجه النظام الافتراضي",
+      "description": "موجه نظام اختياري يُرسل مع كل طلب. استخدمه لمنح Claude شخصية أو تحديد إرشادات سلوكية. اتركه فارغاً لعدم استخدام موجه نظام.",
+      "placeholder": "أنت مساعد منزلي مفيد..."
+    },
+    "max_tokens": {
+      "title": "الحد الأقصى للرموز",
+      "description": "الحد الأقصى لعدد الرموز في استجابة Claude. تتيح القيم الأعلى ردوداً أطول."
+    },
+    "save": {
+      "button": "حفظ الإعدادات",
+      "success": "تم حفظ الإعدادات!",
+      "error": "فشل الحفظ: {{error}}"
+    },
+    "test": {
+      "button": "اختبار الاتصال",
+      "success": "نجح الاتصال!",
+      "error": "فشل الاتصال: {{error}}"
+    },
+    "homey_mcp": {
+      "title": "Homey MCP",
+      "description": "اتصل بـ Homey عبر MCP لمنح Claude الوصول إلى أجهزتك وتدفقاتك. بعد ذلك، استخدم بطاقة التدفق \"اسأل Claude مع سياق Homey\".",
+      "connect": "الاتصال بـ Homey",
+      "disconnect": "قطع الاتصال",
+      "connected": "متصل بـ Homey MCP",
+      "connecting": "جارٍ فتح المصادقة...",
+      "waiting": "في انتظار المصادقة...",
+      "error": "فشلت المصادقة: {{error}}"
+    }
+  }
+}

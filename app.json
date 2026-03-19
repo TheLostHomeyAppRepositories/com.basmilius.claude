@@ -10,11 +10,33 @@
   ],
   "name": {
     "en": "Claude",
-    "nl": "Claude"
+    "nl": "Claude",
+    "de": "Claude",
+    "fr": "Claude",
+    "it": "Claude",
+    "sv": "Claude",
+    "no": "Claude",
+    "es": "Claude",
+    "da": "Claude",
+    "ru": "Claude",
+    "pl": "Claude",
+    "ko": "Claude",
+    "ar": "Claude"
   },
   "description": {
     "en": "Bring Claude AI by Anthropic into your Homey flows.",
-    "nl": "Breng Claude AI van Anthropic in je Homey flows."
+    "nl": "Breng Claude AI van Anthropic in je Homey flows.",
+    "de": "Bringe Claude AI von Anthropic in deine Homey Flows.",
+    "fr": "Intégrez Claude AI d'Anthropic dans vos flux Homey.",
+    "it": "Porta Claude AI di Anthropic nei tuoi flussi Homey.",
+    "sv": "Ta med Claude AI från Anthropic till dina Homey-flöden.",
+    "no": "Ta med Claude AI fra Anthropic inn i Homey-flyene dine.",
+    "es": "Lleva Claude AI de Anthropic a tus flujos de Homey.",
+    "da": "Bring Claude AI fra Anthropic ind i dine Homey-flows.",
+    "ru": "Добавьте Claude AI от Anthropic в свои потоки Homey.",
+    "pl": "Wprowadź Claude AI od Anthropic do swoich przepływów Homey.",
+    "ko": "Anthropic의 Claude AI를 Homey 플로우에 통합하세요.",
+    "ar": "أدرج Claude AI من Anthropic في تدفقات Homey الخاصة بك."
   },
   "category": [
     "tools"
@@ -38,6 +60,94 @@
       "automatisering",
       "flow",
       "slim"
+    ],
+    "de": [
+      "ki",
+      "claude",
+      "anthropic",
+      "automatisierung",
+      "flow",
+      "smart"
+    ],
+    "fr": [
+      "ia",
+      "claude",
+      "anthropic",
+      "automatisation",
+      "flux",
+      "intelligent"
+    ],
+    "it": [
+      "ia",
+      "claude",
+      "anthropic",
+      "automazione",
+      "flusso",
+      "smart"
+    ],
+    "sv": [
+      "ai",
+      "claude",
+      "anthropic",
+      "automatisering",
+      "flöde",
+      "smart"
+    ],
+    "no": [
+      "ai",
+      "claude",
+      "anthropic",
+      "automatisering",
+      "flyt",
+      "smart"
+    ],
+    "es": [
+      "ia",
+      "claude",
+      "anthropic",
+      "automatización",
+      "flujo",
+      "inteligente"
+    ],
+    "da": [
+      "ai",
+      "claude",
+      "anthropic",
+      "automatisering",
+      "flow",
+      "smart"
+    ],
+    "ru": [
+      "ии",
+      "claude",
+      "anthropic",
+      "автоматизация",
+      "поток",
+      "умный"
+    ],
+    "pl": [
+      "ai",
+      "claude",
+      "anthropic",
+      "automatyzacja",
+      "przepływ",
+      "smart"
+    ],
+    "ko": [
+      "인공지능",
+      "claude",
+      "anthropic",
+      "자동화",
+      "플로우",
+      "스마트"
+    ],
+    "ar": [
+      "الذكاء الاصطناعي",
+      "claude",
+      "anthropic",
+      "أتمتة",
+      "تدفق",
+      "ذكي"
     ]
   },
   "permissions": [],
@@ -99,15 +209,48 @@
         "id": "response_contains",
         "title": {
           "en": "Text contains",
-          "nl": "Tekst bevat"
+          "nl": "Tekst bevat",
+          "de": "Text enthält",
+          "fr": "Le texte contient",
+          "it": "Il testo contiene",
+          "sv": "Text innehåller",
+          "no": "Teksten inneholder",
+          "es": "El texto contiene",
+          "da": "Teksten indeholder",
+          "ru": "Текст содержит",
+          "pl": "Tekst zawiera",
+          "ko": "텍스트 포함",
+          "ar": "النص يحتوي على"
         },
         "titleFormatted": {
           "en": "[[text]] contains !{{|not }}[[needle]]",
-          "nl": "[[text]] bevat !{{|niet }}[[needle]]"
+          "nl": "[[text]] bevat !{{|niet }}[[needle]]",
+          "de": "[[text]] enthält !{{|nicht }}[[needle]]",
+          "fr": "[[text]] contient !{{|pas }}[[needle]]",
+          "it": "[[text]] contiene !{{|non }}[[needle]]",
+          "sv": "[[text]] innehåller !{{|inte }}[[needle]]",
+          "no": "[[text]] inneholder !{{|ikke }}[[needle]]",
+          "es": "[[text]] contiene !{{|no }}[[needle]]",
+          "da": "[[text]] indeholder !{{|ikke }}[[needle]]",
+          "ru": "[[text]] содержит !{{|не }}[[needle]]",
+          "pl": "[[text]] zawiera !{{|nie }}[[needle]]",
+          "ko": "[[text]] 포함 !{{|안 }}[[needle]]",
+          "ar": "[[text]] يحتوي !{{|لا }}[[needle]]"
         },
         "hint": {
           "en": "Checks if a text contains a given word or phrase (case-insensitive). Useful for checking Claude's responses.",
-          "nl": "Controleert of een tekst een bepaald woord of zin bevat (hoofdletterongevoelig). Handig voor het controleren van Claude-antwoorden."
+          "nl": "Controleert of een tekst een bepaald woord of zin bevat (hoofdletterongevoelig). Handig voor het controleren van Claude-antwoorden.",
+          "de": "Prüft, ob ein Text ein bestimmtes Wort oder eine bestimmte Phrase enthält (Groß-/Kleinschreibung ignoriert). Nützlich für die Überprüfung von Claudes Antworten.",
+          "fr": "Vérifie si un texte contient un mot ou une phrase donné (insensible à la casse). Utile pour vérifier les réponses de Claude.",
+          "it": "Controlla se un testo contiene una parola o frase specificata (senza distinzione maiuscole/minuscole). Utile per verificare le risposte di Claude.",
+          "sv": "Kontrollerar om en text innehåller ett givet ord eller fras (skiftlägesokänslig). Användbart för att kontrollera Claudes svar.",
+          "no": "Sjekker om en tekst inneholder et gitt ord eller frase (ikke skiller mellom store og små bokstaver). Nyttig for å sjekke Claudes svar.",
+          "es": "Comprueba si un texto contiene una palabra o frase dada (sin distinción de mayúsculas). Útil para verificar las respuestas de Claude.",
+          "da": "Kontrollerer, om en tekst indeholder et givet ord eller sætning (ikke skriftstørrelsesfølsom). Nyttigt til at kontrollere Claudes svar.",
+          "ru": "Проверяет, содержит ли текст заданное слово или фразу (без учёта регистра). Полезно для проверки ответов Claude.",
+          "pl": "Sprawdza, czy tekst zawiera podane słowo lub frazę (bez rozróżnienia wielkości liter). Przydatne do sprawdzania odpowiedzi Claude.",
+          "ko": "텍스트에 주어진 단어나 구문이 포함되어 있는지 확인합니다(대소문자 구분 없음). Claude의 응답을 확인하는 데 유용합니다.",
+          "ar": "يتحقق مما إذا كان النص يحتوي على كلمة أو عبارة معينة (غير حساس لحالة الأحرف). مفيد للتحقق من ردود Claude."
         },
         "args": [
           {
@@ -115,11 +258,33 @@
             "name": "text",
             "title": {
               "en": "Text",
-              "nl": "Tekst"
+              "nl": "Tekst",
+              "de": "Text",
+              "fr": "Texte",
+              "it": "Testo",
+              "sv": "Text",
+              "no": "Tekst",
+              "es": "Texto",
+              "da": "Tekst",
+              "ru": "Текст",
+              "pl": "Tekst",
+              "ko": "텍스트",
+              "ar": "النص"
             },
             "placeholder": {
               "en": "The text to search in",
-              "nl": "De tekst om in te zoeken"
+              "nl": "De tekst om in te zoeken",
+              "de": "Der Text, in dem gesucht werden soll",
+              "fr": "Le texte dans lequel chercher",
+              "it": "Il testo in cui cercare",
+              "sv": "Texten att söka i",
+              "no": "Teksten å søke i",
+              "es": "El texto en el que buscar",
+              "da": "Teksten at søge i",
+              "ru": "Текст для поиска",
+              "pl": "Tekst do przeszukania",
+              "ko": "검색할 텍스트",
+              "ar": "النص المراد البحث فيه"
             }
           },
           {
@@ -127,11 +292,33 @@
             "name": "needle",
             "title": {
               "en": "Word or phrase",
-              "nl": "Woord of zin"
+              "nl": "Woord of zin",
+              "de": "Wort oder Satz",
+              "fr": "Mot ou phrase",
+              "it": "Parola o frase",
+              "sv": "Ord eller fras",
+              "no": "Ord eller setning",
+              "es": "Palabra o frase",
+              "da": "Ord eller sætning",
+              "ru": "Слово или фраза",
+              "pl": "Słowo lub fraza",
+              "ko": "단어 또는 구문",
+              "ar": "كلمة أو عبارة"
             },
             "placeholder": {
               "en": "yes",
-              "nl": "ja"
+              "nl": "ja",
+              "de": "ja",
+              "fr": "oui",
+              "it": "sì",
+              "sv": "ja",
+              "no": "ja",
+              "es": "sí",
+              "da": "ja",
+              "ru": "да",
+              "pl": "tak",
+              "ko": "예",
+              "ar": "نعم"
             }
           }
         ]
@@ -142,15 +329,48 @@
         "id": "ask",
         "title": {
           "en": "Ask Claude a question",
-          "nl": "Stel Claude een vraag"
+          "nl": "Stel Claude een vraag",
+          "de": "Claude eine Frage stellen",
+          "fr": "Poser une question à Claude",
+          "it": "Fai una domanda a Claude",
+          "sv": "Ställ en fråga till Claude",
+          "no": "Still Claude et spørsmål",
+          "es": "Hacer una pregunta a Claude",
+          "da": "Stil Claude et spørgsmål",
+          "ru": "Задать вопрос Claude",
+          "pl": "Zadaj pytanie Claude",
+          "ko": "Claude에게 질문하기",
+          "ar": "اسأل Claude سؤالاً"
         },
         "titleFormatted": {
           "en": "Ask Claude: [[question]]",
-          "nl": "Vraag Claude: [[question]]"
+          "nl": "Vraag Claude: [[question]]",
+          "de": "Frage Claude: [[question]]",
+          "fr": "Demande à Claude : [[question]]",
+          "it": "Chiedi a Claude: [[question]]",
+          "sv": "Fråga Claude: [[question]]",
+          "no": "Spør Claude: [[question]]",
+          "es": "Pregunta a Claude: [[question]]",
+          "da": "Spørg Claude: [[question]]",
+          "ru": "Спросить Claude: [[question]]",
+          "pl": "Zapytaj Claude: [[question]]",
+          "ko": "Claude에게 질문: [[question]]",
+          "ar": "اسأل Claude: [[question]]"
         },
         "hint": {
           "en": "Asks Claude a question and returns the answer as a token. Uses the default model from settings.",
-          "nl": "Stelt Claude een vraag en geeft het antwoord terug als token. Gebruikt het standaard model uit de instellingen."
+          "nl": "Stelt Claude een vraag en geeft het antwoord terug als token. Gebruikt het standaard model uit de instellingen.",
+          "de": "Stellt Claude eine Frage und gibt die Antwort als Token zurück. Verwendet das Standardmodell aus den Einstellungen.",
+          "fr": "Pose une question à Claude et retourne la réponse sous forme de token. Utilise le modèle par défaut des paramètres.",
+          "it": "Pone una domanda a Claude e restituisce la risposta come token. Usa il modello predefinito dalle impostazioni.",
+          "sv": "Ställer en fråga till Claude och returnerar svaret som ett token. Använder standardmodellen från inställningarna.",
+          "no": "Stiller Claude et spørsmål og returnerer svaret som et token. Bruker standardmodellen fra innstillingene.",
+          "es": "Hace una pregunta a Claude y devuelve la respuesta como token. Usa el modelo predeterminado de la configuración.",
+          "da": "Stiller Claude et spørgsmål og returnerer svaret som et token. Bruger standardmodellen fra indstillingerne.",
+          "ru": "Задаёт Claude вопрос и возвращает ответ в виде токена. Использует модель по умолчанию из настроек.",
+          "pl": "Zadaje Claude pytanie i zwraca odpowiedź jako token. Używa domyślnego modelu z ustawień.",
+          "ko": "Claude에게 질문하고 답변을 토큰으로 반환합니다. 설정의 기본 모델을 사용합니다.",
+          "ar": "يسأل Claude سؤالاً ويعيد الإجابة كرمز. يستخدم النموذج الافتراضي من الإعدادات."
         },
         "args": [
           {
@@ -158,11 +378,33 @@
             "name": "question",
             "title": {
               "en": "Question",
-              "nl": "Vraag"
+              "nl": "Vraag",
+              "de": "Frage",
+              "fr": "Question",
+              "it": "Domanda",
+              "sv": "Fråga",
+              "no": "Spørsmål",
+              "es": "Pregunta",
+              "da": "Spørgsmål",
+              "ru": "Вопрос",
+              "pl": "Pytanie",
+              "ko": "질문",
+              "ar": "سؤال"
             },
             "placeholder": {
               "en": "What is the capital of France?",
-              "nl": "Wat is de hoofdstad van Frankrijk?"
+              "nl": "Wat is de hoofdstad van Frankrijk?",
+              "de": "Was ist die Hauptstadt von Frankreich?",
+              "fr": "Quelle est la capitale de la France ?",
+              "it": "Qual è la capitale della Francia?",
+              "sv": "Vad är huvudstaden i Frankrike?",
+              "no": "Hva er hovedstaden i Frankrike?",
+              "es": "¿Cuál es la capital de Francia?",
+              "da": "Hvad er Frankrigs hovedstad?",
+              "ru": "Какова столица Франции?",
+              "pl": "Jaka jest stolica Francji?",
+              "ko": "프랑스의 수도는 어디인가요?",
+              "ar": "ما هي عاصمة فرنسا؟"
             }
           }
         ],
@@ -172,11 +414,33 @@
             "type": "string",
             "title": {
               "en": "Answer",
-              "nl": "Antwoord"
+              "nl": "Antwoord",
+              "de": "Antwort",
+              "fr": "Réponse",
+              "it": "Risposta",
+              "sv": "Svar",
+              "no": "Svar",
+              "es": "Respuesta",
+              "da": "Svar",
+              "ru": "Ответ",
+              "pl": "Odpowiedź",
+              "ko": "답변",
+              "ar": "إجابة"
             },
             "example": {
               "en": "Paris is the capital of France.",
-              "nl": "Parijs is de hoofdstad van Frankrijk."
+              "nl": "Parijs is de hoofdstad van Frankrijk.",
+              "de": "Paris ist die Hauptstadt von Frankreich.",
+              "fr": "Paris est la capitale de la France.",
+              "it": "Parigi è la capitale della Francia.",
+              "sv": "Paris är Frankrikes huvudstad.",
+              "no": "Paris er Frankrikes hovedstad.",
+              "es": "París es la capital de Francia.",
+              "da": "Paris er Frankrigs hovedstad.",
+              "ru": "Париж — столица Франции.",
+              "pl": "Paryż jest stolicą Francji.",
+              "ko": "파리는 프랑스의 수도입니다.",
+              "ar": "باريس هي عاصمة فرنسا."
             }
           },
           {
@@ -184,11 +448,33 @@
             "type": "string",
             "title": {
               "en": "Model used",
-              "nl": "Gebruikte model"
+              "nl": "Gebruikte model",
+              "de": "Verwendetes Modell",
+              "fr": "Modèle utilisé",
+              "it": "Modello utilizzato",
+              "sv": "Använd modell",
+              "no": "Brukt modell",
+              "es": "Modelo utilizado",
+              "da": "Brugt model",
+              "ru": "Используемая модель",
+              "pl": "Użyty model",
+              "ko": "사용된 모델",
+              "ar": "النموذج المستخدم"
             },
             "example": {
               "en": "claude-haiku-4-5-20251001",
-              "nl": "claude-haiku-4-5-20251001"
+              "nl": "claude-haiku-4-5-20251001",
+              "de": "claude-haiku-4-5-20251001",
+              "fr": "claude-haiku-4-5-20251001",
+              "it": "claude-haiku-4-5-20251001",
+              "sv": "claude-haiku-4-5-20251001",
+              "no": "claude-haiku-4-5-20251001",
+              "es": "claude-haiku-4-5-20251001",
+              "da": "claude-haiku-4-5-20251001",
+              "ru": "claude-haiku-4-5-20251001",
+              "pl": "claude-haiku-4-5-20251001",
+              "ko": "claude-haiku-4-5-20251001",
+              "ar": "claude-haiku-4-5-20251001"
             }
           }
         ]
@@ -197,15 +483,48 @@
         "id": "ask_with_homey",
         "title": {
           "en": "Ask Claude with Homey context",
-          "nl": "Stel Claude een vraag met Homey-context"
+          "nl": "Stel Claude een vraag met Homey-context",
+          "de": "Claude mit Homey-Kontext fragen",
+          "fr": "Demander à Claude avec le contexte Homey",
+          "it": "Chiedi a Claude con il contesto Homey",
+          "sv": "Fråga Claude med Homey-kontext",
+          "no": "Spør Claude med Homey-kontekst",
+          "es": "Preguntar a Claude con contexto de Homey",
+          "da": "Spørg Claude med Homey-kontekst",
+          "ru": "Спросить Claude с контекстом Homey",
+          "pl": "Zapytaj Claude z kontekstem Homey",
+          "ko": "Homey 컨텍스트로 Claude에게 질문",
+          "ar": "اسأل Claude مع سياق Homey"
         },
         "titleFormatted": {
           "en": "Ask Claude (Homey): [[question]]",
-          "nl": "Vraag Claude (Homey): [[question]]"
+          "nl": "Vraag Claude (Homey): [[question]]",
+          "de": "Frage Claude (Homey): [[question]]",
+          "fr": "Demande à Claude (Homey) : [[question]]",
+          "it": "Chiedi a Claude (Homey): [[question]]",
+          "sv": "Fråga Claude (Homey): [[question]]",
+          "no": "Spør Claude (Homey): [[question]]",
+          "es": "Pregunta a Claude (Homey): [[question]]",
+          "da": "Spørg Claude (Homey): [[question]]",
+          "ru": "Спросить Claude (Homey): [[question]]",
+          "pl": "Zapytaj Claude (Homey): [[question]]",
+          "ko": "Claude에게 질문 (Homey): [[question]]",
+          "ar": "اسأل Claude (Homey): [[question]]"
         },
         "hint": {
           "en": "Asks Claude a question and gives it access to your Homey devices and flows via MCP. Requires Homey MCP authentication in the app settings.",
-          "nl": "Stelt Claude een vraag en geeft het toegang tot je Homey-apparaten en flows via MCP. Vereist Homey MCP-authenticatie in de app-instellingen."
+          "nl": "Stelt Claude een vraag en geeft het toegang tot je Homey-apparaten en flows via MCP. Vereist Homey MCP-authenticatie in de app-instellingen.",
+          "de": "Stellt Claude eine Frage und gibt ihm Zugriff auf deine Homey-Geräte und Flows über MCP. Erfordert Homey MCP-Authentifizierung in den App-Einstellungen.",
+          "fr": "Pose une question à Claude et lui donne accès à vos appareils et flux Homey via MCP. Nécessite l'authentification Homey MCP dans les paramètres de l'application.",
+          "it": "Pone una domanda a Claude e gli dà accesso ai dispositivi e flussi Homey tramite MCP. Richiede l'autenticazione Homey MCP nelle impostazioni dell'app.",
+          "sv": "Ställer en fråga till Claude och ger den åtkomst till dina Homey-enheter och flöden via MCP. Kräver Homey MCP-autentisering i appinställningarna.",
+          "no": "Stiller Claude et spørsmål og gir det tilgang til Homey-enhetene og flyene dine via MCP. Krever Homey MCP-autentisering i appinnstillingene.",
+          "es": "Hace una pregunta a Claude y le da acceso a tus dispositivos y flujos de Homey a través de MCP. Requiere autenticación Homey MCP en la configuración de la app.",
+          "da": "Stiller Claude et spørgsmål og giver det adgang til dine Homey-enheder og flows via MCP. Kræver Homey MCP-godkendelse i appindstillingerne.",
+          "ru": "Задаёт Claude вопрос и предоставляет ему доступ к устройствам и потокам Homey через MCP. Требует аутентификации Homey MCP в настройках приложения.",
+          "pl": "Zadaje Claude pytanie i daje mu dostęp do urządzeń i przepływów Homey przez MCP. Wymaga uwierzytelnienia Homey MCP w ustawieniach aplikacji.",
+          "ko": "Claude에게 질문하고 MCP를 통해 Homey 기기와 플로우에 액세스할 수 있게 합니다. 앱 설정에서 Homey MCP 인증이 필요합니다.",
+          "ar": "يسأل Claude سؤالاً ويمنحه الوصول إلى أجهزة Homey وتدفقاتك عبر MCP. يتطلب مصادقة Homey MCP في إعدادات التطبيق."
         },
         "args": [
           {
@@ -213,11 +532,33 @@
             "name": "question",
             "title": {
               "en": "Question",
-              "nl": "Vraag"
+              "nl": "Vraag",
+              "de": "Frage",
+              "fr": "Question",
+              "it": "Domanda",
+              "sv": "Fråga",
+              "no": "Spørsmål",
+              "es": "Pregunta",
+              "da": "Spørgsmål",
+              "ru": "Вопрос",
+              "pl": "Pytanie",
+              "ko": "질문",
+              "ar": "سؤال"
             },
             "placeholder": {
               "en": "Which lights are currently on?",
-              "nl": "Welke lampen zijn momenteel aan?"
+              "nl": "Welke lampen zijn momenteel aan?",
+              "de": "Welche Lichter sind gerade an?",
+              "fr": "Quelles lumières sont actuellement allumées ?",
+              "it": "Quali luci sono attualmente accese?",
+              "sv": "Vilka lampor är för närvarande tända?",
+              "no": "Hvilke lys er for øyeblikket på?",
+              "es": "¿Qué luces están encendidas actualmente?",
+              "da": "Hvilke lys er i øjeblikket tændt?",
+              "ru": "Какой свет сейчас включён?",
+              "pl": "Które światła są teraz włączone?",
+              "ko": "현재 켜져 있는 조명은 무엇인가요?",
+              "ar": "ما الأضواء التي تضيء حالياً؟"
             }
           }
         ],
@@ -227,11 +568,33 @@
             "type": "string",
             "title": {
               "en": "Answer",
-              "nl": "Antwoord"
+              "nl": "Antwoord",
+              "de": "Antwort",
+              "fr": "Réponse",
+              "it": "Risposta",
+              "sv": "Svar",
+              "no": "Svar",
+              "es": "Respuesta",
+              "da": "Svar",
+              "ru": "Ответ",
+              "pl": "Odpowiedź",
+              "ko": "답변",
+              "ar": "إجابة"
             },
             "example": {
               "en": "The living room light and kitchen light are currently on.",
-              "nl": "De woonkamerlamp en keukenlamp zijn momenteel aan."
+              "nl": "De woonkamerlamp en keukenlamp zijn momenteel aan.",
+              "de": "Das Wohnzimmerlicht und das Küchenlicht sind momentan an.",
+              "fr": "La lumière du salon et la lumière de la cuisine sont actuellement allumées.",
+              "it": "La luce del soggiorno e la luce della cucina sono attualmente accese.",
+              "sv": "Vardagsrumslampan och köksampan är för närvarande tända.",
+              "no": "Stuelyset og kjøkkenlyset er for øyeblikket på.",
+              "es": "La luz de la sala y la luz de la cocina están encendidas actualmente.",
+              "da": "Stuelyset og køkkenlyset er i øjeblikket tændt.",
+              "ru": "Свет в гостиной и кухне сейчас включён.",
+              "pl": "Lampa w salonie i lampa w kuchni są teraz włączone.",
+              "ko": "현재 거실 조명과 주방 조명이 켜져 있습니다.",
+              "ar": "مصباح غرفة المعيشة والمطبخ مضاءان حالياً."
             }
           },
           {
@@ -239,11 +602,33 @@
             "type": "string",
             "title": {
               "en": "Model used",
-              "nl": "Gebruikte model"
+              "nl": "Gebruikte model",
+              "de": "Verwendetes Modell",
+              "fr": "Modèle utilisé",
+              "it": "Modello utilizzato",
+              "sv": "Använd modell",
+              "no": "Brukt modell",
+              "es": "Modelo utilizado",
+              "da": "Brugt model",
+              "ru": "Используемая модель",
+              "pl": "Użyty model",
+              "ko": "사용된 모델",
+              "ar": "النموذج المستخدم"
             },
             "example": {
               "en": "claude-haiku-4-5-20251001",
-              "nl": "claude-haiku-4-5-20251001"
+              "nl": "claude-haiku-4-5-20251001",
+              "de": "claude-haiku-4-5-20251001",
+              "fr": "claude-haiku-4-5-20251001",
+              "it": "claude-haiku-4-5-20251001",
+              "sv": "claude-haiku-4-5-20251001",
+              "no": "claude-haiku-4-5-20251001",
+              "es": "claude-haiku-4-5-20251001",
+              "da": "claude-haiku-4-5-20251001",
+              "ru": "claude-haiku-4-5-20251001",
+              "pl": "claude-haiku-4-5-20251001",
+              "ko": "claude-haiku-4-5-20251001",
+              "ar": "claude-haiku-4-5-20251001"
             }
           }
         ]
@@ -252,15 +637,48 @@
         "id": "ask_with_model",
         "title": {
           "en": "Ask Claude a question (choose model)",
-          "nl": "Stel Claude een vraag (kies model)"
+          "nl": "Stel Claude een vraag (kies model)",
+          "de": "Claude eine Frage stellen (Modell wählen)",
+          "fr": "Poser une question à Claude (choisir le modèle)",
+          "it": "Fai una domanda a Claude (scegli il modello)",
+          "sv": "Ställ en fråga till Claude (välj modell)",
+          "no": "Still Claude et spørsmål (velg modell)",
+          "es": "Hacer una pregunta a Claude (elegir modelo)",
+          "da": "Stil Claude et spørgsmål (vælg model)",
+          "ru": "Задать вопрос Claude (выбрать модель)",
+          "pl": "Zadaj pytanie Claude (wybierz model)",
+          "ko": "Claude에게 질문하기 (모델 선택)",
+          "ar": "اسأل Claude سؤالاً (اختر النموذج)"
         },
         "titleFormatted": {
           "en": "Ask Claude ([[model]]): [[question]]",
-          "nl": "Vraag Claude ([[model]]): [[question]]"
+          "nl": "Vraag Claude ([[model]]): [[question]]",
+          "de": "Frage Claude ([[model]]): [[question]]",
+          "fr": "Demande à Claude ([[model]]) : [[question]]",
+          "it": "Chiedi a Claude ([[model]]): [[question]]",
+          "sv": "Fråga Claude ([[model]]): [[question]]",
+          "no": "Spør Claude ([[model]]): [[question]]",
+          "es": "Pregunta a Claude ([[model]]): [[question]]",
+          "da": "Spørg Claude ([[model]]): [[question]]",
+          "ru": "Спросить Claude ([[model]]): [[question]]",
+          "pl": "Zapytaj Claude ([[model]]): [[question]]",
+          "ko": "Claude에게 질문 ([[model]]): [[question]]",
+          "ar": "اسأل Claude ([[model]]): [[question]]"
         },
         "hint": {
           "en": "Asks Claude a question and returns the answer as a token. Lets you choose the model per flow card.",
-          "nl": "Stelt Claude een vraag en geeft het antwoord terug als token. Laat je het model per flow kaart kiezen."
+          "nl": "Stelt Claude een vraag en geeft het antwoord terug als token. Laat je het model per flow kaart kiezen.",
+          "de": "Stellt Claude eine Frage und gibt die Antwort als Token zurück. Ermöglicht die Auswahl des Modells pro Flow-Karte.",
+          "fr": "Pose une question à Claude et retourne la réponse sous forme de token. Vous permet de choisir le modèle par carte de flux.",
+          "it": "Pone una domanda a Claude e restituisce la risposta come token. Consente di scegliere il modello per ogni scheda flusso.",
+          "sv": "Ställer en fråga till Claude och returnerar svaret som ett token. Låter dig välja modell per flödeskort.",
+          "no": "Stiller Claude et spørsmål og returnerer svaret som et token. Lar deg velge modell per flydkort.",
+          "es": "Hace una pregunta a Claude y devuelve la respuesta como token. Te permite elegir el modelo por tarjeta de flujo.",
+          "da": "Stiller Claude et spørgsmål og returnerer svaret som et token. Giver dig mulighed for at vælge model pr. flowkort.",
+          "ru": "Задаёт Claude вопрос и возвращает ответ в виде токена. Позволяет выбрать модель для каждой карточки потока.",
+          "pl": "Zadaje Claude pytanie i zwraca odpowiedź jako token. Pozwala wybrać model dla każdej karty przepływu.",
+          "ko": "Claude에게 질문하고 답변을 토큰으로 반환합니다. 플로우 카드별로 모델을 선택할 수 있습니다.",
+          "ar": "يسأل Claude سؤالاً ويعيد الإجابة كرمز. يتيح لك اختيار النموذج لكل بطاقة تدفق."
         },
         "args": [
           {
@@ -268,11 +686,33 @@
             "name": "question",
             "title": {
               "en": "Question",
-              "nl": "Vraag"
+              "nl": "Vraag",
+              "de": "Frage",
+              "fr": "Question",
+              "it": "Domanda",
+              "sv": "Fråga",
+              "no": "Spørsmål",
+              "es": "Pregunta",
+              "da": "Spørgsmål",
+              "ru": "Вопрос",
+              "pl": "Pytanie",
+              "ko": "질문",
+              "ar": "سؤال"
             },
             "placeholder": {
               "en": "What is the capital of France?",
-              "nl": "Wat is de hoofdstad van Frankrijk?"
+              "nl": "Wat is de hoofdstad van Frankrijk?",
+              "de": "Was ist die Hauptstadt von Frankreich?",
+              "fr": "Quelle est la capitale de la France ?",
+              "it": "Qual è la capitale della Francia?",
+              "sv": "Vad är huvudstaden i Frankrike?",
+              "no": "Hva er hovedstaden i Frankrike?",
+              "es": "¿Cuál es la capital de Francia?",
+              "da": "Hvad er Frankrigs hovedstad?",
+              "ru": "Какова столица Франции?",
+              "pl": "Jaka jest stolica Francji?",
+              "ko": "프랑스의 수도는 어디인가요?",
+              "ar": "ما هي عاصمة فرنسا؟"
             }
           },
           {
@@ -280,28 +720,72 @@
             "name": "model",
             "title": {
               "en": "Model",
-              "nl": "Model"
+              "nl": "Model",
+              "de": "Modell",
+              "fr": "Modèle",
+              "it": "Modello",
+              "sv": "Modell",
+              "no": "Modell",
+              "es": "Modelo",
+              "da": "Model",
+              "ru": "Модель",
+              "pl": "Model",
+              "ko": "모델",
+              "ar": "النموذج"
             },
             "values": [
               {
                 "id": "claude-haiku-4-5-20251001",
                 "label": {
                   "en": "Claude Haiku 4.5",
-                  "nl": "Claude Haiku 4.5"
+                  "nl": "Claude Haiku 4.5",
+                  "de": "Claude Haiku 4.5",
+                  "fr": "Claude Haiku 4.5",
+                  "it": "Claude Haiku 4.5",
+                  "sv": "Claude Haiku 4.5",
+                  "no": "Claude Haiku 4.5",
+                  "es": "Claude Haiku 4.5",
+                  "da": "Claude Haiku 4.5",
+                  "ru": "Claude Haiku 4.5",
+                  "pl": "Claude Haiku 4.5",
+                  "ko": "Claude Haiku 4.5",
+                  "ar": "Claude Haiku 4.5"
                 }
               },
               {
                 "id": "claude-sonnet-4-6",
                 "label": {
                   "en": "Claude Sonnet 4.6",
-                  "nl": "Claude Sonnet 4.6"
+                  "nl": "Claude Sonnet 4.6",
+                  "de": "Claude Sonnet 4.6",
+                  "fr": "Claude Sonnet 4.6",
+                  "it": "Claude Sonnet 4.6",
+                  "sv": "Claude Sonnet 4.6",
+                  "no": "Claude Sonnet 4.6",
+                  "es": "Claude Sonnet 4.6",
+                  "da": "Claude Sonnet 4.6",
+                  "ru": "Claude Sonnet 4.6",
+                  "pl": "Claude Sonnet 4.6",
+                  "ko": "Claude Sonnet 4.6",
+                  "ar": "Claude Sonnet 4.6"
                 }
               },
               {
                 "id": "claude-opus-4-6",
                 "label": {
                   "en": "Claude Opus 4.6",
-                  "nl": "Claude Opus 4.6"
+                  "nl": "Claude Opus 4.6",
+                  "de": "Claude Opus 4.6",
+                  "fr": "Claude Opus 4.6",
+                  "it": "Claude Opus 4.6",
+                  "sv": "Claude Opus 4.6",
+                  "no": "Claude Opus 4.6",
+                  "es": "Claude Opus 4.6",
+                  "da": "Claude Opus 4.6",
+                  "ru": "Claude Opus 4.6",
+                  "pl": "Claude Opus 4.6",
+                  "ko": "Claude Opus 4.6",
+                  "ar": "Claude Opus 4.6"
                 }
               }
             ]
@@ -313,11 +797,33 @@
             "type": "string",
             "title": {
               "en": "Answer",
-              "nl": "Antwoord"
+              "nl": "Antwoord",
+              "de": "Antwort",
+              "fr": "Réponse",
+              "it": "Risposta",
+              "sv": "Svar",
+              "no": "Svar",
+              "es": "Respuesta",
+              "da": "Svar",
+              "ru": "Ответ",
+              "pl": "Odpowiedź",
+              "ko": "답변",
+              "ar": "إجابة"
             },
             "example": {
               "en": "Paris is the capital of France.",
-              "nl": "Parijs is de hoofdstad van Frankrijk."
+              "nl": "Parijs is de hoofdstad van Frankrijk.",
+              "de": "Paris ist die Hauptstadt von Frankreich.",
+              "fr": "Paris est la capitale de la France.",
+              "it": "Parigi è la capitale della Francia.",
+              "sv": "Paris är Frankrikes huvudstad.",
+              "no": "Paris er Frankrikes hovedstad.",
+              "es": "París es la capital de Francia.",
+              "da": "Paris er Frankrigs hovedstad.",
+              "ru": "Париж — столица Франции.",
+              "pl": "Paryż jest stolicą Francji.",
+              "ko": "파리는 프랑스의 수도입니다.",
+              "ar": "باريس هي عاصمة فرنسا."
             }
           },
           {
@@ -325,11 +831,33 @@
             "type": "string",
             "title": {
               "en": "Model used",
-              "nl": "Gebruikte model"
+              "nl": "Gebruikte model",
+              "de": "Verwendetes Modell",
+              "fr": "Modèle utilisé",
+              "it": "Modello utilizzato",
+              "sv": "Använd modell",
+              "no": "Brukt modell",
+              "es": "Modelo utilizado",
+              "da": "Brugt model",
+              "ru": "Используемая модель",
+              "pl": "Użyty model",
+              "ko": "사용된 모델",
+              "ar": "النموذج المستخدم"
             },
             "example": {
               "en": "claude-haiku-4-5-20251001",
-              "nl": "claude-haiku-4-5-20251001"
+              "nl": "claude-haiku-4-5-20251001",
+              "de": "claude-haiku-4-5-20251001",
+              "fr": "claude-haiku-4-5-20251001",
+              "it": "claude-haiku-4-5-20251001",
+              "sv": "claude-haiku-4-5-20251001",
+              "no": "claude-haiku-4-5-20251001",
+              "es": "claude-haiku-4-5-20251001",
+              "da": "claude-haiku-4-5-20251001",
+              "ru": "claude-haiku-4-5-20251001",
+              "pl": "claude-haiku-4-5-20251001",
+              "ko": "claude-haiku-4-5-20251001",
+              "ar": "claude-haiku-4-5-20251001"
             }
           }
         ]
@@ -338,15 +866,48 @@
         "id": "conversation_clear",
         "title": {
           "en": "Clear conversation",
-          "nl": "Wis gesprek"
+          "nl": "Wis gesprek",
+          "de": "Gespräch löschen",
+          "fr": "Effacer la conversation",
+          "it": "Cancella conversazione",
+          "sv": "Rensa konversation",
+          "no": "Tøm samtale",
+          "es": "Borrar conversación",
+          "da": "Ryd samtale",
+          "ru": "Очистить разговор",
+          "pl": "Wyczyść konwersację",
+          "ko": "대화 지우기",
+          "ar": "مسح المحادثة"
         },
         "titleFormatted": {
           "en": "Clear conversation [[conversation_id]]",
-          "nl": "Wis gesprek [[conversation_id]]"
+          "nl": "Wis gesprek [[conversation_id]]",
+          "de": "Gespräch löschen [[conversation_id]]",
+          "fr": "Effacer la conversation [[conversation_id]]",
+          "it": "Cancella conversazione [[conversation_id]]",
+          "sv": "Rensa konversation [[conversation_id]]",
+          "no": "Tøm samtale [[conversation_id]]",
+          "es": "Borrar conversación [[conversation_id]]",
+          "da": "Ryd samtale [[conversation_id]]",
+          "ru": "Очистить разговор [[conversation_id]]",
+          "pl": "Wyczyść konwersację [[conversation_id]]",
+          "ko": "대화 지우기 [[conversation_id]]",
+          "ar": "مسح المحادثة [[conversation_id]]"
         },
         "hint": {
           "en": "Clears all messages from the specified conversation.",
-          "nl": "Wist alle berichten uit het opgegeven gesprek."
+          "nl": "Wist alle berichten uit het opgegeven gesprek.",
+          "de": "Löscht alle Nachrichten aus dem angegebenen Gespräch.",
+          "fr": "Efface tous les messages de la conversation spécifiée.",
+          "it": "Cancella tutti i messaggi dalla conversazione specificata.",
+          "sv": "Rensar alla meddelanden från den angivna konversationen.",
+          "no": "Tømmer alle meldinger fra den angitte samtalen.",
+          "es": "Borra todos los mensajes de la conversación especificada.",
+          "da": "Rydder alle beskeder fra den angivne samtale.",
+          "ru": "Удаляет все сообщения из указанного разговора.",
+          "pl": "Usuwa wszystkie wiadomości z określonej konwersacji.",
+          "ko": "지정된 대화에서 모든 메시지를 지웁니다.",
+          "ar": "يمسح جميع الرسائل من المحادثة المحددة."
         },
         "args": [
           {
@@ -354,11 +915,33 @@
             "name": "conversation_id",
             "title": {
               "en": "Conversation name",
-              "nl": "Gespreksnaam"
+              "nl": "Gespreksnaam",
+              "de": "Gesprächsname",
+              "fr": "Nom de la conversation",
+              "it": "Nome della conversazione",
+              "sv": "Konversationsnamn",
+              "no": "Samtalenavn",
+              "es": "Nombre de la conversación",
+              "da": "Samtalenavn",
+              "ru": "Имя разговора",
+              "pl": "Nazwa konwersacji",
+              "ko": "대화 이름",
+              "ar": "اسم المحادثة"
             },
             "placeholder": {
               "en": "my-conversation",
-              "nl": "mijn-gesprek"
+              "nl": "mijn-gesprek",
+              "de": "mein-gespräch",
+              "fr": "ma-conversation",
+              "it": "mia-conversazione",
+              "sv": "min-konversation",
+              "no": "min-samtale",
+              "es": "mi-conversación",
+              "da": "min-samtale",
+              "ru": "мой-разговор",
+              "pl": "moja-rozmowa",
+              "ko": "내-대화",
+              "ar": "محادثتي"
             }
           }
         ]
@@ -367,15 +950,48 @@
         "id": "conversation_message",
         "title": {
           "en": "Send conversation message",
-          "nl": "Stuur gespreksbericht"
+          "nl": "Stuur gespreksbericht",
+          "de": "Gesprächsnachricht senden",
+          "fr": "Envoyer un message de conversation",
+          "it": "Invia messaggio conversazione",
+          "sv": "Skicka konversationsmeddelande",
+          "no": "Send samtalemelding",
+          "es": "Enviar mensaje de conversación",
+          "da": "Send samtalebesked",
+          "ru": "Отправить сообщение в разговор",
+          "pl": "Wyślij wiadomość konwersacji",
+          "ko": "대화 메시지 보내기",
+          "ar": "إرسال رسالة محادثة"
         },
         "titleFormatted": {
           "en": "Say to [[conversation_id]]: [[message]]",
-          "nl": "Zeg tegen [[conversation_id]]: [[message]]"
+          "nl": "Zeg tegen [[conversation_id]]: [[message]]",
+          "de": "Sage zu [[conversation_id]]: [[message]]",
+          "fr": "Dire à [[conversation_id]] : [[message]]",
+          "it": "Di' a [[conversation_id]]: [[message]]",
+          "sv": "Säg till [[conversation_id]]: [[message]]",
+          "no": "Si til [[conversation_id]]: [[message]]",
+          "es": "Decir a [[conversation_id]]: [[message]]",
+          "da": "Sig til [[conversation_id]]: [[message]]",
+          "ru": "Сказать [[conversation_id]]: [[message]]",
+          "pl": "Powiedz do [[conversation_id]]: [[message]]",
+          "ko": "[[conversation_id]]에게 말하기: [[message]]",
+          "ar": "قل لـ [[conversation_id]]: [[message]]"
         },
         "hint": {
           "en": "Sends a message in a named conversation. Previous messages in the same conversation are remembered.",
-          "nl": "Stuurt een bericht in een benoemd gesprek. Eerdere berichten in hetzelfde gesprek worden onthouden."
+          "nl": "Stuurt een bericht in een benoemd gesprek. Eerdere berichten in hetzelfde gesprek worden onthouden.",
+          "de": "Sendet eine Nachricht in einem benannten Gespräch. Frühere Nachrichten im selben Gespräch werden gespeichert.",
+          "fr": "Envoie un message dans une conversation nommée. Les messages précédents de la même conversation sont mémorisés.",
+          "it": "Invia un messaggio in una conversazione denominata. I messaggi precedenti nella stessa conversazione vengono ricordati.",
+          "sv": "Skickar ett meddelande i en namngiven konversation. Tidigare meddelanden i samma konversation sparas.",
+          "no": "Sender en melding i en navngitt samtale. Tidligere meldinger i samme samtale huskes.",
+          "es": "Envía un mensaje en una conversación con nombre. Los mensajes anteriores de la misma conversación se recuerdan.",
+          "da": "Sender en besked i en navngiven samtale. Tidligere beskeder i samme samtale huskes.",
+          "ru": "Отправляет сообщение в именованный разговор. Предыдущие сообщения в том же разговоре сохраняются.",
+          "pl": "Wysyła wiadomość w nazwanej konwersacji. Poprzednie wiadomości w tej samej konwersacji są zapamiętywane.",
+          "ko": "명명된 대화에서 메시지를 보냅니다. 같은 대화의 이전 메시지가 기억됩니다.",
+          "ar": "يرسل رسالة في محادثة مُسمَّاة. يتم تذكر الرسائل السابقة في نفس المحادثة."
         },
         "args": [
           {
@@ -383,11 +999,33 @@
             "name": "conversation_id",
             "title": {
               "en": "Conversation name",
-              "nl": "Gespreksnaam"
+              "nl": "Gespreksnaam",
+              "de": "Gesprächsname",
+              "fr": "Nom de la conversation",
+              "it": "Nome della conversazione",
+              "sv": "Konversationsnamn",
+              "no": "Samtalenavn",
+              "es": "Nombre de la conversación",
+              "da": "Samtalenavn",
+              "ru": "Имя разговора",
+              "pl": "Nazwa konwersacji",
+              "ko": "대화 이름",
+              "ar": "اسم المحادثة"
             },
             "placeholder": {
               "en": "my-conversation",
-              "nl": "mijn-gesprek"
+              "nl": "mijn-gesprek",
+              "de": "mein-gespräch",
+              "fr": "ma-conversation",
+              "it": "mia-conversazione",
+              "sv": "min-konversation",
+              "no": "min-samtale",
+              "es": "mi-conversación",
+              "da": "min-samtale",
+              "ru": "мой-разговор",
+              "pl": "moja-rozmowa",
+              "ko": "내-대화",
+              "ar": "محادثتي"
             }
           },
           {
@@ -395,11 +1033,33 @@
             "name": "message",
             "title": {
               "en": "Message",
-              "nl": "Bericht"
+              "nl": "Bericht",
+              "de": "Nachricht",
+              "fr": "Message",
+              "it": "Messaggio",
+              "sv": "Meddelande",
+              "no": "Melding",
+              "es": "Mensaje",
+              "da": "Besked",
+              "ru": "Сообщение",
+              "pl": "Wiadomość",
+              "ko": "메시지",
+              "ar": "رسالة"
             },
             "placeholder": {
               "en": "What did I just say?",
-              "nl": "Wat heb ik net gezegd?"
+              "nl": "Wat heb ik net gezegd?",
+              "de": "Was habe ich gerade gesagt?",
+              "fr": "Qu'est-ce que je viens de dire ?",
+              "it": "Cosa ho appena detto?",
+              "sv": "Vad sa jag nyss?",
+              "no": "Hva sa jeg nettopp?",
+              "es": "¿Qué acabo de decir?",
+              "da": "Hvad sagde jeg lige?",
+              "ru": "Что я только что сказал?",
+              "pl": "Co właśnie powiedziałem?",
+              "ko": "방금 무슨 말을 했나요?",
+              "ar": "ماذا قلت للتو؟"
             }
           }
         ],
@@ -409,11 +1069,33 @@
             "type": "string",
             "title": {
               "en": "Response",
-              "nl": "Antwoord"
+              "nl": "Antwoord",
+              "de": "Antwort",
+              "fr": "Réponse",
+              "it": "Risposta",
+              "sv": "Svar",
+              "no": "Svar",
+              "es": "Respuesta",
+              "da": "Svar",
+              "ru": "Ответ",
+              "pl": "Odpowiedź",
+              "ko": "응답",
+              "ar": "رد"
             },
             "example": {
               "en": "You said hello.",
-              "nl": "Je zei hallo."
+              "nl": "Je zei hallo.",
+              "de": "Du hast hallo gesagt.",
+              "fr": "Vous avez dit bonjour.",
+              "it": "Hai detto ciao.",
+              "sv": "Du sa hej.",
+              "no": "Du sa hei.",
+              "es": "Dijiste hola.",
+              "da": "Du sagde hej.",
+              "ru": "Вы сказали привет.",
+              "pl": "Powiedziałeś cześć.",
+              "ko": "안녕이라고 말씀하셨습니다.",
+              "ar": "قلت مرحباً."
             }
           },
           {
@@ -421,11 +1103,33 @@
             "type": "string",
             "title": {
               "en": "Model used",
-              "nl": "Gebruikte model"
+              "nl": "Gebruikte model",
+              "de": "Verwendetes Modell",
+              "fr": "Modèle utilisé",
+              "it": "Modello utilizzato",
+              "sv": "Använd modell",
+              "no": "Brukt modell",
+              "es": "Modelo utilizado",
+              "da": "Brugt model",
+              "ru": "Используемая модель",
+              "pl": "Użyty model",
+              "ko": "사용된 모델",
+              "ar": "النموذج المستخدم"
             },
             "example": {
               "en": "claude-haiku-4-5-20251001",
-              "nl": "claude-haiku-4-5-20251001"
+              "nl": "claude-haiku-4-5-20251001",
+              "de": "claude-haiku-4-5-20251001",
+              "fr": "claude-haiku-4-5-20251001",
+              "it": "claude-haiku-4-5-20251001",
+              "sv": "claude-haiku-4-5-20251001",
+              "no": "claude-haiku-4-5-20251001",
+              "es": "claude-haiku-4-5-20251001",
+              "da": "claude-haiku-4-5-20251001",
+              "ru": "claude-haiku-4-5-20251001",
+              "pl": "claude-haiku-4-5-20251001",
+              "ko": "claude-haiku-4-5-20251001",
+              "ar": "claude-haiku-4-5-20251001"
             }
           }
         ]
@@ -434,15 +1138,48 @@
         "id": "conversation_message_with_model",
         "title": {
           "en": "Send conversation message (choose model)",
-          "nl": "Stuur gespreksbericht (kies model)"
+          "nl": "Stuur gespreksbericht (kies model)",
+          "de": "Gesprächsnachricht senden (Modell wählen)",
+          "fr": "Envoyer un message de conversation (choisir le modèle)",
+          "it": "Invia messaggio conversazione (scegli il modello)",
+          "sv": "Skicka konversationsmeddelande (välj modell)",
+          "no": "Send samtalemelding (velg modell)",
+          "es": "Enviar mensaje de conversación (elegir modelo)",
+          "da": "Send samtalebesked (vælg model)",
+          "ru": "Отправить сообщение в разговор (выбрать модель)",
+          "pl": "Wyślij wiadomość konwersacji (wybierz model)",
+          "ko": "대화 메시지 보내기 (모델 선택)",
+          "ar": "إرسال رسالة محادثة (اختر النموذج)"
         },
         "titleFormatted": {
           "en": "Say to [[conversation_id]] ([[model]]): [[message]]",
-          "nl": "Zeg tegen [[conversation_id]] ([[model]]): [[message]]"
+          "nl": "Zeg tegen [[conversation_id]] ([[model]]): [[message]]",
+          "de": "Sage zu [[conversation_id]] ([[model]]): [[message]]",
+          "fr": "Dire à [[conversation_id]] ([[model]]) : [[message]]",
+          "it": "Di' a [[conversation_id]] ([[model]]): [[message]]",
+          "sv": "Säg till [[conversation_id]] ([[model]]): [[message]]",
+          "no": "Si til [[conversation_id]] ([[model]]): [[message]]",
+          "es": "Decir a [[conversation_id]] ([[model]]): [[message]]",
+          "da": "Sig til [[conversation_id]] ([[model]]): [[message]]",
+          "ru": "Сказать [[conversation_id]] ([[model]]): [[message]]",
+          "pl": "Powiedz do [[conversation_id]] ([[model]]): [[message]]",
+          "ko": "[[conversation_id]]에게 말하기 ([[model]]): [[message]]",
+          "ar": "قل لـ [[conversation_id]] ([[model]]): [[message]]"
         },
         "hint": {
           "en": "Sends a message in a named conversation. Previous messages are remembered. Lets you choose the model per flow card.",
-          "nl": "Stuurt een bericht in een benoemd gesprek. Eerdere berichten worden onthouden. Laat je het model per flow kaart kiezen."
+          "nl": "Stuurt een bericht in een benoemd gesprek. Eerdere berichten worden onthouden. Laat je het model per flow kaart kiezen.",
+          "de": "Sendet eine Nachricht in einem benannten Gespräch. Frühere Nachrichten werden gespeichert. Ermöglicht die Auswahl des Modells pro Flow-Karte.",
+          "fr": "Envoie un message dans une conversation nommée. Les messages précédents sont mémorisés. Vous permet de choisir le modèle par carte de flux.",
+          "it": "Invia un messaggio in una conversazione denominata. I messaggi precedenti vengono ricordati. Consente di scegliere il modello per ogni scheda flusso.",
+          "sv": "Skickar ett meddelande i en namngiven konversation. Tidigare meddelanden sparas. Låter dig välja modell per flödeskort.",
+          "no": "Sender en melding i en navngitt samtale. Tidligere meldinger huskes. Lar deg velge modell per flydkort.",
+          "es": "Envía un mensaje en una conversación con nombre. Los mensajes anteriores se recuerdan. Te permite elegir el modelo por tarjeta de flujo.",
+          "da": "Sender en besked i en navngiven samtale. Tidligere beskeder huskes. Giver dig mulighed for at vælge model pr. flowkort.",
+          "ru": "Отправляет сообщение в именованный разговор. Предыдущие сообщения сохраняются. Позволяет выбрать модель для каждой карточки потока.",
+          "pl": "Wysyła wiadomość w nazwanej konwersacji. Poprzednie wiadomości są zapamiętywane. Pozwala wybrać model dla każdej karty przepływu.",
+          "ko": "명명된 대화에서 메시지를 보냅니다. 이전 메시지가 기억됩니다. 플로우 카드별로 모델을 선택할 수 있습니다.",
+          "ar": "يرسل رسالة في محادثة مُسمَّاة. يتم تذكر الرسائل السابقة. يتيح لك اختيار النموذج لكل بطاقة تدفق."
         },
         "args": [
           {
@@ -450,11 +1187,33 @@
             "name": "conversation_id",
             "title": {
               "en": "Conversation name",
-              "nl": "Gespreksnaam"
+              "nl": "Gespreksnaam",
+              "de": "Gesprächsname",
+              "fr": "Nom de la conversation",
+              "it": "Nome della conversazione",
+              "sv": "Konversationsnamn",
+              "no": "Samtalenavn",
+              "es": "Nombre de la conversación",
+              "da": "Samtalenavn",
+              "ru": "Имя разговора",
+              "pl": "Nazwa konwersacji",
+              "ko": "대화 이름",
+              "ar": "اسم المحادثة"
             },
             "placeholder": {
               "en": "my-conversation",
-              "nl": "mijn-gesprek"
+              "nl": "mijn-gesprek",
+              "de": "mein-gespräch",
+              "fr": "ma-conversation",
+              "it": "mia-conversazione",
+              "sv": "min-konversation",
+              "no": "min-samtale",
+              "es": "mi-conversación",
+              "da": "min-samtale",
+              "ru": "мой-разговор",
+              "pl": "moja-rozmowa",
+              "ko": "내-대화",
+              "ar": "محادثتي"
             }
           },
           {
@@ -462,11 +1221,33 @@
             "name": "message",
             "title": {
               "en": "Message",
-              "nl": "Bericht"
+              "nl": "Bericht",
+              "de": "Nachricht",
+              "fr": "Message",
+              "it": "Messaggio",
+              "sv": "Meddelande",
+              "no": "Melding",
+              "es": "Mensaje",
+              "da": "Besked",
+              "ru": "Сообщение",
+              "pl": "Wiadomość",
+              "ko": "메시지",
+              "ar": "رسالة"
             },
             "placeholder": {
               "en": "What did I just say?",
-              "nl": "Wat heb ik net gezegd?"
+              "nl": "Wat heb ik net gezegd?",
+              "de": "Was habe ich gerade gesagt?",
+              "fr": "Qu'est-ce que je viens de dire ?",
+              "it": "Cosa ho appena detto?",
+              "sv": "Vad sa jag nyss?",
+              "no": "Hva sa jeg nettopp?",
+              "es": "¿Qué acabo de decir?",
+              "da": "Hvad sagde jeg lige?",
+              "ru": "Что я только что сказал?",
+              "pl": "Co właśnie powiedziałem?",
+              "ko": "방금 무슨 말을 했나요?",
+              "ar": "ماذا قلت للتو؟"
             }
           },
           {
@@ -474,28 +1255,72 @@
             "name": "model",
             "title": {
               "en": "Model",
-              "nl": "Model"
+              "nl": "Model",
+              "de": "Modell",
+              "fr": "Modèle",
+              "it": "Modello",
+              "sv": "Modell",
+              "no": "Modell",
+              "es": "Modelo",
+              "da": "Model",
+              "ru": "Модель",
+              "pl": "Model",
+              "ko": "모델",
+              "ar": "النموذج"
             },
             "values": [
               {
                 "id": "claude-haiku-4-5-20251001",
                 "label": {
                   "en": "Claude Haiku 4.5",
-                  "nl": "Claude Haiku 4.5"
+                  "nl": "Claude Haiku 4.5",
+                  "de": "Claude Haiku 4.5",
+                  "fr": "Claude Haiku 4.5",
+                  "it": "Claude Haiku 4.5",
+                  "sv": "Claude Haiku 4.5",
+                  "no": "Claude Haiku 4.5",
+                  "es": "Claude Haiku 4.5",
+                  "da": "Claude Haiku 4.5",
+                  "ru": "Claude Haiku 4.5",
+                  "pl": "Claude Haiku 4.5",
+                  "ko": "Claude Haiku 4.5",
+                  "ar": "Claude Haiku 4.5"
                 }
               },
               {
                 "id": "claude-sonnet-4-6",
                 "label": {
                   "en": "Claude Sonnet 4.6",
-                  "nl": "Claude Sonnet 4.6"
+                  "nl": "Claude Sonnet 4.6",
+                  "de": "Claude Sonnet 4.6",
+                  "fr": "Claude Sonnet 4.6",
+                  "it": "Claude Sonnet 4.6",
+                  "sv": "Claude Sonnet 4.6",
+                  "no": "Claude Sonnet 4.6",
+                  "es": "Claude Sonnet 4.6",
+                  "da": "Claude Sonnet 4.6",
+                  "ru": "Claude Sonnet 4.6",
+                  "pl": "Claude Sonnet 4.6",
+                  "ko": "Claude Sonnet 4.6",
+                  "ar": "Claude Sonnet 4.6"
                 }
               },
               {
                 "id": "claude-opus-4-6",
                 "label": {
                   "en": "Claude Opus 4.6",
-                  "nl": "Claude Opus 4.6"
+                  "nl": "Claude Opus 4.6",
+                  "de": "Claude Opus 4.6",
+                  "fr": "Claude Opus 4.6",
+                  "it": "Claude Opus 4.6",
+                  "sv": "Claude Opus 4.6",
+                  "no": "Claude Opus 4.6",
+                  "es": "Claude Opus 4.6",
+                  "da": "Claude Opus 4.6",
+                  "ru": "Claude Opus 4.6",
+                  "pl": "Claude Opus 4.6",
+                  "ko": "Claude Opus 4.6",
+                  "ar": "Claude Opus 4.6"
                 }
               }
             ]
@@ -507,11 +1332,33 @@
             "type": "string",
             "title": {
               "en": "Response",
-              "nl": "Antwoord"
+              "nl": "Antwoord",
+              "de": "Antwort",
+              "fr": "Réponse",
+              "it": "Risposta",
+              "sv": "Svar",
+              "no": "Svar",
+              "es": "Respuesta",
+              "da": "Svar",
+              "ru": "Ответ",
+              "pl": "Odpowiedź",
+              "ko": "응답",
+              "ar": "رد"
             },
             "example": {
               "en": "You said hello.",
-              "nl": "Je zei hallo."
+              "nl": "Je zei hallo.",
+              "de": "Du hast hallo gesagt.",
+              "fr": "Vous avez dit bonjour.",
+              "it": "Hai detto ciao.",
+              "sv": "Du sa hej.",
+              "no": "Du sa hei.",
+              "es": "Dijiste hola.",
+              "da": "Du sagde hej.",
+              "ru": "Вы сказали привет.",
+              "pl": "Powiedziałeś cześć.",
+              "ko": "안녕이라고 말씀하셨습니다.",
+              "ar": "قلت مرحباً."
             }
           },
           {
@@ -519,11 +1366,33 @@
             "type": "string",
             "title": {
               "en": "Model used",
-              "nl": "Gebruikte model"
+              "nl": "Gebruikte model",
+              "de": "Verwendetes Modell",
+              "fr": "Modèle utilisé",
+              "it": "Modello utilizzato",
+              "sv": "Använd modell",
+              "no": "Brukt modell",
+              "es": "Modelo utilizado",
+              "da": "Brugt model",
+              "ru": "Используемая модель",
+              "pl": "Użyty model",
+              "ko": "사용된 모델",
+              "ar": "النموذج المستخدم"
             },
             "example": {
               "en": "claude-haiku-4-5-20251001",
-              "nl": "claude-haiku-4-5-20251001"
+              "nl": "claude-haiku-4-5-20251001",
+              "de": "claude-haiku-4-5-20251001",
+              "fr": "claude-haiku-4-5-20251001",
+              "it": "claude-haiku-4-5-20251001",
+              "sv": "claude-haiku-4-5-20251001",
+              "no": "claude-haiku-4-5-20251001",
+              "es": "claude-haiku-4-5-20251001",
+              "da": "claude-haiku-4-5-20251001",
+              "ru": "claude-haiku-4-5-20251001",
+              "pl": "claude-haiku-4-5-20251001",
+              "ko": "claude-haiku-4-5-20251001",
+              "ar": "claude-haiku-4-5-20251001"
             }
           }
         ]
@@ -532,15 +1401,48 @@
         "id": "generate",
         "title": {
           "en": "Generate text",
-          "nl": "Genereer tekst"
+          "nl": "Genereer tekst",
+          "de": "Text generieren",
+          "fr": "Générer du texte",
+          "it": "Genera testo",
+          "sv": "Generera text",
+          "no": "Generer tekst",
+          "es": "Generar texto",
+          "da": "Generer tekst",
+          "ru": "Сгенерировать текст",
+          "pl": "Generuj tekst",
+          "ko": "텍스트 생성",
+          "ar": "توليد نص"
         },
         "titleFormatted": {
           "en": "Generate: [[prompt]]",
-          "nl": "Genereer: [[prompt]]"
+          "nl": "Genereer: [[prompt]]",
+          "de": "Generiere: [[prompt]]",
+          "fr": "Générer : [[prompt]]",
+          "it": "Genera: [[prompt]]",
+          "sv": "Generera: [[prompt]]",
+          "no": "Generer: [[prompt]]",
+          "es": "Generar: [[prompt]]",
+          "da": "Generer: [[prompt]]",
+          "ru": "Сгенерировать: [[prompt]]",
+          "pl": "Generuj: [[prompt]]",
+          "ko": "생성: [[prompt]]",
+          "ar": "توليد: [[prompt]]"
         },
         "hint": {
           "en": "Generates text based on a prompt using Claude. Uses the default model from settings.",
-          "nl": "Genereert tekst op basis van een prompt met Claude. Gebruikt het standaard model uit de instellingen."
+          "nl": "Genereert tekst op basis van een prompt met Claude. Gebruikt het standaard model uit de instellingen.",
+          "de": "Generiert Text basierend auf einem Prompt mit Claude. Verwendet das Standardmodell aus den Einstellungen.",
+          "fr": "Génère du texte basé sur un prompt avec Claude. Utilise le modèle par défaut des paramètres.",
+          "it": "Genera testo basato su un prompt con Claude. Usa il modello predefinito dalle impostazioni.",
+          "sv": "Genererar text baserat på en prompt med Claude. Använder standardmodellen från inställningarna.",
+          "no": "Genererer tekst basert på en prompt med Claude. Bruker standardmodellen fra innstillingene.",
+          "es": "Genera texto basado en un prompt con Claude. Usa el modelo predeterminado de la configuración.",
+          "da": "Genererer tekst baseret på en prompt med Claude. Bruger standardmodellen fra indstillingerne.",
+          "ru": "Генерирует текст на основе промпта с помощью Claude. Использует модель по умолчанию из настроек.",
+          "pl": "Generuje tekst na podstawie promptu z Claude. Używa domyślnego modelu z ustawień.",
+          "ko": "Claude를 사용하여 프롬프트를 기반으로 텍스트를 생성합니다. 설정의 기본 모델을 사용합니다.",
+          "ar": "يولّد نصاً بناءً على موجه باستخدام Claude. يستخدم النموذج الافتراضي من الإعدادات."
         },
         "args": [
           {
@@ -548,11 +1450,33 @@
             "name": "prompt",
             "title": {
               "en": "Prompt",
-              "nl": "Prompt"
+              "nl": "Prompt",
+              "de": "Prompt",
+              "fr": "Prompt",
+              "it": "Prompt",
+              "sv": "Prompt",
+              "no": "Prompt",
+              "es": "Prompt",
+              "da": "Prompt",
+              "ru": "Промпт",
+              "pl": "Prompt",
+              "ko": "프롬프트",
+              "ar": "موجه"
             },
             "placeholder": {
               "en": "Write a short poem about the rain.",
-              "nl": "Schrijf een kort gedicht over de regen."
+              "nl": "Schrijf een kort gedicht over de regen.",
+              "de": "Schreibe ein kurzes Gedicht über den Regen.",
+              "fr": "Écris un court poème sur la pluie.",
+              "it": "Scrivi una breve poesia sulla pioggia.",
+              "sv": "Skriv en kort dikt om regnet.",
+              "no": "Skriv et kort dikt om regnet.",
+              "es": "Escribe un poema corto sobre la lluvia.",
+              "da": "Skriv et kort digt om regnen.",
+              "ru": "Напишите короткое стихотворение о дожде.",
+              "pl": "Napisz krótki wiersz o deszczu.",
+              "ko": "비에 관한 짧은 시를 써주세요.",
+              "ar": "اكتب قصيدة قصيرة عن المطر."
             }
           }
         ],
@@ -562,11 +1486,33 @@
             "type": "string",
             "title": {
               "en": "Generated text",
-              "nl": "Gegenereerde tekst"
+              "nl": "Gegenereerde tekst",
+              "de": "Generierter Text",
+              "fr": "Texte généré",
+              "it": "Testo generato",
+              "sv": "Genererad text",
+              "no": "Generert tekst",
+              "es": "Texto generado",
+              "da": "Genereret tekst",
+              "ru": "Сгенерированный текст",
+              "pl": "Wygenerowany tekst",
+              "ko": "생성된 텍스트",
+              "ar": "النص المُولَّد"
             },
             "example": {
               "en": "The rain falls softly on the window pane.",
-              "nl": "De regen tikt zacht op het raam."
+              "nl": "De regen tikt zacht op het raam.",
+              "de": "Der Regen fällt sanft auf die Fensterscheibe.",
+              "fr": "La pluie tombe doucement sur la vitre.",
+              "it": "La pioggia cade dolcemente sul vetro della finestra.",
+              "sv": "Regnet faller mjukt mot fönsterglaset.",
+              "no": "Regnet faller mykt mot vindusruten.",
+              "es": "La lluvia cae suavemente sobre el cristal de la ventana.",
+              "da": "Regnen falder blidt på vinduesruden.",
+              "ru": "Дождь мягко падает на оконное стекло.",
+              "pl": "Deszcz pada delikatnie na szybę okienną.",
+              "ko": "빗물이 창문 유리에 부드럽게 떨어집니다.",
+              "ar": "تسقط المطر بهدوء على زجاج النافذة."
             }
           },
           {
@@ -574,11 +1520,33 @@
             "type": "string",
             "title": {
               "en": "Model used",
-              "nl": "Gebruikte model"
+              "nl": "Gebruikte model",
+              "de": "Verwendetes Modell",
+              "fr": "Modèle utilisé",
+              "it": "Modello utilizzato",
+              "sv": "Använd modell",
+              "no": "Brukt modell",
+              "es": "Modelo utilizado",
+              "da": "Brugt model",
+              "ru": "Используемая модель",
+              "pl": "Użyty model",
+              "ko": "사용된 모델",
+              "ar": "النموذج المستخدم"
             },
             "example": {
               "en": "claude-haiku-4-5-20251001",
-              "nl": "claude-haiku-4-5-20251001"
+              "nl": "claude-haiku-4-5-20251001",
+              "de": "claude-haiku-4-5-20251001",
+              "fr": "claude-haiku-4-5-20251001",
+              "it": "claude-haiku-4-5-20251001",
+              "sv": "claude-haiku-4-5-20251001",
+              "no": "claude-haiku-4-5-20251001",
+              "es": "claude-haiku-4-5-20251001",
+              "da": "claude-haiku-4-5-20251001",
+              "ru": "claude-haiku-4-5-20251001",
+              "pl": "claude-haiku-4-5-20251001",
+              "ko": "claude-haiku-4-5-20251001",
+              "ar": "claude-haiku-4-5-20251001"
             }
           }
         ]
@@ -587,15 +1555,48 @@
         "id": "generate_with_model",
         "title": {
           "en": "Generate text (choose model)",
-          "nl": "Genereer tekst (kies model)"
+          "nl": "Genereer tekst (kies model)",
+          "de": "Text generieren (Modell wählen)",
+          "fr": "Générer du texte (choisir le modèle)",
+          "it": "Genera testo (scegli il modello)",
+          "sv": "Generera text (välj modell)",
+          "no": "Generer tekst (velg modell)",
+          "es": "Generar texto (elegir modelo)",
+          "da": "Generer tekst (vælg model)",
+          "ru": "Сгенерировать текст (выбрать модель)",
+          "pl": "Generuj tekst (wybierz model)",
+          "ko": "텍스트 생성 (모델 선택)",
+          "ar": "توليد نص (اختر النموذج)"
         },
         "titleFormatted": {
           "en": "Generate ([[model]]): [[prompt]]",
-          "nl": "Genereer ([[model]]): [[prompt]]"
+          "nl": "Genereer ([[model]]): [[prompt]]",
+          "de": "Generiere ([[model]]): [[prompt]]",
+          "fr": "Générer ([[model]]) : [[prompt]]",
+          "it": "Genera ([[model]]): [[prompt]]",
+          "sv": "Generera ([[model]]): [[prompt]]",
+          "no": "Generer ([[model]]): [[prompt]]",
+          "es": "Generar ([[model]]): [[prompt]]",
+          "da": "Generer ([[model]]): [[prompt]]",
+          "ru": "Сгенерировать ([[model]]): [[prompt]]",
+          "pl": "Generuj ([[model]]): [[prompt]]",
+          "ko": "생성 ([[model]]): [[prompt]]",
+          "ar": "توليد ([[model]]): [[prompt]]"
         },
         "hint": {
           "en": "Generates text based on a prompt using Claude. Lets you choose the model per flow card.",
-          "nl": "Genereert tekst op basis van een prompt met Claude. Laat je het model per flow kaart kiezen."
+          "nl": "Genereert tekst op basis van een prompt met Claude. Laat je het model per flow kaart kiezen.",
+          "de": "Generiert Text basierend auf einem Prompt mit Claude. Ermöglicht die Auswahl des Modells pro Flow-Karte.",
+          "fr": "Génère du texte basé sur un prompt avec Claude. Vous permet de choisir le modèle par carte de flux.",
+          "it": "Genera testo basato su un prompt con Claude. Consente di scegliere il modello per ogni scheda flusso.",
+          "sv": "Genererar text baserat på en prompt med Claude. Låter dig välja modell per flödeskort.",
+          "no": "Genererer tekst basert på en prompt med Claude. Lar deg velge modell per flydkort.",
+          "es": "Genera texto basado en un prompt con Claude. Te permite elegir el modelo por tarjeta de flujo.",
+          "da": "Genererer tekst baseret på en prompt med Claude. Giver dig mulighed for at vælge model pr. flowkort.",
+          "ru": "Генерирует текст на основе промпта с помощью Claude. Позволяет выбрать модель для каждой карточки потока.",
+          "pl": "Generuje tekst na podstawie promptu z Claude. Pozwala wybrać model dla każdej karty przepływu.",
+          "ko": "Claude를 사용하여 프롬프트를 기반으로 텍스트를 생성합니다. 플로우 카드별로 모델을 선택할 수 있습니다.",
+          "ar": "يولّد نصاً بناءً على موجه باستخدام Claude. يتيح لك اختيار النموذج لكل بطاقة تدفق."
         },
         "args": [
           {
@@ -603,11 +1604,33 @@
             "name": "prompt",
             "title": {
               "en": "Prompt",
-              "nl": "Prompt"
+              "nl": "Prompt",
+              "de": "Prompt",
+              "fr": "Prompt",
+              "it": "Prompt",
+              "sv": "Prompt",
+              "no": "Prompt",
+              "es": "Prompt",
+              "da": "Prompt",
+              "ru": "Промпт",
+              "pl": "Prompt",
+              "ko": "프롬프트",
+              "ar": "موجه"
             },
             "placeholder": {
               "en": "Write a short poem about the rain.",
-              "nl": "Schrijf een kort gedicht over de regen."
+              "nl": "Schrijf een kort gedicht over de regen.",
+              "de": "Schreibe ein kurzes Gedicht über den Regen.",
+              "fr": "Écris un court poème sur la pluie.",
+              "it": "Scrivi una breve poesia sulla pioggia.",
+              "sv": "Skriv en kort dikt om regnet.",
+              "no": "Skriv et kort dikt om regnet.",
+              "es": "Escribe un poema corto sobre la lluvia.",
+              "da": "Skriv et kort digt om regnen.",
+              "ru": "Напишите короткое стихотворение о дожде.",
+              "pl": "Napisz krótki wiersz o deszczu.",
+              "ko": "비에 관한 짧은 시를 써주세요.",
+              "ar": "اكتب قصيدة قصيرة عن المطر."
             }
           },
           {
@@ -615,28 +1638,72 @@
             "name": "model",
             "title": {
               "en": "Model",
-              "nl": "Model"
+              "nl": "Model",
+              "de": "Modell",
+              "fr": "Modèle",
+              "it": "Modello",
+              "sv": "Modell",
+              "no": "Modell",
+              "es": "Modelo",
+              "da": "Model",
+              "ru": "Модель",
+              "pl": "Model",
+              "ko": "모델",
+              "ar": "النموذج"
             },
             "values": [
               {
                 "id": "claude-haiku-4-5-20251001",
                 "label": {
                   "en": "Claude Haiku 4.5",
-                  "nl": "Claude Haiku 4.5"
+                  "nl": "Claude Haiku 4.5",
+                  "de": "Claude Haiku 4.5",
+                  "fr": "Claude Haiku 4.5",
+                  "it": "Claude Haiku 4.5",
+                  "sv": "Claude Haiku 4.5",
+                  "no": "Claude Haiku 4.5",
+                  "es": "Claude Haiku 4.5",
+                  "da": "Claude Haiku 4.5",
+                  "ru": "Claude Haiku 4.5",
+                  "pl": "Claude Haiku 4.5",
+                  "ko": "Claude Haiku 4.5",
+                  "ar": "Claude Haiku 4.5"
                 }
               },
               {
                 "id": "claude-sonnet-4-6",
                 "label": {
                   "en": "Claude Sonnet 4.6",
-                  "nl": "Claude Sonnet 4.6"
+                  "nl": "Claude Sonnet 4.6",
+                  "de": "Claude Sonnet 4.6",
+                  "fr": "Claude Sonnet 4.6",
+                  "it": "Claude Sonnet 4.6",
+                  "sv": "Claude Sonnet 4.6",
+                  "no": "Claude Sonnet 4.6",
+                  "es": "Claude Sonnet 4.6",
+                  "da": "Claude Sonnet 4.6",
+                  "ru": "Claude Sonnet 4.6",
+                  "pl": "Claude Sonnet 4.6",
+                  "ko": "Claude Sonnet 4.6",
+                  "ar": "Claude Sonnet 4.6"
                 }
               },
               {
                 "id": "claude-opus-4-6",
                 "label": {
                   "en": "Claude Opus 4.6",
-                  "nl": "Claude Opus 4.6"
+                  "nl": "Claude Opus 4.6",
+                  "de": "Claude Opus 4.6",
+                  "fr": "Claude Opus 4.6",
+                  "it": "Claude Opus 4.6",
+                  "sv": "Claude Opus 4.6",
+                  "no": "Claude Opus 4.6",
+                  "es": "Claude Opus 4.6",
+                  "da": "Claude Opus 4.6",
+                  "ru": "Claude Opus 4.6",
+                  "pl": "Claude Opus 4.6",
+                  "ko": "Claude Opus 4.6",
+                  "ar": "Claude Opus 4.6"
                 }
               }
             ]
@@ -648,11 +1715,33 @@
             "type": "string",
             "title": {
               "en": "Generated text",
-              "nl": "Gegenereerde tekst"
+              "nl": "Gegenereerde tekst",
+              "de": "Generierter Text",
+              "fr": "Texte généré",
+              "it": "Testo generato",
+              "sv": "Genererad text",
+              "no": "Generert tekst",
+              "es": "Texto generado",
+              "da": "Genereret tekst",
+              "ru": "Сгенерированный текст",
+              "pl": "Wygenerowany tekst",
+              "ko": "생성된 텍스트",
+              "ar": "النص المُولَّد"
             },
             "example": {
               "en": "The rain falls softly on the window pane.",
-              "nl": "De regen tikt zacht op het raam."
+              "nl": "De regen tikt zacht op het raam.",
+              "de": "Der Regen fällt sanft auf die Fensterscheibe.",
+              "fr": "La pluie tombe doucement sur la vitre.",
+              "it": "La pioggia cade dolcemente sul vetro della finestra.",
+              "sv": "Regnet faller mjukt mot fönsterglaset.",
+              "no": "Regnet faller mykt mot vindusruten.",
+              "es": "La lluvia cae suavemente sobre el cristal de la ventana.",
+              "da": "Regnen falder blidt på vinduesruden.",
+              "ru": "Дождь мягко падает на оконное стекло.",
+              "pl": "Deszcz pada delikatnie na szybę okienną.",
+              "ko": "빗물이 창문 유리에 부드럽게 떨어집니다.",
+              "ar": "تسقط المطر بهدوء على زجاج النافذة."
             }
           },
           {
@@ -660,11 +1749,33 @@
             "type": "string",
             "title": {
               "en": "Model used",
-              "nl": "Gebruikte model"
+              "nl": "Gebruikte model",
+              "de": "Verwendetes Modell",
+              "fr": "Modèle utilisé",
+              "it": "Modello utilizzato",
+              "sv": "Använd modell",
+              "no": "Brukt modell",
+              "es": "Modelo utilizado",
+              "da": "Brugt model",
+              "ru": "Используемая модель",
+              "pl": "Użyty model",
+              "ko": "사용된 모델",
+              "ar": "النموذج المستخدم"
             },
             "example": {
               "en": "claude-haiku-4-5-20251001",
-              "nl": "claude-haiku-4-5-20251001"
+              "nl": "claude-haiku-4-5-20251001",
+              "de": "claude-haiku-4-5-20251001",
+              "fr": "claude-haiku-4-5-20251001",
+              "it": "claude-haiku-4-5-20251001",
+              "sv": "claude-haiku-4-5-20251001",
+              "no": "claude-haiku-4-5-20251001",
+              "es": "claude-haiku-4-5-20251001",
+              "da": "claude-haiku-4-5-20251001",
+              "ru": "claude-haiku-4-5-20251001",
+              "pl": "claude-haiku-4-5-20251001",
+              "ko": "claude-haiku-4-5-20251001",
+              "ar": "claude-haiku-4-5-20251001"
             }
           }
         ]
@@ -673,15 +1784,48 @@
         "id": "summarize",
         "title": {
           "en": "Summarize text",
-          "nl": "Vat tekst samen"
+          "nl": "Vat tekst samen",
+          "de": "Text zusammenfassen",
+          "fr": "Résumer du texte",
+          "it": "Riassumi testo",
+          "sv": "Sammanfatta text",
+          "no": "Oppsummer tekst",
+          "es": "Resumir texto",
+          "da": "Opsummer tekst",
+          "ru": "Резюмировать текст",
+          "pl": "Podsumuj tekst",
+          "ko": "텍스트 요약",
+          "ar": "تلخيص النص"
         },
         "titleFormatted": {
           "en": "Summarize [[text]] in [[language]]",
-          "nl": "Vat [[text]] samen in [[language]]"
+          "nl": "Vat [[text]] samen in [[language]]",
+          "de": "Fasse [[text]] in [[language]] zusammen",
+          "fr": "Résumer [[text]] en [[language]]",
+          "it": "Riassumi [[text]] in [[language]]",
+          "sv": "Sammanfatta [[text]] på [[language]]",
+          "no": "Oppsummer [[text]] på [[language]]",
+          "es": "Resumir [[text]] en [[language]]",
+          "da": "Opsummer [[text]] på [[language]]",
+          "ru": "Резюмировать [[text]] на [[language]]",
+          "pl": "Podsumuj [[text]] w [[language]]",
+          "ko": "[[text]]을 [[language]]로 요약",
+          "ar": "لخّص [[text]] بـ [[language]]"
         },
         "hint": {
           "en": "Summarizes a text using Claude. Uses the default model from settings.",
-          "nl": "Vat een tekst samen met Claude. Gebruikt het standaard model uit de instellingen."
+          "nl": "Vat een tekst samen met Claude. Gebruikt het standaard model uit de instellingen.",
+          "de": "Fasst einen Text mit Claude zusammen. Verwendet das Standardmodell aus den Einstellungen.",
+          "fr": "Résume un texte avec Claude. Utilise le modèle par défaut des paramètres.",
+          "it": "Riassume un testo con Claude. Usa il modello predefinito dalle impostazioni.",
+          "sv": "Sammanfattar en text med Claude. Använder standardmodellen från inställningarna.",
+          "no": "Oppsummerer en tekst med Claude. Bruker standardmodellen fra innstillingene.",
+          "es": "Resume un texto con Claude. Usa el modelo predeterminado de la configuración.",
+          "da": "Opsummerer en tekst med Claude. Bruger standardmodellen fra indstillingerne.",
+          "ru": "Резюмирует текст с помощью Claude. Использует модель по умолчанию из настроек.",
+          "pl": "Podsumowuje tekst za pomocą Claude. Używa domyślnego modelu z ustawień.",
+          "ko": "Claude를 사용하여 텍스트를 요약합니다. 설정의 기본 모델을 사용합니다.",
+          "ar": "يلخّص نصاً باستخدام Claude. يستخدم النموذج الافتراضي من الإعدادات."
         },
         "args": [
           {
@@ -689,11 +1833,33 @@
             "name": "text",
             "title": {
               "en": "Text to summarize",
-              "nl": "Tekst om samen te vatten"
+              "nl": "Tekst om samen te vatten",
+              "de": "Zusammenzufassender Text",
+              "fr": "Texte à résumer",
+              "it": "Testo da riassumere",
+              "sv": "Text att sammanfatta",
+              "no": "Tekst å oppsummere",
+              "es": "Texto a resumir",
+              "da": "Tekst at opsummere",
+              "ru": "Текст для резюмирования",
+              "pl": "Tekst do podsumowania",
+              "ko": "요약할 텍스트",
+              "ar": "النص المراد تلخيصه"
             },
             "placeholder": {
               "en": "Paste the text you want to summarize here.",
-              "nl": "Plak hier de tekst die je wilt samenvatten."
+              "nl": "Plak hier de tekst die je wilt samenvatten.",
+              "de": "Füge hier den Text ein, den du zusammenfassen möchtest.",
+              "fr": "Collez ici le texte que vous souhaitez résumer.",
+              "it": "Incolla qui il testo che vuoi riassumere.",
+              "sv": "Klistra in texten du vill sammanfatta här.",
+              "no": "Lim inn teksten du vil oppsummere her.",
+              "es": "Pega aquí el texto que quieres resumir.",
+              "da": "Indsæt her den tekst, du vil opsummere.",
+              "ru": "Вставьте здесь текст, который нужно резюмировать.",
+              "pl": "Wklej tutaj tekst, który chcesz podsumować.",
+              "ko": "요약하려는 텍스트를 여기에 붙여넣으세요.",
+              "ar": "الصق هنا النص الذي تريد تلخيصه."
             }
           },
           {
@@ -701,56 +1867,144 @@
             "name": "language",
             "title": {
               "en": "Summary language",
-              "nl": "Taal van de samenvatting"
+              "nl": "Taal van de samenvatting",
+              "de": "Sprache der Zusammenfassung",
+              "fr": "Langue du résumé",
+              "it": "Lingua del riassunto",
+              "sv": "Sammanfattningens språk",
+              "no": "Oppsummeringsspråk",
+              "es": "Idioma del resumen",
+              "da": "Resuméets sprog",
+              "ru": "Язык резюме",
+              "pl": "Język podsumowania",
+              "ko": "요약 언어",
+              "ar": "لغة الملخص"
             },
             "values": [
               {
                 "id": "same",
                 "label": {
                   "en": "Same as input",
-                  "nl": "Zelfde als invoer"
+                  "nl": "Zelfde als invoer",
+                  "de": "Wie Eingabe",
+                  "fr": "Comme l'entrée",
+                  "it": "Come l'input",
+                  "sv": "Samma som inmatning",
+                  "no": "Samme som inndata",
+                  "es": "Igual que la entrada",
+                  "da": "Samme som input",
+                  "ru": "Как входной",
+                  "pl": "Taki sam jak wejście",
+                  "ko": "입력과 동일",
+                  "ar": "نفس الإدخال"
                 }
               },
               {
                 "id": "English",
                 "label": {
                   "en": "English",
-                  "nl": "Engels"
+                  "nl": "Engels",
+                  "de": "Englisch",
+                  "fr": "Anglais",
+                  "it": "Inglese",
+                  "sv": "Engelska",
+                  "no": "Engelsk",
+                  "es": "Inglés",
+                  "da": "Engelsk",
+                  "ru": "Английский",
+                  "pl": "Angielski",
+                  "ko": "영어",
+                  "ar": "الإنجليزية"
                 }
               },
               {
                 "id": "Dutch",
                 "label": {
                   "en": "Dutch",
-                  "nl": "Nederlands"
+                  "nl": "Nederlands",
+                  "de": "Niederländisch",
+                  "fr": "Néerlandais",
+                  "it": "Olandese",
+                  "sv": "Nederländska",
+                  "no": "Nederlandsk",
+                  "es": "Neerlandés",
+                  "da": "Nederlandsk",
+                  "ru": "Нидерландский",
+                  "pl": "Niderlandzki",
+                  "ko": "네덜란드어",
+                  "ar": "الهولندية"
                 }
               },
               {
                 "id": "German",
                 "label": {
                   "en": "German",
-                  "nl": "Duits"
+                  "nl": "Duits",
+                  "de": "Deutsch",
+                  "fr": "Allemand",
+                  "it": "Tedesco",
+                  "sv": "Tyska",
+                  "no": "Tysk",
+                  "es": "Alemán",
+                  "da": "Tysk",
+                  "ru": "Немецкий",
+                  "pl": "Niemiecki",
+                  "ko": "독일어",
+                  "ar": "الألمانية"
                 }
               },
               {
                 "id": "French",
                 "label": {
                   "en": "French",
-                  "nl": "Frans"
+                  "nl": "Frans",
+                  "de": "Französisch",
+                  "fr": "Français",
+                  "it": "Francese",
+                  "sv": "Franska",
+                  "no": "Fransk",
+                  "es": "Francés",
+                  "da": "Fransk",
+                  "ru": "Французский",
+                  "pl": "Francuski",
+                  "ko": "프랑스어",
+                  "ar": "الفرنسية"
                 }
               },
               {
                 "id": "Spanish",
                 "label": {
                   "en": "Spanish",
-                  "nl": "Spaans"
+                  "nl": "Spaans",
+                  "de": "Spanisch",
+                  "fr": "Espagnol",
+                  "it": "Spagnolo",
+                  "sv": "Spanska",
+                  "no": "Spansk",
+                  "es": "Español",
+                  "da": "Spansk",
+                  "ru": "Испанский",
+                  "pl": "Hiszpański",
+                  "ko": "스페인어",
+                  "ar": "الإسبانية"
                 }
               },
               {
                 "id": "Italian",
                 "label": {
                   "en": "Italian",
-                  "nl": "Italiaans"
+                  "nl": "Italiaans",
+                  "de": "Italienisch",
+                  "fr": "Italien",
+                  "it": "Italiano",
+                  "sv": "Italienska",
+                  "no": "Italiensk",
+                  "es": "Italiano",
+                  "da": "Italiensk",
+                  "ru": "Итальянский",
+                  "pl": "Włoski",
+                  "ko": "이탈리아어",
+                  "ar": "الإيطالية"
                 }
               }
             ]
@@ -762,11 +2016,33 @@
             "type": "string",
             "title": {
               "en": "Summary",
-              "nl": "Samenvatting"
+              "nl": "Samenvatting",
+              "de": "Zusammenfassung",
+              "fr": "Résumé",
+              "it": "Riassunto",
+              "sv": "Sammanfattning",
+              "no": "Oppsummering",
+              "es": "Resumen",
+              "da": "Opsummering",
+              "ru": "Резюме",
+              "pl": "Podsumowanie",
+              "ko": "요약",
+              "ar": "ملخص"
             },
             "example": {
               "en": "The article discusses the impact of climate change.",
-              "nl": "Het artikel bespreekt de impact van klimaatverandering."
+              "nl": "Het artikel bespreekt de impact van klimaatverandering.",
+              "de": "Der Artikel behandelt die Auswirkungen des Klimawandels.",
+              "fr": "L'article traite de l'impact du changement climatique.",
+              "it": "L'articolo discute l'impatto del cambiamento climatico.",
+              "sv": "Artikeln diskuterar klimatförändringarnas påverkan.",
+              "no": "Artikkelen diskuterer konsekvensene av klimaendringer.",
+              "es": "El artículo analiza el impacto del cambio climático.",
+              "da": "Artiklen diskuterer klimaforandringernes indvirkning.",
+              "ru": "В статье обсуждается влияние изменения климата.",
+              "pl": "Artykuł omawia wpływ zmian klimatycznych.",
+              "ko": "기사에서는 기후 변화의 영향에 대해 논의합니다.",
+              "ar": "تناقش المقالة تأثير تغير المناخ."
             }
           },
           {
@@ -774,11 +2050,33 @@
             "type": "string",
             "title": {
               "en": "Model used",
-              "nl": "Gebruikte model"
+              "nl": "Gebruikte model",
+              "de": "Verwendetes Modell",
+              "fr": "Modèle utilisé",
+              "it": "Modello utilizzato",
+              "sv": "Använd modell",
+              "no": "Brukt modell",
+              "es": "Modelo utilizado",
+              "da": "Brugt model",
+              "ru": "Используемая модель",
+              "pl": "Użyty model",
+              "ko": "사용된 모델",
+              "ar": "النموذج المستخدم"
             },
             "example": {
               "en": "claude-haiku-4-5-20251001",
-              "nl": "claude-haiku-4-5-20251001"
+              "nl": "claude-haiku-4-5-20251001",
+              "de": "claude-haiku-4-5-20251001",
+              "fr": "claude-haiku-4-5-20251001",
+              "it": "claude-haiku-4-5-20251001",
+              "sv": "claude-haiku-4-5-20251001",
+              "no": "claude-haiku-4-5-20251001",
+              "es": "claude-haiku-4-5-20251001",
+              "da": "claude-haiku-4-5-20251001",
+              "ru": "claude-haiku-4-5-20251001",
+              "pl": "claude-haiku-4-5-20251001",
+              "ko": "claude-haiku-4-5-20251001",
+              "ar": "claude-haiku-4-5-20251001"
             }
           }
         ]
@@ -787,15 +2085,48 @@
         "id": "summarize_with_model",
         "title": {
           "en": "Summarize text (choose model)",
-          "nl": "Vat tekst samen (kies model)"
+          "nl": "Vat tekst samen (kies model)",
+          "de": "Text zusammenfassen (Modell wählen)",
+          "fr": "Résumer du texte (choisir le modèle)",
+          "it": "Riassumi testo (scegli il modello)",
+          "sv": "Sammanfatta text (välj modell)",
+          "no": "Oppsummer tekst (velg modell)",
+          "es": "Resumir texto (elegir modelo)",
+          "da": "Opsummer tekst (vælg model)",
+          "ru": "Резюмировать текст (выбрать модель)",
+          "pl": "Podsumuj tekst (wybierz model)",
+          "ko": "텍스트 요약 (모델 선택)",
+          "ar": "تلخيص النص (اختر النموذج)"
         },
         "titleFormatted": {
           "en": "Summarize [[text]] in [[language]] ([[model]])",
-          "nl": "Vat [[text]] samen in [[language]] ([[model]])"
+          "nl": "Vat [[text]] samen in [[language]] ([[model]])",
+          "de": "Fasse [[text]] in [[language]] zusammen ([[model]])",
+          "fr": "Résumer [[text]] en [[language]] ([[model]])",
+          "it": "Riassumi [[text]] in [[language]] ([[model]])",
+          "sv": "Sammanfatta [[text]] på [[language]] ([[model]])",
+          "no": "Oppsummer [[text]] på [[language]] ([[model]])",
+          "es": "Resumir [[text]] en [[language]] ([[model]])",
+          "da": "Opsummer [[text]] på [[language]] ([[model]])",
+          "ru": "Резюмировать [[text]] на [[language]] ([[model]])",
+          "pl": "Podsumuj [[text]] w [[language]] ([[model]])",
+          "ko": "[[text]]을 [[language]]로 요약 ([[model]])",
+          "ar": "لخّص [[text]] بـ [[language]] ([[model]])"
         },
         "hint": {
           "en": "Summarizes a text using Claude. Lets you choose the model per flow card.",
-          "nl": "Vat een tekst samen met Claude. Laat je het model per flow kaart kiezen."
+          "nl": "Vat een tekst samen met Claude. Laat je het model per flow kaart kiezen.",
+          "de": "Fasst einen Text mit Claude zusammen. Ermöglicht die Auswahl des Modells pro Flow-Karte.",
+          "fr": "Résume un texte avec Claude. Vous permet de choisir le modèle par carte de flux.",
+          "it": "Riassume un testo con Claude. Consente di scegliere il modello per ogni scheda flusso.",
+          "sv": "Sammanfattar en text med Claude. Låter dig välja modell per flödeskort.",
+          "no": "Oppsummerer en tekst med Claude. Lar deg velge modell per flydkort.",
+          "es": "Resume un texto con Claude. Te permite elegir el modelo por tarjeta de flujo.",
+          "da": "Opsummerer en tekst med Claude. Giver dig mulighed for at vælge model pr. flowkort.",
+          "ru": "Резюмирует текст с помощью Claude. Позволяет выбрать модель для каждой карточки потока.",
+          "pl": "Podsumowuje tekst za pomocą Claude. Pozwala wybrać model dla każdej karty przepływu.",
+          "ko": "Claude를 사용하여 텍스트를 요약합니다. 플로우 카드별로 모델을 선택할 수 있습니다.",
+          "ar": "يلخّص نصاً باستخدام Claude. يتيح لك اختيار النموذج لكل بطاقة تدفق."
         },
         "args": [
           {
@@ -803,11 +2134,33 @@
             "name": "text",
             "title": {
               "en": "Text to summarize",
-              "nl": "Tekst om samen te vatten"
+              "nl": "Tekst om samen te vatten",
+              "de": "Zusammenzufassender Text",
+              "fr": "Texte à résumer",
+              "it": "Testo da riassumere",
+              "sv": "Text att sammanfatta",
+              "no": "Tekst å oppsummere",
+              "es": "Texto a resumir",
+              "da": "Tekst at opsummere",
+              "ru": "Текст для резюмирования",
+              "pl": "Tekst do podsumowania",
+              "ko": "요약할 텍스트",
+              "ar": "النص المراد تلخيصه"
             },
             "placeholder": {
               "en": "Paste the text you want to summarize here.",
-              "nl": "Plak hier de tekst die je wilt samenvatten."
+              "nl": "Plak hier de tekst die je wilt samenvatten.",
+              "de": "Füge hier den Text ein, den du zusammenfassen möchtest.",
+              "fr": "Collez ici le texte que vous souhaitez résumer.",
+              "it": "Incolla qui il testo che vuoi riassumere.",
+              "sv": "Klistra in texten du vill sammanfatta här.",
+              "no": "Lim inn teksten du vil oppsummere her.",
+              "es": "Pega aquí el texto que quieres resumir.",
+              "da": "Indsæt her den tekst, du vil opsummere.",
+              "ru": "Вставьте здесь текст, который нужно резюмировать.",
+              "pl": "Wklej tutaj tekst, który chcesz podsumować.",
+              "ko": "요약하려는 텍스트를 여기에 붙여넣으세요.",
+              "ar": "الصق هنا النص الذي تريد تلخيصه."
             }
           },
           {
@@ -815,56 +2168,144 @@
             "name": "language",
             "title": {
               "en": "Summary language",
-              "nl": "Taal van de samenvatting"
+              "nl": "Taal van de samenvatting",
+              "de": "Sprache der Zusammenfassung",
+              "fr": "Langue du résumé",
+              "it": "Lingua del riassunto",
+              "sv": "Sammanfattningens språk",
+              "no": "Oppsummeringsspråk",
+              "es": "Idioma del resumen",
+              "da": "Resuméets sprog",
+              "ru": "Язык резюме",
+              "pl": "Język podsumowania",
+              "ko": "요약 언어",
+              "ar": "لغة الملخص"
             },
             "values": [
               {
                 "id": "same",
                 "label": {
                   "en": "Same as input",
-                  "nl": "Zelfde als invoer"
+                  "nl": "Zelfde als invoer",
+                  "de": "Wie Eingabe",
+                  "fr": "Comme l'entrée",
+                  "it": "Come l'input",
+                  "sv": "Samma som inmatning",
+                  "no": "Samme som inndata",
+                  "es": "Igual que la entrada",
+                  "da": "Samme som input",
+                  "ru": "Как входной",
+                  "pl": "Taki sam jak wejście",
+                  "ko": "입력과 동일",
+                  "ar": "نفس الإدخال"
                 }
               },
               {
                 "id": "English",
                 "label": {
                   "en": "English",
-                  "nl": "Engels"
+                  "nl": "Engels",
+                  "de": "Englisch",
+                  "fr": "Anglais",
+                  "it": "Inglese",
+                  "sv": "Engelska",
+                  "no": "Engelsk",
+                  "es": "Inglés",
+                  "da": "Engelsk",
+                  "ru": "Английский",
+                  "pl": "Angielski",
+                  "ko": "영어",
+                  "ar": "الإنجليزية"
                 }
               },
               {
                 "id": "Dutch",
                 "label": {
                   "en": "Dutch",
-                  "nl": "Nederlands"
+                  "nl": "Nederlands",
+                  "de": "Niederländisch",
+                  "fr": "Néerlandais",
+                  "it": "Olandese",
+                  "sv": "Nederländska",
+                  "no": "Nederlandsk",
+                  "es": "Neerlandés",
+                  "da": "Nederlandsk",
+                  "ru": "Нидерландский",
+                  "pl": "Niderlandzki",
+                  "ko": "네덜란드어",
+                  "ar": "الهولندية"
                 }
               },
               {
                 "id": "German",
                 "label": {
                   "en": "German",
-                  "nl": "Duits"
+                  "nl": "Duits",
+                  "de": "Deutsch",
+                  "fr": "Allemand",
+                  "it": "Tedesco",
+                  "sv": "Tyska",
+                  "no": "Tysk",
+                  "es": "Alemán",
+                  "da": "Tysk",
+                  "ru": "Немецкий",
+                  "pl": "Niemiecki",
+                  "ko": "독일어",
+                  "ar": "الألمانية"
                 }
               },
               {
                 "id": "French",
                 "label": {
                   "en": "French",
-                  "nl": "Frans"
+                  "nl": "Frans",
+                  "de": "Französisch",
+                  "fr": "Français",
+                  "it": "Francese",
+                  "sv": "Franska",
+                  "no": "Fransk",
+                  "es": "Francés",
+                  "da": "Fransk",
+                  "ru": "Французский",
+                  "pl": "Francuski",
+                  "ko": "프랑스어",
+                  "ar": "الفرنسية"
                 }
               },
               {
                 "id": "Spanish",
                 "label": {
                   "en": "Spanish",
-                  "nl": "Spaans"
+                  "nl": "Spaans",
+                  "de": "Spanisch",
+                  "fr": "Espagnol",
+                  "it": "Spagnolo",
+                  "sv": "Spanska",
+                  "no": "Spansk",
+                  "es": "Español",
+                  "da": "Spansk",
+                  "ru": "Испанский",
+                  "pl": "Hiszpański",
+                  "ko": "스페인어",
+                  "ar": "الإسبانية"
                 }
               },
               {
                 "id": "Italian",
                 "label": {
                   "en": "Italian",
-                  "nl": "Italiaans"
+                  "nl": "Italiaans",
+                  "de": "Italienisch",
+                  "fr": "Italien",
+                  "it": "Italiano",
+                  "sv": "Italienska",
+                  "no": "Italiensk",
+                  "es": "Italiano",
+                  "da": "Italiensk",
+                  "ru": "Итальянский",
+                  "pl": "Włoski",
+                  "ko": "이탈리아어",
+                  "ar": "الإيطالية"
                 }
               }
             ]
@@ -874,28 +2315,72 @@
             "name": "model",
             "title": {
               "en": "Model",
-              "nl": "Model"
+              "nl": "Model",
+              "de": "Modell",
+              "fr": "Modèle",
+              "it": "Modello",
+              "sv": "Modell",
+              "no": "Modell",
+              "es": "Modelo",
+              "da": "Model",
+              "ru": "Модель",
+              "pl": "Model",
+              "ko": "모델",
+              "ar": "النموذج"
             },
             "values": [
               {
                 "id": "claude-haiku-4-5-20251001",
                 "label": {
                   "en": "Claude Haiku 4.5",
-                  "nl": "Claude Haiku 4.5"
+                  "nl": "Claude Haiku 4.5",
+                  "de": "Claude Haiku 4.5",
+                  "fr": "Claude Haiku 4.5",
+                  "it": "Claude Haiku 4.5",
+                  "sv": "Claude Haiku 4.5",
+                  "no": "Claude Haiku 4.5",
+                  "es": "Claude Haiku 4.5",
+                  "da": "Claude Haiku 4.5",
+                  "ru": "Claude Haiku 4.5",
+                  "pl": "Claude Haiku 4.5",
+                  "ko": "Claude Haiku 4.5",
+                  "ar": "Claude Haiku 4.5"
                 }
               },
               {
                 "id": "claude-sonnet-4-6",
                 "label": {
                   "en": "Claude Sonnet 4.6",
-                  "nl": "Claude Sonnet 4.6"
+                  "nl": "Claude Sonnet 4.6",
+                  "de": "Claude Sonnet 4.6",
+                  "fr": "Claude Sonnet 4.6",
+                  "it": "Claude Sonnet 4.6",
+                  "sv": "Claude Sonnet 4.6",
+                  "no": "Claude Sonnet 4.6",
+                  "es": "Claude Sonnet 4.6",
+                  "da": "Claude Sonnet 4.6",
+                  "ru": "Claude Sonnet 4.6",
+                  "pl": "Claude Sonnet 4.6",
+                  "ko": "Claude Sonnet 4.6",
+                  "ar": "Claude Sonnet 4.6"
                 }
               },
               {
                 "id": "claude-opus-4-6",
                 "label": {
                   "en": "Claude Opus 4.6",
-                  "nl": "Claude Opus 4.6"
+                  "nl": "Claude Opus 4.6",
+                  "de": "Claude Opus 4.6",
+                  "fr": "Claude Opus 4.6",
+                  "it": "Claude Opus 4.6",
+                  "sv": "Claude Opus 4.6",
+                  "no": "Claude Opus 4.6",
+                  "es": "Claude Opus 4.6",
+                  "da": "Claude Opus 4.6",
+                  "ru": "Claude Opus 4.6",
+                  "pl": "Claude Opus 4.6",
+                  "ko": "Claude Opus 4.6",
+                  "ar": "Claude Opus 4.6"
                 }
               }
             ]
@@ -907,11 +2392,33 @@
             "type": "string",
             "title": {
               "en": "Summary",
-              "nl": "Samenvatting"
+              "nl": "Samenvatting",
+              "de": "Zusammenfassung",
+              "fr": "Résumé",
+              "it": "Riassunto",
+              "sv": "Sammanfattning",
+              "no": "Oppsummering",
+              "es": "Resumen",
+              "da": "Opsummering",
+              "ru": "Резюме",
+              "pl": "Podsumowanie",
+              "ko": "요약",
+              "ar": "ملخص"
             },
             "example": {
               "en": "The article discusses the impact of climate change.",
-              "nl": "Het artikel bespreekt de impact van klimaatverandering."
+              "nl": "Het artikel bespreekt de impact van klimaatverandering.",
+              "de": "Der Artikel behandelt die Auswirkungen des Klimawandels.",
+              "fr": "L'article traite de l'impact du changement climatique.",
+              "it": "L'articolo discute l'impatto del cambiamento climatico.",
+              "sv": "Artikeln diskuterar klimatförändringarnas påverkan.",
+              "no": "Artikkelen diskuterer konsekvensene av klimaendringer.",
+              "es": "El artículo analiza el impacto del cambio climático.",
+              "da": "Artiklen diskuterer klimaforandringernes indvirkning.",
+              "ru": "В статье обсуждается влияние изменения климата.",
+              "pl": "Artykuł omawia wpływ zmian klimatycznych.",
+              "ko": "기사에서는 기후 변화의 영향에 대해 논의합니다.",
+              "ar": "تناقش المقالة تأثير تغير المناخ."
             }
           },
           {
@@ -919,11 +2426,33 @@
             "type": "string",
             "title": {
               "en": "Model used",
-              "nl": "Gebruikte model"
+              "nl": "Gebruikte model",
+              "de": "Verwendetes Modell",
+              "fr": "Modèle utilisé",
+              "it": "Modello utilizzato",
+              "sv": "Använd modell",
+              "no": "Brukt modell",
+              "es": "Modelo utilizado",
+              "da": "Brugt model",
+              "ru": "Используемая модель",
+              "pl": "Użyty model",
+              "ko": "사용된 모델",
+              "ar": "النموذج المستخدم"
             },
             "example": {
               "en": "claude-haiku-4-5-20251001",
-              "nl": "claude-haiku-4-5-20251001"
+              "nl": "claude-haiku-4-5-20251001",
+              "de": "claude-haiku-4-5-20251001",
+              "fr": "claude-haiku-4-5-20251001",
+              "it": "claude-haiku-4-5-20251001",
+              "sv": "claude-haiku-4-5-20251001",
+              "no": "claude-haiku-4-5-20251001",
+              "es": "claude-haiku-4-5-20251001",
+              "da": "claude-haiku-4-5-20251001",
+              "ru": "claude-haiku-4-5-20251001",
+              "pl": "claude-haiku-4-5-20251001",
+              "ko": "claude-haiku-4-5-20251001",
+              "ar": "claude-haiku-4-5-20251001"
             }
           }
         ]
@@ -932,15 +2461,48 @@
         "id": "translate",
         "title": {
           "en": "Translate text",
-          "nl": "Vertaal tekst"
+          "nl": "Vertaal tekst",
+          "de": "Text übersetzen",
+          "fr": "Traduire du texte",
+          "it": "Traduci testo",
+          "sv": "Översätt text",
+          "no": "Oversett tekst",
+          "es": "Traducir texto",
+          "da": "Oversæt tekst",
+          "ru": "Перевести текст",
+          "pl": "Przetłumacz tekst",
+          "ko": "텍스트 번역",
+          "ar": "ترجمة النص"
         },
         "titleFormatted": {
           "en": "Translate [[text]] to [[target_language]]",
-          "nl": "Vertaal [[text]] naar [[target_language]]"
+          "nl": "Vertaal [[text]] naar [[target_language]]",
+          "de": "Übersetze [[text]] nach [[target_language]]",
+          "fr": "Traduire [[text]] en [[target_language]]",
+          "it": "Traduci [[text]] in [[target_language]]",
+          "sv": "Översätt [[text]] till [[target_language]]",
+          "no": "Oversett [[text]] til [[target_language]]",
+          "es": "Traducir [[text]] a [[target_language]]",
+          "da": "Oversæt [[text]] til [[target_language]]",
+          "ru": "Перевести [[text]] на [[target_language]]",
+          "pl": "Przetłumacz [[text]] na [[target_language]]",
+          "ko": "[[text]]을 [[target_language]]로 번역",
+          "ar": "ترجم [[text]] إلى [[target_language]]"
         },
         "hint": {
           "en": "Translates text to the specified language using Claude. Uses the default model from settings.",
-          "nl": "Vertaalt tekst naar de opgegeven taal met Claude. Gebruikt het standaard model uit de instellingen."
+          "nl": "Vertaalt tekst naar de opgegeven taal met Claude. Gebruikt het standaard model uit de instellingen.",
+          "de": "Übersetzt Text in die angegebene Sprache mit Claude. Verwendet das Standardmodell aus den Einstellungen.",
+          "fr": "Traduit du texte dans la langue spécifiée avec Claude. Utilise le modèle par défaut des paramètres.",
+          "it": "Traduce testo nella lingua specificata con Claude. Usa il modello predefinito dalle impostazioni.",
+          "sv": "Översätter text till det angivna språket med Claude. Använder standardmodellen från inställningarna.",
+          "no": "Oversetter tekst til det angitte språket med Claude. Bruker standardmodellen fra innstillingene.",
+          "es": "Traduce texto al idioma especificado con Claude. Usa el modelo predeterminado de la configuración.",
+          "da": "Oversætter tekst til det angivne sprog med Claude. Bruger standardmodellen fra indstillingerne.",
+          "ru": "Переводит текст на указанный язык с помощью Claude. Использует модель по умолчанию из настроек.",
+          "pl": "Tłumaczy tekst na podany język za pomocą Claude. Używa domyślnego modelu z ustawień.",
+          "ko": "Claude를 사용하여 텍스트를 지정된 언어로 번역합니다. 설정의 기본 모델을 사용합니다.",
+          "ar": "يترجم النص إلى اللغة المحددة باستخدام Claude. يستخدم النموذج الافتراضي من الإعدادات."
         },
         "args": [
           {
@@ -948,11 +2510,33 @@
             "name": "text",
             "title": {
               "en": "Text to translate",
-              "nl": "Te vertalen tekst"
+              "nl": "Te vertalen tekst",
+              "de": "Zu übersetzender Text",
+              "fr": "Texte à traduire",
+              "it": "Testo da tradurre",
+              "sv": "Text att översätta",
+              "no": "Tekst å oversette",
+              "es": "Texto a traducir",
+              "da": "Tekst at oversætte",
+              "ru": "Текст для перевода",
+              "pl": "Tekst do przetłumaczenia",
+              "ko": "번역할 텍스트",
+              "ar": "النص المراد ترجمته"
             },
             "placeholder": {
               "en": "Hello, how are you?",
-              "nl": "Hallo, hoe gaat het?"
+              "nl": "Hallo, hoe gaat het?",
+              "de": "Hallo, wie geht es dir?",
+              "fr": "Bonjour, comment allez-vous ?",
+              "it": "Ciao, come stai?",
+              "sv": "Hej, hur mår du?",
+              "no": "Hei, hvordan har du det?",
+              "es": "Hola, ¿cómo estás?",
+              "da": "Hej, hvordan har du det?",
+              "ru": "Привет, как дела?",
+              "pl": "Cześć, jak się masz?",
+              "ko": "안녕하세요, 어떻게 지내세요?",
+              "ar": "مرحباً، كيف حالك؟"
             }
           },
           {
@@ -960,11 +2544,33 @@
             "name": "target_language",
             "title": {
               "en": "Target language",
-              "nl": "Doeltaal"
+              "nl": "Doeltaal",
+              "de": "Zielsprache",
+              "fr": "Langue cible",
+              "it": "Lingua di destinazione",
+              "sv": "Målspråk",
+              "no": "Målspråk",
+              "es": "Idioma de destino",
+              "da": "Målsprog",
+              "ru": "Целевой язык",
+              "pl": "Język docelowy",
+              "ko": "대상 언어",
+              "ar": "اللغة المستهدفة"
             },
             "placeholder": {
               "en": "Dutch",
-              "nl": "Engels"
+              "nl": "Engels",
+              "de": "Englisch",
+              "fr": "Anglais",
+              "it": "Inglese",
+              "sv": "Engelska",
+              "no": "Engelsk",
+              "es": "Inglés",
+              "da": "Engelsk",
+              "ru": "Английский",
+              "pl": "Angielski",
+              "ko": "영어",
+              "ar": "الإنجليزية"
             }
           }
         ],
@@ -974,11 +2580,33 @@
             "type": "string",
             "title": {
               "en": "Translation",
-              "nl": "Vertaling"
+              "nl": "Vertaling",
+              "de": "Übersetzung",
+              "fr": "Traduction",
+              "it": "Traduzione",
+              "sv": "Översättning",
+              "no": "Oversettelse",
+              "es": "Traducción",
+              "da": "Oversættelse",
+              "ru": "Перевод",
+              "pl": "Tłumaczenie",
+              "ko": "번역",
+              "ar": "ترجمة"
             },
             "example": {
               "en": "Hallo, hoe gaat het?",
-              "nl": "Hello, how are you?"
+              "nl": "Hello, how are you?",
+              "de": "Hallo, wie geht es dir?",
+              "fr": "Bonjour, comment allez-vous ?",
+              "it": "Ciao, come stai?",
+              "sv": "Hej, hur mår du?",
+              "no": "Hei, hvordan har du det?",
+              "es": "Hola, ¿cómo estás?",
+              "da": "Hej, hvordan har du det?",
+              "ru": "Привет, как дела?",
+              "pl": "Cześć, jak się masz?",
+              "ko": "안녕하세요, 어떻게 지내세요?",
+              "ar": "مرحباً، كيف حالك؟"
             }
           },
           {
@@ -986,11 +2614,33 @@
             "type": "string",
             "title": {
               "en": "Model used",
-              "nl": "Gebruikte model"
+              "nl": "Gebruikte model",
+              "de": "Verwendetes Modell",
+              "fr": "Modèle utilisé",
+              "it": "Modello utilizzato",
+              "sv": "Använd modell",
+              "no": "Brukt modell",
+              "es": "Modelo utilizado",
+              "da": "Brugt model",
+              "ru": "Используемая модель",
+              "pl": "Użyty model",
+              "ko": "사용된 모델",
+              "ar": "النموذج المستخدم"
             },
             "example": {
               "en": "claude-haiku-4-5-20251001",
-              "nl": "claude-haiku-4-5-20251001"
+              "nl": "claude-haiku-4-5-20251001",
+              "de": "claude-haiku-4-5-20251001",
+              "fr": "claude-haiku-4-5-20251001",
+              "it": "claude-haiku-4-5-20251001",
+              "sv": "claude-haiku-4-5-20251001",
+              "no": "claude-haiku-4-5-20251001",
+              "es": "claude-haiku-4-5-20251001",
+              "da": "claude-haiku-4-5-20251001",
+              "ru": "claude-haiku-4-5-20251001",
+              "pl": "claude-haiku-4-5-20251001",
+              "ko": "claude-haiku-4-5-20251001",
+              "ar": "claude-haiku-4-5-20251001"
             }
           }
         ]
@@ -999,15 +2649,48 @@
         "id": "translate_with_model",
         "title": {
           "en": "Translate text (choose model)",
-          "nl": "Vertaal tekst (kies model)"
+          "nl": "Vertaal tekst (kies model)",
+          "de": "Text übersetzen (Modell wählen)",
+          "fr": "Traduire du texte (choisir le modèle)",
+          "it": "Traduci testo (scegli il modello)",
+          "sv": "Översätt text (välj modell)",
+          "no": "Oversett tekst (velg modell)",
+          "es": "Traducir texto (elegir modelo)",
+          "da": "Oversæt tekst (vælg model)",
+          "ru": "Перевести текст (выбрать модель)",
+          "pl": "Przetłumacz tekst (wybierz model)",
+          "ko": "텍스트 번역 (모델 선택)",
+          "ar": "ترجمة النص (اختر النموذج)"
         },
         "titleFormatted": {
           "en": "Translate [[text]] to [[target_language]] ([[model]])",
-          "nl": "Vertaal [[text]] naar [[target_language]] ([[model]])"
+          "nl": "Vertaal [[text]] naar [[target_language]] ([[model]])",
+          "de": "Übersetze [[text]] nach [[target_language]] ([[model]])",
+          "fr": "Traduire [[text]] en [[target_language]] ([[model]])",
+          "it": "Traduci [[text]] in [[target_language]] ([[model]])",
+          "sv": "Översätt [[text]] till [[target_language]] ([[model]])",
+          "no": "Oversett [[text]] til [[target_language]] ([[model]])",
+          "es": "Traducir [[text]] a [[target_language]] ([[model]])",
+          "da": "Oversæt [[text]] til [[target_language]] ([[model]])",
+          "ru": "Перевести [[text]] на [[target_language]] ([[model]])",
+          "pl": "Przetłumacz [[text]] na [[target_language]] ([[model]])",
+          "ko": "[[text]]을 [[target_language]]로 번역 ([[model]])",
+          "ar": "ترجم [[text]] إلى [[target_language]] ([[model]])"
         },
         "hint": {
           "en": "Translates text to the specified language using Claude. Lets you choose the model per flow card.",
-          "nl": "Vertaalt tekst naar de opgegeven taal met Claude. Laat je het model per flow kaart kiezen."
+          "nl": "Vertaalt tekst naar de opgegeven taal met Claude. Laat je het model per flow kaart kiezen.",
+          "de": "Übersetzt Text in die angegebene Sprache mit Claude. Ermöglicht die Auswahl des Modells pro Flow-Karte.",
+          "fr": "Traduit du texte dans la langue spécifiée avec Claude. Vous permet de choisir le modèle par carte de flux.",
+          "it": "Traduce testo nella lingua specificata con Claude. Consente di scegliere il modello per ogni scheda flusso.",
+          "sv": "Översätter text till det angivna språket med Claude. Låter dig välja modell per flödeskort.",
+          "no": "Oversetter tekst til det angitte språket med Claude. Lar deg velge modell per flydkort.",
+          "es": "Traduce texto al idioma especificado con Claude. Te permite elegir el modelo por tarjeta de flujo.",
+          "da": "Oversætter tekst til det angivne sprog med Claude. Giver dig mulighed for at vælge model pr. flowkort.",
+          "ru": "Переводит текст на указанный язык с помощью Claude. Позволяет выбрать модель для каждой карточки потока.",
+          "pl": "Tłumaczy tekst na podany język za pomocą Claude. Pozwala wybrać model dla każdej karty przepływu.",
+          "ko": "Claude를 사용하여 텍스트를 지정된 언어로 번역합니다. 플로우 카드별로 모델을 선택할 수 있습니다.",
+          "ar": "يترجم النص إلى اللغة المحددة باستخدام Claude. يتيح لك اختيار النموذج لكل بطاقة تدفق."
         },
         "args": [
           {
@@ -1015,11 +2698,33 @@
             "name": "text",
             "title": {
               "en": "Text to translate",
-              "nl": "Te vertalen tekst"
+              "nl": "Te vertalen tekst",
+              "de": "Zu übersetzender Text",
+              "fr": "Texte à traduire",
+              "it": "Testo da tradurre",
+              "sv": "Text att översätta",
+              "no": "Tekst å oversette",
+              "es": "Texto a traducir",
+              "da": "Tekst at oversætte",
+              "ru": "Текст для перевода",
+              "pl": "Tekst do przetłumaczenia",
+              "ko": "번역할 텍스트",
+              "ar": "النص المراد ترجمته"
             },
             "placeholder": {
               "en": "Hello, how are you?",
-              "nl": "Hallo, hoe gaat het?"
+              "nl": "Hallo, hoe gaat het?",
+              "de": "Hallo, wie geht es dir?",
+              "fr": "Bonjour, comment allez-vous ?",
+              "it": "Ciao, come stai?",
+              "sv": "Hej, hur mår du?",
+              "no": "Hei, hvordan har du det?",
+              "es": "Hola, ¿cómo estás?",
+              "da": "Hej, hvordan har du det?",
+              "ru": "Привет, как дела?",
+              "pl": "Cześć, jak się masz?",
+              "ko": "안녕하세요, 어떻게 지내세요?",
+              "ar": "مرحباً، كيف حالك؟"
             }
           },
           {
@@ -1027,11 +2732,33 @@
             "name": "target_language",
             "title": {
               "en": "Target language",
-              "nl": "Doeltaal"
+              "nl": "Doeltaal",
+              "de": "Zielsprache",
+              "fr": "Langue cible",
+              "it": "Lingua di destinazione",
+              "sv": "Målspråk",
+              "no": "Målspråk",
+              "es": "Idioma de destino",
+              "da": "Målsprog",
+              "ru": "Целевой язык",
+              "pl": "Język docelowy",
+              "ko": "대상 언어",
+              "ar": "اللغة المستهدفة"
             },
             "placeholder": {
               "en": "Dutch",
-              "nl": "Engels"
+              "nl": "Engels",
+              "de": "Englisch",
+              "fr": "Anglais",
+              "it": "Inglese",
+              "sv": "Engelska",
+              "no": "Engelsk",
+              "es": "Inglés",
+              "da": "Engelsk",
+              "ru": "Английский",
+              "pl": "Angielski",
+              "ko": "영어",
+              "ar": "الإنجليزية"
             }
           },
           {
@@ -1039,28 +2766,72 @@
             "name": "model",
             "title": {
               "en": "Model",
-              "nl": "Model"
+              "nl": "Model",
+              "de": "Modell",
+              "fr": "Modèle",
+              "it": "Modello",
+              "sv": "Modell",
+              "no": "Modell",
+              "es": "Modelo",
+              "da": "Model",
+              "ru": "Модель",
+              "pl": "Model",
+              "ko": "모델",
+              "ar": "النموذج"
             },
             "values": [
               {
                 "id": "claude-haiku-4-5-20251001",
                 "label": {
                   "en": "Claude Haiku 4.5",
-                  "nl": "Claude Haiku 4.5"
+                  "nl": "Claude Haiku 4.5",
+                  "de": "Claude Haiku 4.5",
+                  "fr": "Claude Haiku 4.5",
+                  "it": "Claude Haiku 4.5",
+                  "sv": "Claude Haiku 4.5",
+                  "no": "Claude Haiku 4.5",
+                  "es": "Claude Haiku 4.5",
+                  "da": "Claude Haiku 4.5",
+                  "ru": "Claude Haiku 4.5",
+                  "pl": "Claude Haiku 4.5",
+                  "ko": "Claude Haiku 4.5",
+                  "ar": "Claude Haiku 4.5"
                 }
               },
               {
                 "id": "claude-sonnet-4-6",
                 "label": {
                   "en": "Claude Sonnet 4.6",
-                  "nl": "Claude Sonnet 4.6"
+                  "nl": "Claude Sonnet 4.6",
+                  "de": "Claude Sonnet 4.6",
+                  "fr": "Claude Sonnet 4.6",
+                  "it": "Claude Sonnet 4.6",
+                  "sv": "Claude Sonnet 4.6",
+                  "no": "Claude Sonnet 4.6",
+                  "es": "Claude Sonnet 4.6",
+                  "da": "Claude Sonnet 4.6",
+                  "ru": "Claude Sonnet 4.6",
+                  "pl": "Claude Sonnet 4.6",
+                  "ko": "Claude Sonnet 4.6",
+                  "ar": "Claude Sonnet 4.6"
                 }
               },
               {
                 "id": "claude-opus-4-6",
                 "label": {
                   "en": "Claude Opus 4.6",
-                  "nl": "Claude Opus 4.6"
+                  "nl": "Claude Opus 4.6",
+                  "de": "Claude Opus 4.6",
+                  "fr": "Claude Opus 4.6",
+                  "it": "Claude Opus 4.6",
+                  "sv": "Claude Opus 4.6",
+                  "no": "Claude Opus 4.6",
+                  "es": "Claude Opus 4.6",
+                  "da": "Claude Opus 4.6",
+                  "ru": "Claude Opus 4.6",
+                  "pl": "Claude Opus 4.6",
+                  "ko": "Claude Opus 4.6",
+                  "ar": "Claude Opus 4.6"
                 }
               }
             ]
@@ -1072,11 +2843,33 @@
             "type": "string",
             "title": {
               "en": "Translation",
-              "nl": "Vertaling"
+              "nl": "Vertaling",
+              "de": "Übersetzung",
+              "fr": "Traduction",
+              "it": "Traduzione",
+              "sv": "Översättning",
+              "no": "Oversettelse",
+              "es": "Traducción",
+              "da": "Oversættelse",
+              "ru": "Перевод",
+              "pl": "Tłumaczenie",
+              "ko": "번역",
+              "ar": "ترجمة"
             },
             "example": {
               "en": "Hallo, hoe gaat het?",
-              "nl": "Hello, how are you?"
+              "nl": "Hello, how are you?",
+              "de": "Hallo, wie geht es dir?",
+              "fr": "Bonjour, comment allez-vous ?",
+              "it": "Ciao, come stai?",
+              "sv": "Hej, hur mår du?",
+              "no": "Hei, hvordan har du det?",
+              "es": "Hola, ¿cómo estás?",
+              "da": "Hej, hvordan har du det?",
+              "ru": "Привет, как дела?",
+              "pl": "Cześć, jak się masz?",
+              "ko": "안녕하세요, 어떻게 지내세요?",
+              "ar": "مرحباً، كيف حالك؟"
             }
           },
           {
@@ -1084,11 +2877,33 @@
             "type": "string",
             "title": {
               "en": "Model used",
-              "nl": "Gebruikte model"
+              "nl": "Gebruikte model",
+              "de": "Verwendetes Modell",
+              "fr": "Modèle utilisé",
+              "it": "Modello utilizzato",
+              "sv": "Använd modell",
+              "no": "Brukt modell",
+              "es": "Modelo utilizado",
+              "da": "Brugt model",
+              "ru": "Используемая модель",
+              "pl": "Użyty model",
+              "ko": "사용된 모델",
+              "ar": "النموذج المستخدم"
             },
             "example": {
               "en": "claude-haiku-4-5-20251001",
-              "nl": "claude-haiku-4-5-20251001"
+              "nl": "claude-haiku-4-5-20251001",
+              "de": "claude-haiku-4-5-20251001",
+              "fr": "claude-haiku-4-5-20251001",
+              "it": "claude-haiku-4-5-20251001",
+              "sv": "claude-haiku-4-5-20251001",
+              "no": "claude-haiku-4-5-20251001",
+              "es": "claude-haiku-4-5-20251001",
+              "da": "claude-haiku-4-5-20251001",
+              "ru": "claude-haiku-4-5-20251001",
+              "pl": "claude-haiku-4-5-20251001",
+              "ko": "claude-haiku-4-5-20251001",
+              "ar": "claude-haiku-4-5-20251001"
             }
           }
         ]

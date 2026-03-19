@@ -1,0 +1,47 @@
+{
+  "notification": {
+    "welcome": "¡Bienvenido a **Claude**! Ve a la configuración de la app para configurar tu clave API de Anthropic."
+  },
+  "settings": {
+    "title": "Claude",
+    "subtitle": "Configura tu integración de Claude AI",
+    "api_key": {
+      "title": "Clave API",
+      "description": "Tu clave API de Anthropic. Puedes encontrar o crear una en platform.claude.com.",
+      "placeholder": "sk-ant-..."
+    },
+    "model": {
+      "title": "Modelo predeterminado",
+      "description": "El modelo Claude que se usará de forma predeterminada. Las tarjetas de flujo individuales pueden anularlo."
+    },
+    "system_prompt": {
+      "title": "Prompt de sistema predeterminado",
+      "description": "Un prompt de sistema opcional que se envía con cada solicitud. Úsalo para dar a Claude una personalidad o establecer pautas de comportamiento. Déjalo vacío para no usar ningún prompt de sistema.",
+      "placeholder": "Eres un asistente del hogar útil..."
+    },
+    "max_tokens": {
+      "title": "Tokens máximos",
+      "description": "Número máximo de tokens en la respuesta de Claude. Los valores más altos permiten respuestas más largas."
+    },
+    "save": {
+      "button": "Guardar configuración",
+      "success": "¡Configuración guardada!",
+      "error": "Error al guardar: {{error}}"
+    },
+    "test": {
+      "button": "Probar conexión",
+      "success": "¡Conexión exitosa!",
+      "error": "Error de conexión: {{error}}"
+    },
+    "homey_mcp": {
+      "title": "Homey MCP",
+      "description": "Conéctate a tu Homey a través de MCP para dar a Claude acceso a tus dispositivos y flujos. Luego usa la tarjeta de flujo \"Pregunta a Claude con contexto de Homey\".",
+      "connect": "Conectar a Homey",
+      "disconnect": "Desconectar",
+      "connected": "Conectado a Homey MCP",
+      "connecting": "Abriendo autenticación...",
+      "waiting": "Esperando autenticación...",
+      "error": "Autenticación fallida: {{error}}"
+    }
+  }
+}
