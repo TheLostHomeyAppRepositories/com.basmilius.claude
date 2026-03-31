@@ -9,5 +9,9 @@
     "1.2.0": {
         "en": "Added the ability to add a default system prompt from app settings.",
         "nl": "Ondersteuning toegevoegd voor het toevoegen van een standaard systeemprompt vanuit app instellingen."
+    },
+    "1.3.0": {
+        "en": "Added image analysis, trigger cards, conversation context seeding, command scheduling and custom instructions.",
+        "nl": "Beeldanalyse, trigger-kaarten, gesprekscontext-seeding, commando-planning en aangepaste instructies toegevoegd."
     }
 }
