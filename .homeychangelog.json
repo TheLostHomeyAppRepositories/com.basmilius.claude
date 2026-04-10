@@ -16,5 +16,9 @@
     },
     "1.3.1": {
         "en": "Update dependencies."
+    },
+    "1.4.0": {
+        "en": "Introduce new apply mood cards to set the mood using Claude. Introduce new classify intent cards to classify the intent of a prompt. Update dependencies.",
+        "nl": "Introduceer nieuwe kaarten om de mood te instellen met Claude. Introduceer nieuwe kaarten om de intentie van een prompt te classificeren. Update dependencies."
     }
 }
