@@ -59,6 +59,15 @@
       "cancel": "Avbryt",
       "empty": "Inga färdigheter än.",
       "error": "Något gick fel: {{error}}"
+    },
+    "effort": {
+      "title": "Reasoning",
+      "description": "Hur mycket Claude tänker innan det svarar. Lägre är snabbare och billigare, högre är grundligare. Enskilda flödeskort kan åsidosätta detta.",
+      "low": "Låg",
+      "medium": "Medel",
+      "high": "Hög",
+      "xhigh": "Mycket hög",
+      "max": "Max"
     }
   }
 }

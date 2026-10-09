@@ -10,7 +10,9 @@ export default class extends FlowActionEntity<ClaudeApp, Args, never, Result> {
         const {answer, model} = await this.app.brain.claude.ask(
             args.prompt,
             undefined,
-            args.model
+            args.model,
+            undefined,
+            args.effort
         );
 
         await this.app.triggerResponseReady(answer, model);
@@ -22,6 +24,7 @@ export default class extends FlowActionEntity<ClaudeApp, Args, never, Result> {
 type Args = {
     readonly prompt: string;
     readonly model: string;
+    readonly effort?: string;
 };
 
 type Result = {

@@ -59,6 +59,15 @@
       "cancel": "Abbrechen",
       "empty": "Noch keine Skills.",
       "error": "Etwas ist schiefgelaufen: {{error}}"
+    },
+    "effort": {
+      "title": "Reasoning",
+      "description": "Wie viel Claude nachdenkt, bevor es antwortet. Niedriger ist schneller und günstiger, höher ist gründlicher. Einzelne Flow-Karten können dies überschreiben.",
+      "low": "Niedrig",
+      "medium": "Mittel",
+      "high": "Hoch",
+      "xhigh": "Sehr hoch",
+      "max": "Maximal"
     }
   }
 }

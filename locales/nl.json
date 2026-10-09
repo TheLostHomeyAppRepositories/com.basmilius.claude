@@ -59,6 +59,15 @@
       "cancel": "Annuleren",
       "empty": "Nog geen skills.",
       "error": "Er ging iets mis: {{error}}"
+    },
+    "effort": {
+      "title": "Reasoning",
+      "description": "Hoeveel Claude nadenkt voordat het antwoordt. Lager is sneller en goedkoper, hoger is grondiger. Individuele flowkaarten kunnen dit overschrijven.",
+      "low": "Laag",
+      "medium": "Gemiddeld",
+      "high": "Hoog",
+      "xhigh": "Extra hoog",
+      "max": "Max"
     }
   }
 }

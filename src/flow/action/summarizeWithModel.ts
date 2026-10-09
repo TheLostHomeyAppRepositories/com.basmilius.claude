@@ -13,7 +13,7 @@ export default class extends FlowActionEntity<ClaudeApp, Args, never, Result> {
 
         const prompt = `Please summarize the following text ${languageInstruction}. Provide only the summary, no additional commentary:\n\n${args.text}`;
 
-        const {answer, model} = await this.app.brain.claude.ask(prompt, undefined, args.model);
+        const {answer, model} = await this.app.brain.claude.ask(prompt, undefined, args.model, undefined, args.effort);
 
         await this.app.triggerResponseReady(answer, model);
 
@@ -25,6 +25,7 @@ type Args = {
     readonly text: string;
     readonly language: string;
     readonly model: string;
+    readonly effort?: string;
 };
 
 type Result = {

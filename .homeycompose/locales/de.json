@@ -14,6 +14,15 @@
             "title": "Standardmodell",
             "description": "Das Claude-Modell, das standardmäßig verwendet wird. Einzelne Flow-Karten können dies überschreiben."
         },
+        "effort": {
+            "title": "Reasoning",
+            "description": "Wie viel Claude nachdenkt, bevor es antwortet. Niedriger ist schneller und günstiger, höher ist gründlicher. Einzelne Flow-Karten können dies überschreiben.",
+            "low": "Niedrig",
+            "medium": "Mittel",
+            "high": "Hoch",
+            "xhigh": "Sehr hoch",
+            "max": "Maximal"
+        },
         "system_prompt": {
             "title": "Standard-Systemprompt",
             "description": "Ein optionaler Systemprompt, der mit jeder Anfrage gesendet wird. Verwende ihn, um Claude eine Rolle zu geben oder Verhaltensrichtlinien festzulegen. Leer lassen für keinen Systemprompt.",

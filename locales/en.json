@@ -59,6 +59,15 @@
       "cancel": "Cancel",
       "empty": "No skills yet.",
       "error": "Something went wrong: {{error}}"
+    },
+    "effort": {
+      "title": "Reasoning",
+      "description": "How much Claude thinks before answering. Lower is faster and cheaper, higher is more thorough. Individual flow cards can override this.",
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High",
+      "xhigh": "Extra high",
+      "max": "Max"
     }
   }
 }

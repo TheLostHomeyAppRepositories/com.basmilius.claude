@@ -21,7 +21,9 @@ export default class extends FlowActionEntity<ClaudeApp, Args, never, Result> {
             args.question,
             [skill],
             undefined,
-            args.model
+            args.model,
+            undefined,
+            args.effort
         );
 
         await this.app.triggerResponseReady(answer, model);
@@ -36,6 +38,7 @@ type Args = {
         readonly id: string;
     };
     readonly model: string;
+    readonly effort?: string;
 };
 
 type Result = {

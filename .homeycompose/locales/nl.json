@@ -14,6 +14,15 @@
             "title": "Standaard model",
             "description": "Het Claude-model dat standaard wordt gebruikt. Individuele flow-kaarten kunnen dit overschrijven."
         },
+        "effort": {
+            "title": "Reasoning",
+            "description": "Hoeveel Claude nadenkt voordat het antwoordt. Lager is sneller en goedkoper, hoger is grondiger. Individuele flowkaarten kunnen dit overschrijven.",
+            "low": "Laag",
+            "medium": "Gemiddeld",
+            "high": "Hoog",
+            "xhigh": "Extra hoog",
+            "max": "Max"
+        },
         "system_prompt": {
             "title": "Standaard systeem-prompt",
             "description": "Een optionele systeem-prompt die met elk verzoek meegestuurd wordt. Gebruik dit om Claude een rol te geven of gedragsrichtlijnen in te stellen. Laat leeg om geen systeem-prompt te gebruiken.",

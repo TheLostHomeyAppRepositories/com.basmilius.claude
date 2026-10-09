@@ -59,6 +59,15 @@
       "cancel": "Annuller",
       "empty": "Ingen færdigheder endnu.",
       "error": "Noget gik galt: {{error}}"
+    },
+    "effort": {
+      "title": "Reasoning",
+      "description": "Hvor meget Claude tænker, før det svarer. Lavere er hurtigere og billigere, højere er grundigere. Enkelte flowkort kan tilsidesætte dette.",
+      "low": "Lav",
+      "medium": "Middel",
+      "high": "Høj",
+      "xhigh": "Meget høj",
+      "max": "Maks"
     }
   }
 }

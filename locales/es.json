@@ -59,6 +59,15 @@
       "cancel": "Cancelar",
       "empty": "Aún no hay habilidades.",
       "error": "Algo salió mal: {{error}}"
+    },
+    "effort": {
+      "title": "Reasoning",
+      "description": "Cuánto razona Claude antes de responder. Más bajo es más rápido y barato, más alto es más minucioso. Cada tarjeta de flow puede sobrescribirlo.",
+      "low": "Bajo",
+      "medium": "Medio",
+      "high": "Alto",
+      "xhigh": "Muy alto",
+      "max": "Máximo"
     }
   }
 }

@@ -15,7 +15,9 @@ export default class extends FlowActionEntity<ClaudeApp, Args, never, Result> {
             buffer,
             mimeType,
             undefined,
-            args.model
+            args.model,
+            undefined,
+            args.effort
         );
 
         await this.app.triggerImageResponseReady(answer, model);
@@ -27,6 +29,7 @@ export default class extends FlowActionEntity<ClaudeApp, Args, never, Result> {
 type Args = {
     readonly prompt: string;
     readonly model: string;
+    readonly effort?: string;
     readonly droptoken: HomeyImage;
 };
 

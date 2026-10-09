@@ -14,6 +14,15 @@
             "title": "Domyślny model",
             "description": "Model Claude używany domyślnie. Poszczególne karty przepływu mogą to zastąpić."
         },
+        "effort": {
+            "title": "Reasoning",
+            "description": "Jak długo Claude rozumuje przed odpowiedzią. Niższy poziom jest szybszy i tańszy, wyższy dokładniejszy. Pojedyncze karty flow mogą to nadpisać.",
+            "low": "Niski",
+            "medium": "Średni",
+            "high": "Wysoki",
+            "xhigh": "Bardzo wysoki",
+            "max": "Maksymalny"
+        },
         "system_prompt": {
             "title": "Domyślny prompt systemowy",
             "description": "Opcjonalny prompt systemowy wysyłany z każdym żądaniem. Użyj go, aby nadać Claude rolę lub ustawić wytyczne dotyczące zachowania. Pozostaw puste, aby nie używać promptu systemowego.",

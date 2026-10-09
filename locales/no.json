@@ -59,6 +59,15 @@
       "cancel": "Avbryt",
       "empty": "Ingen ferdigheter ennå.",
       "error": "Noe gikk galt: {{error}}"
+    },
+    "effort": {
+      "title": "Reasoning",
+      "description": "Hvor mye Claude tenker før det svarer. Lavere er raskere og billigere, høyere er mer grundig. Enkelte flytkort kan overstyre dette.",
+      "low": "Lav",
+      "medium": "Middels",
+      "high": "Høy",
+      "xhigh": "Svært høy",
+      "max": "Maks"
     }
   }
 }

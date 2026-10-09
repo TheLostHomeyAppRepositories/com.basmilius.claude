@@ -13,7 +13,9 @@ export default class extends FlowActionEntity<ClaudeApp, Args, never, Result> {
         const {answer, model} = await this.app.brain.claude.askWithHistory(
             newHistory,
             undefined,
-            args.model
+            args.model,
+            undefined,
+            args.effort
         );
 
         this.app.brain.conversation.setHistory(args.conversation_id, [
@@ -31,6 +33,7 @@ type Args = {
     readonly conversation_id: string;
     readonly message: string;
     readonly model: string;
+    readonly effort?: string;
 };
 
 type Result = {

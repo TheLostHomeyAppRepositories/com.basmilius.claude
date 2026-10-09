@@ -59,6 +59,15 @@
       "cancel": "Annuler",
       "empty": "Aucune compétence pour le moment.",
       "error": "Une erreur s'est produite : {{error}}"
+    },
+    "effort": {
+      "title": "Reasoning",
+      "description": "Le temps de réflexion de Claude avant de répondre. Plus bas est plus rapide et moins cher, plus élevé est plus approfondi. Chaque carte de flow peut le remplacer.",
+      "low": "Faible",
+      "medium": "Moyen",
+      "high": "Élevé",
+      "xhigh": "Très élevé",
+      "max": "Maximum"
     }
   }
 }

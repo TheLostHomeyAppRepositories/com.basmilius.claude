@@ -27,7 +27,9 @@ export default class extends FlowActionEntity<ClaudeApp, Args, never, Result> {
                 authorization_token: accessToken
             }],
             MOOD_SYSTEM_PROMPT,
-            args.model
+            args.model,
+            undefined,
+            args.effort
         );
 
         await this.app.triggerResponseReady(answer, model);
@@ -39,6 +41,7 @@ export default class extends FlowActionEntity<ClaudeApp, Args, never, Result> {
 type Args = {
     readonly mood: string;
     readonly model: string;
+    readonly effort?: string;
 };
 
 type Result = {

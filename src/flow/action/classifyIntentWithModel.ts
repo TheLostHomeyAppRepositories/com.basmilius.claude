@@ -21,7 +21,9 @@ export default class extends FlowActionEntity<ClaudeApp, Args, never, Result> {
         const {answer, model} = await this.app.brain.claude.ask(
             prompt,
             CLASSIFY_SYSTEM_PROMPT,
-            args.model
+            args.model,
+            undefined,
+            args.effort
         );
 
         const parsed = parseClassification(answer);
@@ -63,6 +65,7 @@ type Args = {
     readonly text: string;
     readonly intents: string;
     readonly model: string;
+    readonly effort?: string;
 };
 
 type Result = {

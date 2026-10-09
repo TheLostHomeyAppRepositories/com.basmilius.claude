@@ -14,6 +14,15 @@
             "title": "Standardmodel",
             "description": "Den Claude-model, der bruges som standard. Individuelle flowkort kan tilsidesætte dette."
         },
+        "effort": {
+            "title": "Reasoning",
+            "description": "Hvor meget Claude tænker, før det svarer. Lavere er hurtigere og billigere, højere er grundigere. Enkelte flowkort kan tilsidesætte dette.",
+            "low": "Lav",
+            "medium": "Middel",
+            "high": "Høj",
+            "xhigh": "Meget høj",
+            "max": "Maks"
+        },
         "system_prompt": {
             "title": "Standard systemprompt",
             "description": "En valgfri systemprompt, der sendes med hver anmodning. Brug den til at give Claude en persona eller angive adfærdsretningslinjer. Lad den stå tom for ikke at bruge nogen systemprompt.",

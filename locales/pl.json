@@ -59,6 +59,15 @@
       "cancel": "Anuluj",
       "empty": "Brak umiejętności.",
       "error": "Coś poszło nie tak: {{error}}"
+    },
+    "effort": {
+      "title": "Reasoning",
+      "description": "Jak długo Claude rozumuje przed odpowiedzią. Niższy poziom jest szybszy i tańszy, wyższy dokładniejszy. Pojedyncze karty flow mogą to nadpisać.",
+      "low": "Niski",
+      "medium": "Średni",
+      "high": "Wysoki",
+      "xhigh": "Bardzo wysoki",
+      "max": "Maksymalny"
     }
   }
 }

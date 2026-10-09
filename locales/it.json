@@ -59,6 +59,15 @@
       "cancel": "Annulla",
       "empty": "Nessuna skill.",
       "error": "Qualcosa è andato storto: {{error}}"
+    },
+    "effort": {
+      "title": "Reasoning",
+      "description": "Quanto Claude ragiona prima di rispondere. Più basso è più veloce ed economico, più alto è più accurato. Le singole card del flow possono sostituirlo.",
+      "low": "Basso",
+      "medium": "Medio",
+      "high": "Alto",
+      "xhigh": "Molto alto",
+      "max": "Massimo"
     }
   }
 }

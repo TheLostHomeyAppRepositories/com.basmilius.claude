@@ -2,7 +2,7 @@ import Anthropic from '@anthropic-ai/sdk';
 import type { Base64ImageSource } from '@anthropic-ai/sdk/resources/messages/messages';
 import type { BetaRequestMCPServerURLDefinition } from '@anthropic-ai/sdk/resources/beta/messages/messages';
 import { Shortcuts } from '@basmilius/homey-common';
-import { DEFAULT_MAX_TOKENS, DEFAULT_MODEL, MAX_SERVER_TOOL_TURNS, MAX_WEB_CONTENT_TOKENS, MAX_WEB_FETCHES, MAX_WEB_SEARCHES, MODELS, SETTING_API_KEY, SETTING_DEFAULT_MODEL, SETTING_DEFAULT_SYSTEM_PROMPT, SETTING_MAX_TOKENS } from '../const';
+import { DEFAULT_EFFORT, DEFAULT_MAX_TOKENS, DEFAULT_MODEL, MAX_SERVER_TOOL_TURNS, MAX_WEB_CONTENT_TOKENS, MAX_WEB_FETCHES, MAX_WEB_SEARCHES, MODELS, SETTING_API_KEY, SETTING_DEFAULT_EFFORT, SETTING_DEFAULT_MODEL, SETTING_DEFAULT_SYSTEM_PROMPT, SETTING_MAX_TOKENS, type Effort } from '../const';
 import type { ClaudeApp, ConversationMessage, StoredSkill } from '../types';
 
 /**
@@ -16,9 +16,9 @@ export default class Claude extends Shortcuts<ClaudeApp> {
     /**
      * Sends a single message to Claude and returns the response.
      */
-    async ask(prompt: string, systemPrompt?: string, model?: string, maxTokens?: number): Promise<AskResult> {
+    async ask(prompt: string, systemPrompt?: string, model?: string, maxTokens?: number, effort?: string): Promise<AskResult> {
         const client = this.#createClient();
-        const params = this.#buildParams(systemPrompt, model, maxTokens);
+        const params = this.#buildParams(systemPrompt, model, maxTokens, effort);
 
         return this.#execute([{role: 'user', content: prompt}], messages => client.messages.create({...params, messages}));
     }
@@ -26,9 +26,9 @@ export default class Claude extends Shortcuts<ClaudeApp> {
     /**
      * Sends a full conversation history to Claude and returns the response.
      */
-    async askWithHistory(messages: ConversationMessage[], systemPrompt?: string, model?: string, maxTokens?: number): Promise<AskResult> {
+    async askWithHistory(messages: ConversationMessage[], systemPrompt?: string, model?: string, maxTokens?: number, effort?: string): Promise<AskResult> {
         const client = this.#createClient();
-        const params = this.#buildParams(systemPrompt, model, maxTokens);
+        const params = this.#buildParams(systemPrompt, model, maxTokens, effort);
 
         return this.#execute(messages, history => client.messages.create({...params, messages: history}));
     }
@@ -42,10 +42,11 @@ export default class Claude extends Shortcuts<ClaudeApp> {
      * @param systemPrompt - Optional system prompt override.
      * @param model - Optional model override.
      * @param maxTokens - Optional max tokens override.
+     * @param effort - Optional effort override.
      */
-    async askWithImage(prompt: string, imageBuffer: Buffer, mimeType: string, systemPrompt?: string, model?: string, maxTokens?: number): Promise<AskResult> {
+    async askWithImage(prompt: string, imageBuffer: Buffer, mimeType: string, systemPrompt?: string, model?: string, maxTokens?: number, effort?: string): Promise<AskResult> {
         const client = this.#createClient();
-        const params = this.#buildParams(systemPrompt, model, maxTokens);
+        const params = this.#buildParams(systemPrompt, model, maxTokens, effort);
 
         const imageSource: Base64ImageSource = {
             type: 'base64',
@@ -67,9 +68,9 @@ export default class Claude extends Shortcuts<ClaudeApp> {
     /**
      * Sends a message to Claude with access to one or more MCP servers as tools.
      */
-    async askWithMcpServers(prompt: string, mcpServers: BetaRequestMCPServerURLDefinition[], systemPrompt?: string, model?: string, maxTokens?: number): Promise<AskResult> {
+    async askWithMcpServers(prompt: string, mcpServers: BetaRequestMCPServerURLDefinition[], systemPrompt?: string, model?: string, maxTokens?: number, effort?: string): Promise<AskResult> {
         const client = this.#createClient();
-        const params = this.#buildParams(systemPrompt, model, maxTokens);
+        const params = this.#buildParams(systemPrompt, model, maxTokens, effort);
 
         return this.#execute([{role: 'user', content: prompt}], messages => client.beta.messages.create({
             ...params,
@@ -87,9 +88,9 @@ export default class Claude extends Shortcuts<ClaudeApp> {
      * Claude only reads a SKILL.md when the question matches the skill description, so the
      * system prompt names the skills: the flow card already picked them.
      */
-    async askWithSkills(prompt: string, skills: readonly StoredSkill[], systemPrompt?: string, model?: string, maxTokens?: number): Promise<AskResult> {
+    async askWithSkills(prompt: string, skills: readonly StoredSkill[], systemPrompt?: string, model?: string, maxTokens?: number, effort?: string): Promise<AskResult> {
         const client = this.#createClient();
-        const params = this.#buildParams(systemPrompt, model, maxTokens);
+        const params = this.#buildParams(systemPrompt, model, maxTokens, effort);
         const names = skills.map(skill => `\`${skill.name}\``).join(' and ');
         const noun = skills.length === 1 ? 'skill' : 'skills';
 
@@ -109,15 +110,15 @@ export default class Claude extends Shortcuts<ClaudeApp> {
      * Sends a message to Claude with the web search and web fetch tools enabled, so it can
      * look up current information and read pages linked from the prompt.
      */
-    async askWithWebTools(prompt: string, systemPrompt?: string, model?: string, maxTokens?: number): Promise<AskResult> {
+    async askWithWebTools(prompt: string, systemPrompt?: string, model?: string, maxTokens?: number, effort?: string): Promise<AskResult> {
         const client = this.#createClient();
-        const params = this.#buildParams(systemPrompt, model, maxTokens);
+        const params = this.#buildParams(systemPrompt, model, maxTokens, effort);
         const tools = webToolsFor(params.model);
 
         return this.#execute([{role: 'user', content: prompt}], messages => client.messages.create({...params, messages, tools}));
     }
 
-    #buildParams(systemPrompt?: string, model?: string, maxTokens?: number): RequestParams {
+    #buildParams(systemPrompt?: string, model?: string, maxTokens?: number, effort?: string): RequestParams {
         const resolvedModel = model && model !== 'default'
             ? model
             : (this.settings.get(SETTING_DEFAULT_MODEL) as string | null ?? DEFAULT_MODEL);
@@ -136,6 +137,15 @@ export default class Claude extends Shortcuts<ClaudeApp> {
 
         if (resolvedSystemPrompt) {
             params.system = resolvedSystemPrompt;
+        }
+
+        const resolvedEffort = effectiveEffort(
+            resolvedModel,
+            effort || (this.settings.get(SETTING_DEFAULT_EFFORT) as string | null) || DEFAULT_EFFORT
+        );
+
+        if (resolvedEffort) {
+            params.output_config = {effort: resolvedEffort};
         }
 
         return params;
@@ -212,6 +222,24 @@ function asFlowError(err: unknown): Error {
     }
 
     return err instanceof Error ? err : new Error(String(err));
+}
+
+/**
+ * Returns the effort level to send, or null when the model does not take one. A level the
+ * model lacks (`xhigh` on the 4.6 models) drops to the nearest lower level.
+ */
+function effectiveEffort(model: string, requested: string): Effort | null {
+    const efforts: readonly string[] = MODELS.find(entry => entry.id === model)?.efforts ?? [];
+
+    if (efforts.length === 0) {
+        return null;
+    }
+
+    if (efforts.includes(requested)) {
+        return requested as Effort;
+    }
+
+    return requested === 'xhigh' ? 'high' : 'medium';
 }
 
 /**

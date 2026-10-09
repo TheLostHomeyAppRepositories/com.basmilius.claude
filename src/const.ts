@@ -1,5 +1,6 @@
 export const SETTING_API_KEY = 'claude-api-key';
 export const SETTING_CUSTOM_INSTRUCTIONS = 'claude-custom-instructions';
+export const SETTING_DEFAULT_EFFORT = 'claude-default-effort';
 export const SETTING_DEFAULT_MODEL = 'claude-default-model';
 export const SETTING_DEFAULT_SYSTEM_PROMPT = 'claude-default-system-prompt';
 export const SETTING_MAX_TOKENS = 'claude-max-tokens';
@@ -17,8 +18,9 @@ export const HOMEY_MCP_AUTH_ENDPOINT = 'https://mcp.athom.com/oauth2/authorise';
 export const HOMEY_MCP_TOKEN_ENDPOINT = 'https://mcp.athom.com/oauth2/token';
 export const HOMEY_MCP_REGISTER_ENDPOINT = 'https://mcp.athom.com/oauth2/client';
 
-export const DEFAULT_MODEL = 'claude-haiku-4-5-20251001';
-export const DEFAULT_MAX_TOKENS = 1024;
+export const DEFAULT_MODEL = 'claude-sonnet-5-5';
+export const DEFAULT_EFFORT = 'medium';
+export const DEFAULT_MAX_TOKENS = 4096;
 
 export const MAX_SERVER_TOOL_TURNS = 8;
 export const MAX_SKILL_NAME_LENGTH = 64;
@@ -27,15 +29,27 @@ export const MAX_WEB_CONTENT_TOKENS = 25_000;
 export const MAX_WEB_FETCHES = 5;
 export const MAX_WEB_SEARCHES = 5;
 
+export type Effort = 'low' | 'medium' | 'high' | 'xhigh' | 'max';
+
+const ALL_EFFORTS = ['low', 'medium', 'high', 'xhigh', 'max'] as const;
+const EFFORTS_WITHOUT_XHIGH = ['low', 'medium', 'high', 'max'] as const;
+
 /**
  * `filtersWebResults` marks the models that run the web tools from inside code execution,
  * which strips irrelevant content before it reaches the context window. Claude 4.6 and up
  * support this; older models only accept the basic tool versions.
+ *
+ * `efforts` lists the effort levels a model accepts. Models without any ignore `effort`,
+ * because they reject the parameter.
  */
 export const MODELS = [
-    {id: 'claude-haiku-4-5-20251001', name: 'Claude Haiku 4.5', filtersWebResults: false},
-    {id: 'claude-sonnet-5', name: 'Claude Sonnet 5', filtersWebResults: true},
-    {id: 'claude-opus-5', name: 'Claude Opus 5', filtersWebResults: true},
-    {id: 'claude-sonnet-4-6', name: 'Claude Sonnet 4.6 (deprecated)', filtersWebResults: true},
-    {id: 'claude-opus-4-6', name: 'Claude Opus 4.6 (deprecated)', filtersWebResults: true}
+    {id: 'claude-fable-5-1', name: 'Claude Fable 5.1', filtersWebResults: false, efforts: ALL_EFFORTS},
+    {id: 'claude-opus-5-5', name: 'Claude Opus 5.5', filtersWebResults: true, efforts: ALL_EFFORTS},
+    {id: 'claude-sonnet-5-5', name: 'Claude Sonnet 5.5', filtersWebResults: true, efforts: ALL_EFFORTS},
+    {id: 'claude-haiku-5-5', name: 'Claude Haiku 5.5', filtersWebResults: false, efforts: ALL_EFFORTS},
+    {id: 'claude-opus-5', name: 'Claude Opus 5', filtersWebResults: true, efforts: ALL_EFFORTS},
+    {id: 'claude-opus-4-6', name: 'Claude Opus 4.6 (deprecated)', filtersWebResults: true, efforts: EFFORTS_WITHOUT_XHIGH},
+    {id: 'claude-sonnet-5', name: 'Claude Sonnet 5', filtersWebResults: true, efforts: ALL_EFFORTS},
+    {id: 'claude-sonnet-4-6', name: 'Claude Sonnet 4.6 (deprecated)', filtersWebResults: true, efforts: EFFORTS_WITHOUT_XHIGH},
+    {id: 'claude-haiku-4-5-20251001', name: 'Claude Haiku 4.5', filtersWebResults: false, efforts: []}
 ] as const;

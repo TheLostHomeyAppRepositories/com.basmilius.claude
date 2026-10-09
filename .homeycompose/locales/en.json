@@ -14,6 +14,15 @@
             "title": "Default Model",
             "description": "The Claude model to use by default. Individual flow cards can override this."
         },
+        "effort": {
+            "title": "Reasoning",
+            "description": "How much Claude thinks before answering. Lower is faster and cheaper, higher is more thorough. Individual flow cards can override this.",
+            "low": "Low",
+            "medium": "Medium",
+            "high": "High",
+            "xhigh": "Extra high",
+            "max": "Max"
+        },
         "system_prompt": {
             "title": "Default System Prompt",
             "description": "An optional system prompt that is sent with every request. Use this to give Claude a persona or set behavioural guidelines. Leave empty to use no system prompt.",

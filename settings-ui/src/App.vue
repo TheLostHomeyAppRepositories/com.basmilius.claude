@@ -34,6 +34,24 @@
             </select>
         </FormGroup>
 
+        <FormGroup :title="t('settings.effort.title')">
+            <template #before>
+                <p :class="$style.description">{{ t('settings.effort.description') }}</p>
+            </template>
+
+            <label class="homey-form-label">{{ t('settings.effort.title') }}</label>
+            <select
+                class="homey-form-select"
+                v-model="defaultEffort">
+                <option
+                    v-for="effort in EFFORTS"
+                    :key="effort"
+                    :value="effort">
+                    {{ t(`settings.effort.${effort}`) }}
+                </option>
+            </select>
+        </FormGroup>
+
         <FormGroup :title="t('settings.system_prompt.title')">
             <template #before>
                 <p :class="$style.description">{{ t('settings.system_prompt.description') }}</p>
@@ -55,7 +73,7 @@
                 v-model="maxTokensStr"
                 type="number"
                 :label="t('settings.max_tokens.title')"
-                placeholder="1024"/>
+                placeholder="4096"/>
         </FormGroup>
 
         <FormGroup :title="t('settings.test.button')">
@@ -126,19 +144,26 @@
     import { useTranslate } from './composables';
 
     const MODELS = [
-        {id: 'claude-haiku-4-5-20251001', name: 'Claude Haiku 4.5'},
-        {id: 'claude-sonnet-5', name: 'Claude Sonnet 5'},
+        {id: 'claude-fable-5-1', name: 'Claude Fable 5.1'},
+        {id: 'claude-opus-5-5', name: 'Claude Opus 5.5'},
+        {id: 'claude-sonnet-5-5', name: 'Claude Sonnet 5.5'},
+        {id: 'claude-haiku-5-5', name: 'Claude Haiku 5.5'},
         {id: 'claude-opus-5', name: 'Claude Opus 5'},
+        {id: 'claude-opus-4-6', name: 'Claude Opus 4.6 (deprecated)'},
+        {id: 'claude-sonnet-5', name: 'Claude Sonnet 5'},
         {id: 'claude-sonnet-4-6', name: 'Claude Sonnet 4.6 (deprecated)'},
-        {id: 'claude-opus-4-6', name: 'Claude Opus 4.6 (deprecated)'}
+        {id: 'claude-haiku-4-5-20251001', name: 'Claude Haiku 4.5'}
     ];
+
+    const EFFORTS = ['low', 'medium', 'high', 'xhigh', 'max'];
 
     const t = useTranslate();
 
     const apiKey = ref('');
-    const defaultModel = ref('claude-haiku-4-5-20251001');
+    const defaultEffort = ref('medium');
+    const defaultModel = ref('claude-sonnet-5-5');
     const defaultSystemPrompt = ref('');
-    const maxTokensStr = ref('1024');
+    const maxTokensStr = ref('4096');
     const isSaving = ref(false);
     const isTesting = ref(false);
     const isConnecting = ref(false);
@@ -156,9 +181,10 @@
         ]);
 
         apiKey.value = settings.apiKey ?? '';
-        defaultModel.value = settings.defaultModel ?? 'claude-haiku-4-5-20251001';
+        defaultEffort.value = settings.defaultEffort ?? 'medium';
+        defaultModel.value = settings.defaultModel ?? 'claude-sonnet-5-5';
         defaultSystemPrompt.value = settings.defaultSystemPrompt ?? '';
-        maxTokensStr.value = String(settings.maxTokens ?? 1024);
+        maxTokensStr.value = String(settings.maxTokens ?? 4096);
         homeyMcpConnected.value = mcpStatus.connected;
 
         Homey.ready();
@@ -173,6 +199,7 @@
 
             await Promise.all([
                 Homey.api('PUT', '/settings', {key: 'claude-api-key', value: apiKey.value}),
+                Homey.api('PUT', '/settings', {key: 'claude-default-effort', value: defaultEffort.value}),
                 Homey.api('PUT', '/settings', {key: 'claude-default-model', value: defaultModel.value}),
                 Homey.api('PUT', '/settings', {key: 'claude-default-system-prompt', value: defaultSystemPrompt.value || null}),
                 ...(isNaN(maxTokens) || maxTokens <= 0 ? [] : [
@@ -263,6 +290,7 @@
 
     type Settings = {
         apiKey: string | null;
+        defaultEffort: string | null;
         defaultModel: string | null;
         defaultSystemPrompt: string | null;
         maxTokens: number | null;

@@ -14,6 +14,15 @@
             "title": "Standardmodell",
             "description": "Claude-modellen som brukes som standard. Individuelle flydkort kan overstyre dette."
         },
+        "effort": {
+            "title": "Reasoning",
+            "description": "Hvor mye Claude tenker før det svarer. Lavere er raskere og billigere, høyere er mer grundig. Enkelte flytkort kan overstyre dette.",
+            "low": "Lav",
+            "medium": "Middels",
+            "high": "Høy",
+            "xhigh": "Svært høy",
+            "max": "Maks"
+        },
         "system_prompt": {
             "title": "Standard systemprompt",
             "description": "En valgfri systemprompt som sendes med hver forespørsel. Bruk den til å gi Claude en persona eller angi atferdsretningslinjer. La den stå tom for å ikke bruke noen systemprompt.",

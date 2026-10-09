@@ -14,6 +14,15 @@
             "title": "Standardmodell",
             "description": "Claude-modellen som används som standard. Enskilda flödeskort kan åsidosätta detta."
         },
+        "effort": {
+            "title": "Reasoning",
+            "description": "Hur mycket Claude tänker innan det svarar. Lägre är snabbare och billigare, högre är grundligare. Enskilda flödeskort kan åsidosätta detta.",
+            "low": "Låg",
+            "medium": "Medel",
+            "high": "Hög",
+            "xhigh": "Mycket hög",
+            "max": "Max"
+        },
         "system_prompt": {
             "title": "Standard-systemprompt",
             "description": "En valfri systemprompt som skickas med varje begäran. Använd den för att ge Claude en persona eller ange beteenderiktlinjer. Lämna tomt för att inte använda någon systemprompt.",

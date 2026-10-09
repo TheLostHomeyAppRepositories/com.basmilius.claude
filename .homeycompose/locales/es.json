@@ -14,6 +14,15 @@
             "title": "Modelo predeterminado",
             "description": "El modelo Claude que se usará de forma predeterminada. Las tarjetas de flujo individuales pueden anularlo."
         },
+        "effort": {
+            "title": "Reasoning",
+            "description": "Cuánto razona Claude antes de responder. Más bajo es más rápido y barato, más alto es más minucioso. Cada tarjeta de flow puede sobrescribirlo.",
+            "low": "Bajo",
+            "medium": "Medio",
+            "high": "Alto",
+            "xhigh": "Muy alto",
+            "max": "Máximo"
+        },
         "system_prompt": {
             "title": "Prompt de sistema predeterminado",
             "description": "Un prompt de sistema opcional que se envía con cada solicitud. Úsalo para dar a Claude una personalidad o establecer pautas de comportamiento. Déjalo vacío para no usar ningún prompt de sistema.",
