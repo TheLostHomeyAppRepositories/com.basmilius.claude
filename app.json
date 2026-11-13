@@ -2011,6 +2011,574 @@
         ]
       },
       {
+        "id": "ask_with_homey_with_skill",
+        "title": {
+          "en": "Ask Claude with Homey context (with a skill)",
+          "nl": "Stel Claude een vraag met Homey-context (met een skill)",
+          "de": "Claude mit Homey-Kontext fragen (mit einem Skill)",
+          "fr": "Demander à Claude avec le contexte Homey (avec une compétence)",
+          "it": "Chiedi a Claude con il contesto Homey (con una skill)",
+          "sv": "Fråga Claude med Homey-kontext (med en färdighet)",
+          "no": "Spør Claude med Homey-kontekst (med en ferdighet)",
+          "es": "Preguntar a Claude con contexto de Homey (con una habilidad)",
+          "da": "Spørg Claude med Homey-kontekst (med en færdighed)",
+          "ru": "Спросить Claude с контекстом Homey (с навыком)",
+          "pl": "Zapytaj Claude z kontekstem Homey (z umiejętnością)",
+          "ko": "Homey 컨텍스트로 Claude에게 질문 (스킬 사용)",
+          "ar": "اسأل Claude مع سياق Homey (باستخدام مهارة)"
+        },
+        "titleFormatted": {
+          "en": "Ask Claude (Homey) with skill [[skill]]: [[question]]",
+          "nl": "Vraag Claude (Homey) met skill [[skill]]: [[question]]",
+          "de": "Frage Claude (Homey) mit Skill [[skill]]: [[question]]",
+          "fr": "Demande à Claude (Homey) avec la compétence [[skill]] : [[question]]",
+          "it": "Chiedi a Claude (Homey) con la skill [[skill]]: [[question]]",
+          "sv": "Fråga Claude (Homey) med färdigheten [[skill]]: [[question]]",
+          "no": "Spør Claude (Homey) med ferdigheten [[skill]]: [[question]]",
+          "es": "Pregunta a Claude (Homey) con la habilidad [[skill]]: [[question]]",
+          "da": "Spørg Claude (Homey) med færdigheden [[skill]]: [[question]]",
+          "ru": "Спросить Claude (Homey) с навыком [[skill]]: [[question]]",
+          "pl": "Zapytaj Claude (Homey) z umiejętnością [[skill]]: [[question]]",
+          "ko": "스킬 [[skill]]로 Claude (Homey)에게 질문: [[question]]",
+          "ar": "اسأل Claude (Homey) باستخدام المهارة [[skill]]: [[question]]"
+        },
+        "hint": {
+          "en": "Asks Claude a question with access to your Homey devices and flows via MCP, with one of the skills from the app settings loaded. Skills run in a code execution container, so these cards are slower and cost more than a plain question. Requires Homey MCP authentication in the app settings.",
+          "nl": "Stelt Claude een vraag met toegang tot je Homey-apparaten en flows via MCP, met een van de skills uit de app-instellingen geladen. Skills draaien in een code execution container, dus deze kaarten zijn trager en duurder dan een gewone vraag. Vereist Homey MCP-authenticatie in de app-instellingen.",
+          "de": "Stellt Claude eine Frage mit Zugriff auf deine Homey-Geräte und Flows über MCP und mit einem der Skills aus den App-Einstellungen. Skills laufen in einem Code-Execution-Container, daher sind diese Karten langsamer und teurer als eine einfache Frage. Erfordert Homey MCP-Authentifizierung in den App-Einstellungen.",
+          "fr": "Pose une question à Claude avec accès à vos appareils et flux Homey via MCP et avec l'une des compétences des réglages de l'app. Les compétences s'exécutent dans un conteneur d'exécution de code, donc ces cartes sont plus lentes et plus coûteuses qu'une question simple. Nécessite l'authentification Homey MCP dans les paramètres de l'application.",
+          "it": "Pone una domanda a Claude con accesso ai dispositivi e flussi Homey tramite MCP e con una delle skill dalle impostazioni dell'app. Le skill vengono eseguite in un container di code execution, quindi queste schede sono più lente e costose di una domanda semplice. Richiede l'autenticazione Homey MCP nelle impostazioni dell'app.",
+          "sv": "Ställer en fråga till Claude med åtkomst till dina Homey-enheter och flöden via MCP och med en av färdigheterna från appinställningarna. Färdigheter körs i en code execution-container, så dessa kort är långsammare och dyrare än en vanlig fråga. Kräver Homey MCP-autentisering i appinställningarna.",
+          "no": "Stiller Claude et spørsmål med tilgang til Homey-enhetene og flytene dine via MCP og med en av ferdighetene fra appinnstillingene. Ferdigheter kjører i en code execution-container, så disse kortene er tregere og dyrere enn et vanlig spørsmål. Krever Homey MCP-autentisering i appinnstillingene.",
+          "es": "Hace una pregunta a Claude con acceso a tus dispositivos y flujos de Homey a través de MCP y con una de las habilidades de los ajustes de la app. Las habilidades se ejecutan en un contenedor de code execution, por lo que estas tarjetas son más lentas y caras que una pregunta simple. Requiere autenticación Homey MCP en la configuración de la app.",
+          "da": "Stiller Claude et spørgsmål med adgang til dine Homey-enheder og flows via MCP og med en af færdighederne fra app-indstillingerne. Færdigheder kører i en code execution-container, så disse kort er langsommere og dyrere end et almindeligt spørgsmål. Kræver Homey MCP-godkendelse i appindstillingerne.",
+          "ru": "Задаёт Claude вопрос с доступом к устройствам и потокам Homey через MCP и с одним из навыков из настроек приложения. Навыки выполняются в контейнере code execution, поэтому такие карточки медленнее и дороже обычного вопроса. Требует аутентификации Homey MCP в настройках приложения.",
+          "pl": "Zadaje Claude pytanie z dostępem do urządzeń i przepływów Homey przez MCP oraz z jedną z umiejętności z ustawień aplikacji. Umiejętności działają w kontenerze code execution, więc te karty są wolniejsze i droższe niż zwykłe pytanie. Wymaga uwierzytelnienia Homey MCP w ustawieniach aplikacji.",
+          "ko": "MCP를 통해 Homey 기기와 플로우에 액세스하고 앱 설정의 스킬 중 하나를 불러와 Claude에게 질문합니다. 스킬은 code execution 컨테이너에서 실행되므로 일반 질문보다 느리고 비용이 더 듭니다. 앱 설정에서 Homey MCP 인증이 필요합니다.",
+          "ar": "يسأل Claude سؤالاً مع الوصول إلى أجهزة Homey وتدفقاتك عبر MCP ومع تحميل إحدى المهارات من إعدادات التطبيق. تعمل المهارات داخل حاوية تنفيذ التعليمات البرمجية، لذا فإن هذه البطاقات أبطأ وأعلى تكلفة من السؤال العادي. يتطلب مصادقة Homey MCP في إعدادات التطبيق."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "skill",
+            "title": {
+              "en": "Skill",
+              "nl": "Skill",
+              "de": "Skill",
+              "fr": "Compétence",
+              "it": "Skill",
+              "sv": "Färdighet",
+              "no": "Ferdighet",
+              "es": "Habilidad",
+              "da": "Færdighed",
+              "ru": "Навык",
+              "pl": "Umiejętność",
+              "ko": "스킬",
+              "ar": "مهارة"
+            }
+          },
+          {
+            "type": "text",
+            "name": "question",
+            "title": {
+              "en": "Question",
+              "nl": "Vraag",
+              "de": "Frage",
+              "fr": "Question",
+              "it": "Domanda",
+              "sv": "Fråga",
+              "no": "Spørsmål",
+              "es": "Pregunta",
+              "da": "Spørgsmål",
+              "ru": "Вопрос",
+              "pl": "Pytanie",
+              "ko": "질문",
+              "ar": "سؤال"
+            },
+            "placeholder": {
+              "en": "Which lights are currently on?",
+              "nl": "Welke lampen zijn momenteel aan?",
+              "de": "Welche Lichter sind gerade an?",
+              "fr": "Quelles lumières sont actuellement allumées ?",
+              "it": "Quali luci sono attualmente accese?",
+              "sv": "Vilka lampor är för närvarande tända?",
+              "no": "Hvilke lys er for øyeblikket på?",
+              "es": "¿Qué luces están encendidas actualmente?",
+              "da": "Hvilke lys er i øjeblikket tændt?",
+              "ru": "Какой свет сейчас включён?",
+              "pl": "Które światła są teraz włączone?",
+              "ko": "현재 켜져 있는 조명은 무엇인가요?",
+              "ar": "ما الأضواء التي تضيء حالياً؟"
+            }
+          }
+        ],
+        "tokens": [
+          {
+            "name": "answer",
+            "type": "string",
+            "title": {
+              "en": "Answer",
+              "nl": "Antwoord",
+              "de": "Antwort",
+              "fr": "Réponse",
+              "it": "Risposta",
+              "sv": "Svar",
+              "no": "Svar",
+              "es": "Respuesta",
+              "da": "Svar",
+              "ru": "Ответ",
+              "pl": "Odpowiedź",
+              "ko": "답변",
+              "ar": "إجابة"
+            },
+            "example": {
+              "en": "Paris is the capital of France.",
+              "nl": "Parijs is de hoofdstad van Frankrijk.",
+              "de": "Paris ist die Hauptstadt von Frankreich.",
+              "fr": "Paris est la capitale de la France.",
+              "it": "Parigi è la capitale della Francia.",
+              "sv": "Paris är Frankrikes huvudstad.",
+              "no": "Paris er Frankrikes hovedstad.",
+              "es": "París es la capital de Francia.",
+              "da": "Paris er Frankrigs hovedstad.",
+              "ru": "Париж — столица Франции.",
+              "pl": "Paryż jest stolicą Francji.",
+              "ko": "파리는 프랑스의 수도입니다.",
+              "ar": "باريس هي عاصمة فرنسا."
+            }
+          },
+          {
+            "name": "model_used",
+            "type": "string",
+            "title": {
+              "en": "Model used",
+              "nl": "Gebruikte model",
+              "de": "Verwendetes Modell",
+              "fr": "Modèle utilisé",
+              "it": "Modello utilizzato",
+              "sv": "Använd modell",
+              "no": "Brukt modell",
+              "es": "Modelo utilizado",
+              "da": "Brugt model",
+              "ru": "Используемая модель",
+              "pl": "Użyty model",
+              "ko": "사용된 모델",
+              "ar": "النموذج المستخدم"
+            },
+            "example": {
+              "en": "claude-haiku-4-5-20251001",
+              "nl": "claude-haiku-4-5-20251001",
+              "de": "claude-haiku-4-5-20251001",
+              "fr": "claude-haiku-4-5-20251001",
+              "it": "claude-haiku-4-5-20251001",
+              "sv": "claude-haiku-4-5-20251001",
+              "no": "claude-haiku-4-5-20251001",
+              "es": "claude-haiku-4-5-20251001",
+              "da": "claude-haiku-4-5-20251001",
+              "ru": "claude-haiku-4-5-20251001",
+              "pl": "claude-haiku-4-5-20251001",
+              "ko": "claude-haiku-4-5-20251001",
+              "ar": "claude-haiku-4-5-20251001"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ask_with_homey_with_skill_with_model",
+        "title": {
+          "en": "Ask Claude with Homey context (with a skill, choose model)",
+          "nl": "Stel Claude een vraag met Homey-context (met een skill, kies model)",
+          "de": "Claude mit Homey-Kontext fragen (mit einem Skill, Modell wählen)",
+          "fr": "Demander à Claude avec le contexte Homey (avec une compétence, choisir le modèle)",
+          "it": "Chiedi a Claude con il contesto Homey (con una skill, scegli il modello)",
+          "sv": "Fråga Claude med Homey-kontext (med en färdighet, välj modell)",
+          "no": "Spør Claude med Homey-kontekst (med en ferdighet, velg modell)",
+          "es": "Preguntar a Claude con contexto de Homey (con una habilidad, elegir modelo)",
+          "da": "Spørg Claude med Homey-kontekst (med en færdighed, vælg model)",
+          "ru": "Спросить Claude с контекстом Homey (с навыком, выбрать модель)",
+          "pl": "Zapytaj Claude z kontekstem Homey (z umiejętnością, wybierz model)",
+          "ko": "Homey 컨텍스트로 Claude에게 질문 (스킬 사용, 모델 선택)",
+          "ar": "اسأل Claude مع سياق Homey (باستخدام مهارة، اختر النموذج)"
+        },
+        "titleFormatted": {
+          "en": "Ask Claude (Homey) with skill [[skill]] ([[model]], [[effort]]): [[question]]",
+          "nl": "Vraag Claude (Homey) met skill [[skill]] ([[model]], [[effort]]): [[question]]",
+          "de": "Frage Claude (Homey) mit Skill [[skill]] ([[model]], [[effort]]): [[question]]",
+          "fr": "Demande à Claude (Homey) avec la compétence [[skill]] ([[model]], [[effort]]) : [[question]]",
+          "it": "Chiedi a Claude (Homey) con la skill [[skill]] ([[model]], [[effort]]): [[question]]",
+          "sv": "Fråga Claude (Homey) med färdigheten [[skill]] ([[model]], [[effort]]): [[question]]",
+          "no": "Spør Claude (Homey) med ferdigheten [[skill]] ([[model]], [[effort]]): [[question]]",
+          "es": "Pregunta a Claude (Homey) con la habilidad [[skill]] ([[model]], [[effort]]): [[question]]",
+          "da": "Spørg Claude (Homey) med færdigheden [[skill]] ([[model]], [[effort]]): [[question]]",
+          "ru": "Спросить Claude (Homey) с навыком [[skill]] ([[model]], [[effort]]): [[question]]",
+          "pl": "Zapytaj Claude (Homey) z umiejętnością [[skill]] ([[model]], [[effort]]): [[question]]",
+          "ko": "스킬 [[skill]] ([[model]], [[effort]])로 Claude (Homey)에게 질문: [[question]]",
+          "ar": "اسأل Claude (Homey) باستخدام المهارة [[skill]] ([[model]], [[effort]]): [[question]]"
+        },
+        "hint": {
+          "en": "Asks Claude a question with access to your Homey devices and flows via MCP, with one of the skills from the app settings loaded. Skills run in a code execution container, so these cards are slower and cost more than a plain question. Requires Homey MCP authentication in the app settings. Lets you choose the model per flow card.",
+          "nl": "Stelt Claude een vraag met toegang tot je Homey-apparaten en flows via MCP, met een van de skills uit de app-instellingen geladen. Skills draaien in een code execution container, dus deze kaarten zijn trager en duurder dan een gewone vraag. Vereist Homey MCP-authenticatie in de app-instellingen. Laat je het model per flow kaart kiezen.",
+          "de": "Stellt Claude eine Frage mit Zugriff auf deine Homey-Geräte und Flows über MCP und mit einem der Skills aus den App-Einstellungen. Skills laufen in einem Code-Execution-Container, daher sind diese Karten langsamer und teurer als eine einfache Frage. Erfordert Homey MCP-Authentifizierung in den App-Einstellungen. Ermöglicht die Auswahl des Modells pro Flow-Karte.",
+          "fr": "Pose une question à Claude avec accès à vos appareils et flux Homey via MCP et avec l'une des compétences des réglages de l'app. Les compétences s'exécutent dans un conteneur d'exécution de code, donc ces cartes sont plus lentes et plus coûteuses qu'une question simple. Nécessite l'authentification Homey MCP dans les paramètres de l'application. Vous permet de choisir le modèle par carte de flux.",
+          "it": "Pone una domanda a Claude con accesso ai dispositivi e flussi Homey tramite MCP e con una delle skill dalle impostazioni dell'app. Le skill vengono eseguite in un container di code execution, quindi queste schede sono più lente e costose di una domanda semplice. Richiede l'autenticazione Homey MCP nelle impostazioni dell'app. Consente di scegliere il modello per ogni scheda flusso.",
+          "sv": "Ställer en fråga till Claude med åtkomst till dina Homey-enheter och flöden via MCP och med en av färdigheterna från appinställningarna. Färdigheter körs i en code execution-container, så dessa kort är långsammare och dyrare än en vanlig fråga. Kräver Homey MCP-autentisering i appinställningarna. Låter dig välja modell per flödeskort.",
+          "no": "Stiller Claude et spørsmål med tilgang til Homey-enhetene og flytene dine via MCP og med en av ferdighetene fra appinnstillingene. Ferdigheter kjører i en code execution-container, så disse kortene er tregere og dyrere enn et vanlig spørsmål. Krever Homey MCP-autentisering i appinnstillingene. Lar deg velge modell per flydkort.",
+          "es": "Hace una pregunta a Claude con acceso a tus dispositivos y flujos de Homey a través de MCP y con una de las habilidades de los ajustes de la app. Las habilidades se ejecutan en un contenedor de code execution, por lo que estas tarjetas son más lentas y caras que una pregunta simple. Requiere autenticación Homey MCP en la configuración de la app. Te permite elegir el modelo por tarjeta de flujo.",
+          "da": "Stiller Claude et spørgsmål med adgang til dine Homey-enheder og flows via MCP og med en af færdighederne fra app-indstillingerne. Færdigheder kører i en code execution-container, så disse kort er langsommere og dyrere end et almindeligt spørgsmål. Kræver Homey MCP-godkendelse i appindstillingerne. Giver dig mulighed for at vælge model pr. flowkort.",
+          "ru": "Задаёт Claude вопрос с доступом к устройствам и потокам Homey через MCP и с одним из навыков из настроек приложения. Навыки выполняются в контейнере code execution, поэтому такие карточки медленнее и дороже обычного вопроса. Требует аутентификации Homey MCP в настройках приложения. Позволяет выбрать модель для каждой карточки потока.",
+          "pl": "Zadaje Claude pytanie z dostępem do urządzeń i przepływów Homey przez MCP oraz z jedną z umiejętności z ustawień aplikacji. Umiejętności działają w kontenerze code execution, więc te karty są wolniejsze i droższe niż zwykłe pytanie. Wymaga uwierzytelnienia Homey MCP w ustawieniach aplikacji. Pozwala wybrać model dla każdej karty przepływu.",
+          "ko": "MCP를 통해 Homey 기기와 플로우에 액세스하고 앱 설정의 스킬 중 하나를 불러와 Claude에게 질문합니다. 스킬은 code execution 컨테이너에서 실행되므로 일반 질문보다 느리고 비용이 더 듭니다. 앱 설정에서 Homey MCP 인증이 필요합니다. 플로우 카드별로 모델을 선택할 수 있습니다.",
+          "ar": "يسأل Claude سؤالاً مع الوصول إلى أجهزة Homey وتدفقاتك عبر MCP ومع تحميل إحدى المهارات من إعدادات التطبيق. تعمل المهارات داخل حاوية تنفيذ التعليمات البرمجية، لذا فإن هذه البطاقات أبطأ وأعلى تكلفة من السؤال العادي. يتطلب مصادقة Homey MCP في إعدادات التطبيق. يتيح لك اختيار النموذج لكل بطاقة تدفق."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "skill",
+            "title": {
+              "en": "Skill",
+              "nl": "Skill",
+              "de": "Skill",
+              "fr": "Compétence",
+              "it": "Skill",
+              "sv": "Färdighet",
+              "no": "Ferdighet",
+              "es": "Habilidad",
+              "da": "Færdighed",
+              "ru": "Навык",
+              "pl": "Umiejętność",
+              "ko": "스킬",
+              "ar": "مهارة"
+            }
+          },
+          {
+            "type": "text",
+            "name": "question",
+            "title": {
+              "en": "Question",
+              "nl": "Vraag",
+              "de": "Frage",
+              "fr": "Question",
+              "it": "Domanda",
+              "sv": "Fråga",
+              "no": "Spørsmål",
+              "es": "Pregunta",
+              "da": "Spørgsmål",
+              "ru": "Вопрос",
+              "pl": "Pytanie",
+              "ko": "질문",
+              "ar": "سؤال"
+            },
+            "placeholder": {
+              "en": "Which lights are currently on?",
+              "nl": "Welke lampen zijn momenteel aan?",
+              "de": "Welche Lichter sind gerade an?",
+              "fr": "Quelles lumières sont actuellement allumées ?",
+              "it": "Quali luci sono attualmente accese?",
+              "sv": "Vilka lampor är för närvarande tända?",
+              "no": "Hvilke lys er for øyeblikket på?",
+              "es": "¿Qué luces están encendidas actualmente?",
+              "da": "Hvilke lys er i øjeblikket tændt?",
+              "ru": "Какой свет сейчас включён?",
+              "pl": "Które światła są teraz włączone?",
+              "ko": "현재 켜져 있는 조명은 무엇인가요?",
+              "ar": "ما الأضواء التي تضيء حالياً؟"
+            }
+          },
+          {
+            "type": "dropdown",
+            "name": "model",
+            "title": {
+              "en": "Model",
+              "nl": "Model",
+              "de": "Modell",
+              "fr": "Modèle",
+              "it": "Modello",
+              "sv": "Modell",
+              "no": "Modell",
+              "es": "Modelo",
+              "da": "Model",
+              "ru": "Модель",
+              "pl": "Model",
+              "ko": "모델",
+              "ar": "النموذج"
+            },
+            "values": [
+              {
+                "id": "claude-fable-5-2",
+                "label": {
+                  "en": "Claude Fable 5.2",
+                  "nl": "Claude Fable 5.2",
+                  "de": "Claude Fable 5.2",
+                  "fr": "Claude Fable 5.2",
+                  "it": "Claude Fable 5.2",
+                  "sv": "Claude Fable 5.2",
+                  "no": "Claude Fable 5.2",
+                  "es": "Claude Fable 5.2",
+                  "da": "Claude Fable 5.2",
+                  "ru": "Claude Fable 5.2",
+                  "pl": "Claude Fable 5.2",
+                  "ko": "Claude Fable 5.2",
+                  "ar": "Claude Fable 5.2"
+                }
+              },
+              {
+                "id": "claude-opus-5-5",
+                "label": {
+                  "en": "Claude Opus 5.5",
+                  "nl": "Claude Opus 5.5",
+                  "de": "Claude Opus 5.5",
+                  "fr": "Claude Opus 5.5",
+                  "it": "Claude Opus 5.5",
+                  "sv": "Claude Opus 5.5",
+                  "no": "Claude Opus 5.5",
+                  "es": "Claude Opus 5.5",
+                  "da": "Claude Opus 5.5",
+                  "ru": "Claude Opus 5.5",
+                  "pl": "Claude Opus 5.5",
+                  "ko": "Claude Opus 5.5",
+                  "ar": "Claude Opus 5.5"
+                }
+              },
+              {
+                "id": "claude-sonnet-5-5",
+                "label": {
+                  "en": "Claude Sonnet 5.5",
+                  "nl": "Claude Sonnet 5.5",
+                  "de": "Claude Sonnet 5.5",
+                  "fr": "Claude Sonnet 5.5",
+                  "it": "Claude Sonnet 5.5",
+                  "sv": "Claude Sonnet 5.5",
+                  "no": "Claude Sonnet 5.5",
+                  "es": "Claude Sonnet 5.5",
+                  "da": "Claude Sonnet 5.5",
+                  "ru": "Claude Sonnet 5.5",
+                  "pl": "Claude Sonnet 5.5",
+                  "ko": "Claude Sonnet 5.5",
+                  "ar": "Claude Sonnet 5.5"
+                }
+              },
+              {
+                "id": "claude-haiku-5-5",
+                "label": {
+                  "en": "Claude Haiku 5.5",
+                  "nl": "Claude Haiku 5.5",
+                  "de": "Claude Haiku 5.5",
+                  "fr": "Claude Haiku 5.5",
+                  "it": "Claude Haiku 5.5",
+                  "sv": "Claude Haiku 5.5",
+                  "no": "Claude Haiku 5.5",
+                  "es": "Claude Haiku 5.5",
+                  "da": "Claude Haiku 5.5",
+                  "ru": "Claude Haiku 5.5",
+                  "pl": "Claude Haiku 5.5",
+                  "ko": "Claude Haiku 5.5",
+                  "ar": "Claude Haiku 5.5"
+                }
+              },
+              {
+                "id": "claude-fable-5-1",
+                "label": {
+                  "en": "Claude Fable 5.1 (legacy)",
+                  "nl": "Claude Fable 5.1 (verouderd)",
+                  "de": "Claude Fable 5.1 (veraltet)",
+                  "fr": "Claude Fable 5.1 (ancien)",
+                  "it": "Claude Fable 5.1 (obsoleto)",
+                  "sv": "Claude Fable 5.1 (äldre)",
+                  "no": "Claude Fable 5.1 (eldre)",
+                  "es": "Claude Fable 5.1 (heredado)",
+                  "da": "Claude Fable 5.1 (ældre)",
+                  "ru": "Claude Fable 5.1 (устаревшая)",
+                  "pl": "Claude Fable 5.1 (starszy)",
+                  "ko": "Claude Fable 5.1 (레거시)",
+                  "ar": "Claude Fable 5.1 (قديم)"
+                }
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "effort",
+            "title": {
+              "en": "Reasoning",
+              "nl": "Reasoning",
+              "de": "Reasoning",
+              "fr": "Reasoning",
+              "it": "Reasoning",
+              "sv": "Reasoning",
+              "no": "Reasoning",
+              "es": "Reasoning",
+              "da": "Reasoning",
+              "ru": "Reasoning",
+              "pl": "Reasoning",
+              "ko": "Reasoning",
+              "ar": "Reasoning"
+            },
+            "values": [
+              {
+                "id": "medium",
+                "label": {
+                  "en": "Medium",
+                  "nl": "Gemiddeld",
+                  "de": "Mittel",
+                  "fr": "Moyen",
+                  "it": "Medio",
+                  "sv": "Medel",
+                  "no": "Middels",
+                  "es": "Medio",
+                  "da": "Middel",
+                  "ru": "Средний",
+                  "pl": "Średni",
+                  "ko": "보통",
+                  "ar": "متوسط"
+                }
+              },
+              {
+                "id": "low",
+                "label": {
+                  "en": "Low",
+                  "nl": "Laag",
+                  "de": "Niedrig",
+                  "fr": "Faible",
+                  "it": "Basso",
+                  "sv": "Låg",
+                  "no": "Lav",
+                  "es": "Bajo",
+                  "da": "Lav",
+                  "ru": "Низкий",
+                  "pl": "Niski",
+                  "ko": "낮음",
+                  "ar": "منخفض"
+                }
+              },
+              {
+                "id": "high",
+                "label": {
+                  "en": "High",
+                  "nl": "Hoog",
+                  "de": "Hoch",
+                  "fr": "Élevé",
+                  "it": "Alto",
+                  "sv": "Hög",
+                  "no": "Høy",
+                  "es": "Alto",
+                  "da": "Høj",
+                  "ru": "Высокий",
+                  "pl": "Wysoki",
+                  "ko": "높음",
+                  "ar": "عالٍ"
+                }
+              },
+              {
+                "id": "xhigh",
+                "label": {
+                  "en": "Extra high",
+                  "nl": "Extra hoog",
+                  "de": "Sehr hoch",
+                  "fr": "Très élevé",
+                  "it": "Molto alto",
+                  "sv": "Mycket hög",
+                  "no": "Svært høy",
+                  "es": "Muy alto",
+                  "da": "Meget høj",
+                  "ru": "Очень высокий",
+                  "pl": "Bardzo wysoki",
+                  "ko": "매우 높음",
+                  "ar": "عالٍ جدًا"
+                }
+              },
+              {
+                "id": "max",
+                "label": {
+                  "en": "Max",
+                  "nl": "Max",
+                  "de": "Maximal",
+                  "fr": "Maximum",
+                  "it": "Massimo",
+                  "sv": "Max",
+                  "no": "Maks",
+                  "es": "Máximo",
+                  "da": "Maks",
+                  "ru": "Максимальный",
+                  "pl": "Maksymalny",
+                  "ko": "최대",
+                  "ar": "أقصى"
+                }
+              }
+            ]
+          }
+        ],
+        "tokens": [
+          {
+            "name": "answer",
+            "type": "string",
+            "title": {
+              "en": "Answer",
+              "nl": "Antwoord",
+              "de": "Antwort",
+              "fr": "Réponse",
+              "it": "Risposta",
+              "sv": "Svar",
+              "no": "Svar",
+              "es": "Respuesta",
+              "da": "Svar",
+              "ru": "Ответ",
+              "pl": "Odpowiedź",
+              "ko": "답변",
+              "ar": "إجابة"
+            },
+            "example": {
+              "en": "Paris is the capital of France.",
+              "nl": "Parijs is de hoofdstad van Frankrijk.",
+              "de": "Paris ist die Hauptstadt von Frankreich.",
+              "fr": "Paris est la capitale de la France.",
+              "it": "Parigi è la capitale della Francia.",
+              "sv": "Paris är Frankrikes huvudstad.",
+              "no": "Paris er Frankrikes hovedstad.",
+              "es": "París es la capital de Francia.",
+              "da": "Paris er Frankrigs hovedstad.",
+              "ru": "Париж — столица Франции.",
+              "pl": "Paryż jest stolicą Francji.",
+              "ko": "파리는 프랑스의 수도입니다.",
+              "ar": "باريس هي عاصمة فرنسا."
+            }
+          },
+          {
+            "name": "model_used",
+            "type": "string",
+            "title": {
+              "en": "Model used",
+              "nl": "Gebruikte model",
+              "de": "Verwendetes Modell",
+              "fr": "Modèle utilisé",
+              "it": "Modello utilizzato",
+              "sv": "Använd modell",
+              "no": "Brukt modell",
+              "es": "Modelo utilizado",
+              "da": "Brugt model",
+              "ru": "Используемая модель",
+              "pl": "Użyty model",
+              "ko": "사용된 모델",
+              "ar": "النموذج المستخدم"
+            },
+            "example": {
+              "en": "claude-haiku-4-5-20251001",
+              "nl": "claude-haiku-4-5-20251001",
+              "de": "claude-haiku-4-5-20251001",
+              "fr": "claude-haiku-4-5-20251001",
+              "it": "claude-haiku-4-5-20251001",
+              "sv": "claude-haiku-4-5-20251001",
+              "no": "claude-haiku-4-5-20251001",
+              "es": "claude-haiku-4-5-20251001",
+              "da": "claude-haiku-4-5-20251001",
+              "ru": "claude-haiku-4-5-20251001",
+              "pl": "claude-haiku-4-5-20251001",
+              "ko": "claude-haiku-4-5-20251001",
+              "ar": "claude-haiku-4-5-20251001"
+            }
+          }
+        ]
+      },
+      {
         "id": "ask_with_model",
         "title": {
           "en": "Ask Claude a question (choose model)",

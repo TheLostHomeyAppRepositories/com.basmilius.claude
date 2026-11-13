@@ -82,26 +82,42 @@ export default class Claude extends Shortcuts<ClaudeApp> {
     }
 
     /**
+     * Sends a message to Claude with access to one or more MCP servers as tools and one or
+     * more custom skills loaded.
+     */
+    async askWithMcpServersAndSkills(prompt: string, mcpServers: BetaRequestMCPServerURLDefinition[], skills: readonly StoredSkill[], systemPrompt?: string, model?: string, maxTokens?: number, effort?: string): Promise<AskResult> {
+        const client = this.#createClient();
+        const params = this.#buildParams(systemPrompt, model, maxTokens, effort);
+
+        params.system = withSkillInstruction(params.system, skills);
+
+        return this.#execute([{role: 'user', content: prompt}], messages => client.beta.messages.create({
+            ...params,
+            messages,
+            betas: ['mcp-client-2025-11-20'],
+            mcp_servers: mcpServers,
+            container: skillContainer(skills),
+            tools: [
+                ...mcpServers.map(server => ({type: 'mcp_toolset' as const, mcp_server_name: server.name})),
+                {type: 'code_execution_20260521', name: 'code_execution'}
+            ]
+        }));
+    }
+
+    /**
      * Sends a message to Claude with one or more custom skills loaded. Skills run inside the
      * code execution container, which the tool below provisions.
-     *
-     * Claude only reads a SKILL.md when the question matches the skill description, so the
-     * system prompt names the skills: the flow card already picked them.
      */
     async askWithSkills(prompt: string, skills: readonly StoredSkill[], systemPrompt?: string, model?: string, maxTokens?: number, effort?: string): Promise<AskResult> {
         const client = this.#createClient();
         const params = this.#buildParams(systemPrompt, model, maxTokens, effort);
-        const names = skills.map(skill => `\`${skill.name}\``).join(' and ');
-        const noun = skills.length === 1 ? 'skill' : 'skills';
 
-        params.system = [params.system, `Use the ${names} ${noun} for this request. Read the SKILL.md first and follow it, even when the question does not mention it.`]
-            .filter(Boolean)
-            .join('\n\n');
+        params.system = withSkillInstruction(params.system, skills);
 
         return this.#execute([{role: 'user', content: prompt}], messages => client.messages.create({
             ...params,
             messages,
-            container: {skills: skills.map(skill => ({type: 'custom', skill_id: skill.id, version: 'latest'}))},
+            container: skillContainer(skills),
             tools: [{type: 'code_execution_20260521', name: 'code_execution'}]
         }));
     }
@@ -240,6 +256,27 @@ function effectiveEffort(model: string, requested: string): Effort | null {
     }
 
     return requested === 'xhigh' ? 'high' : 'medium';
+}
+
+/**
+ * Builds the container that loads the given skills for code execution.
+ */
+function skillContainer(skills: readonly StoredSkill[]): Anthropic.Messages.ContainerParams {
+    return {skills: skills.map(skill => ({type: 'custom', skill_id: skill.id, version: 'latest'}))};
+}
+
+/**
+ * Appends the instruction to use the given skills to the system prompt. Claude only reads a
+ * SKILL.md when the question matches the skill description, so the system prompt names the
+ * skills: the flow card already picked them.
+ */
+function withSkillInstruction(system: RequestParams['system'], skills: readonly StoredSkill[]): string {
+    const names = skills.map(skill => `\`${skill.name}\``).join(' and ');
+    const noun = skills.length === 1 ? 'skill' : 'skills';
+
+    return [system, `Use the ${names} ${noun} for this request. Read the SKILL.md first and follow it, even when the question does not mention it.`]
+        .filter(Boolean)
+        .join('\n\n');
 }
 
 /**

@@ -1,3 +1,4 @@
+import type { BetaRequestMCPServerURLDefinition } from '@anthropic-ai/sdk/resources/beta/messages/messages';
 import { Shortcuts } from '@basmilius/homey-common';
 import { HOMEY_MCP_REGISTER_ENDPOINT, HOMEY_MCP_SERVER_URL, HOMEY_MCP_TOKEN_ENDPOINT, SETTING_HOMEY_MCP_ACCESS_TOKEN, SETTING_HOMEY_MCP_CLIENT_ID, SETTING_HOMEY_MCP_CLIENT_SECRET, SETTING_HOMEY_MCP_REFRESH_TOKEN, SETTING_HOMEY_MCP_TOKEN_EXPIRES_AT } from '../const';
 import type { ClaudeApp } from '../types';
@@ -15,6 +16,19 @@ export default class HomeyMcp extends Shortcuts<ClaudeApp> {
      */
     get isConnected(): boolean {
         return !!this.settings.get(SETTING_HOMEY_MCP_ACCESS_TOKEN);
+    }
+
+    /**
+     * Returns the Homey MCP server definition for a Claude request, with a valid access token.
+     * Throws if not connected.
+     */
+    async getServer(): Promise<BetaRequestMCPServerURLDefinition> {
+        return {
+            type: 'url',
+            name: 'homey',
+            url: HOMEY_MCP_SERVER_URL,
+            authorization_token: await this.getAccessToken()
+        };
     }
 
     /**

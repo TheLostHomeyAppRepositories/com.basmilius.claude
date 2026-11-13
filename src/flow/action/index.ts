@@ -4,6 +4,8 @@ export { default as ApplyMood } from './applyMood';
 export { default as ApplyMoodWithModel } from './applyMoodWithModel';
 export { default as Ask } from './ask';
 export { default as AskWithHomey } from './askWithHomey';
+export { default as AskWithHomeyWithSkill } from './askWithHomeyWithSkill';
+export { default as AskWithHomeyWithSkillWithModel } from './askWithHomeyWithSkillWithModel';
 export { default as AskWithModel } from './askWithModel';
 export { default as AskWithSkill } from './askWithSkill';
 export { default as AskWithSkillWithModel } from './askWithSkillWithModel';
