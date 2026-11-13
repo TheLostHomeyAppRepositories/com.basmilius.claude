@@ -47,5 +47,20 @@
         "pl": "Dodano Claude Fable 5.2, Opus 5.5, Sonnet 5.5 i Haiku 5.5. Sonnet 5.5 jest nowym modelem domyślnym. Karty Flow z wyborem modelu mają teraz ustawienie Reasoning. Usunięto Opus 4.6 i Sonnet 4.6. Jeśli jeden z nich był Twoim modelem domyślnym, aplikacja używa teraz Opus 5.5 lub Sonnet 5.5.",
         "ko": "Claude Fable 5.2, Opus 5.5, Sonnet 5.5, Haiku 5.5를 추가했습니다. Sonnet 5.5가 새 기본 모델입니다. 모델을 선택하는 Flow 카드에 Reasoning 설정이 추가되었습니다. Opus 4.6과 Sonnet 4.6을 제거했습니다. 둘 중 하나가 기본 모델이었다면 이제 앱은 Opus 5.5 또는 Sonnet 5.5를 사용합니다.",
         "ar": "تمت إضافة Claude Fable 5.2 وOpus 5.5 وSonnet 5.5 وHaiku 5.5. أصبح Sonnet 5.5 هو النموذج الافتراضي الجديد. تحتوي بطاقات Flow التي تختار نموذجًا الآن على إعداد Reasoning. تمت إزالة Opus 4.6 وSonnet 4.6. إذا كان أحدهما نموذجك الافتراضي، فسيستخدم التطبيق الآن Opus 5.5 أو Sonnet 5.5."
+    },
+    "1.7.0": {
+        "en": "Added Ask Claude (Homey) cards with a skill. Claude can now use one of your skills while it reads and controls your Homey.",
+        "nl": "Kaarten Vraag Claude (Homey) met een skill toegevoegd. Claude kan nu een van je skills gebruiken terwijl het je Homey uitleest en bedient.",
+        "de": "Karten Frage Claude (Homey) mit einem Skill hinzugefügt. Claude kann jetzt einen deiner Skills nutzen, während es dein Homey ausliest und steuert.",
+        "fr": "Ajout des cartes Demande à Claude (Homey) avec une compétence. Claude peut désormais utiliser l'une de vos compétences pendant qu'il consulte et contrôle votre Homey.",
+        "it": "Aggiunte le schede Chiedi a Claude (Homey) con una skill. Claude ora può usare una delle tue skill mentre legge e controlla il tuo Homey.",
+        "sv": "Lade till korten Fråga Claude (Homey) med en färdighet. Claude kan nu använda en av dina färdigheter medan den läser av och styr din Homey.",
+        "no": "La til kortene Spør Claude (Homey) med en ferdighet. Claude kan nå bruke en av ferdighetene dine mens den leser av og styrer Homey-en din.",
+        "es": "Se añadieron las tarjetas Pregunta a Claude (Homey) con una habilidad. Claude ahora puede usar una de tus habilidades mientras consulta y controla tu Homey.",
+        "da": "Tilføjede kortene Spørg Claude (Homey) med en færdighed. Claude kan nu bruge en af dine færdigheder, mens den aflæser og styrer din Homey.",
+        "ru": "Добавлены карточки «Спросить Claude (Homey)» с навыком. Теперь Claude может использовать один из ваших навыков, когда читает данные Homey и управляет им.",
+        "pl": "Dodano karty Zapytaj Claude (Homey) z umiejętnością. Claude może teraz korzystać z jednej z Twoich umiejętności, odczytując dane z Homey i sterując nim.",
+        "ko": "스킬을 사용하는 Claude에게 질문 (Homey) 카드를 추가했습니다. 이제 Claude가 Homey를 조회하고 제어하면서 스킬 중 하나를 사용할 수 있습니다.",
+        "ar": "تمت إضافة بطاقات اسأل Claude (Homey) مع مهارة. يمكن لـ Claude الآن استخدام إحدى مهاراتك أثناء قراءة Homey والتحكم فيه."
     }
 }
