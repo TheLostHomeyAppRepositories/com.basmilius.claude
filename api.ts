@@ -1,6 +1,6 @@
 import Anthropic from '@anthropic-ai/sdk';
 import type { ApiRequest } from '@basmilius/homey-common';
-import { DEFAULT_EFFORT, DEFAULT_MAX_TOKENS, DEFAULT_MODEL, HOMEY_MCP_AUTH_ENDPOINT, SETTING_API_KEY, SETTING_CUSTOM_INSTRUCTIONS, SETTING_DEFAULT_EFFORT, SETTING_DEFAULT_MODEL, SETTING_DEFAULT_SYSTEM_PROMPT, SETTING_MAX_TOKENS } from './src/const';
+import { DEFAULT_EFFORT, DEFAULT_MAX_TOKENS, DEFAULT_MODEL, HOMEY_MCP_AUTH_ENDPOINT, SETTING_API_KEY, SETTING_CUSTOM_INSTRUCTIONS, SETTING_DEFAULT_EFFORT, SETTING_DEFAULT_MODEL, SETTING_DEFAULT_SYSTEM_PROMPT, SETTING_MAX_TOKENS, UTILITY_MODEL, replaceRemovedModel } from './src/const';
 import type { ClaudeApp, SkillInput } from './src/types';
 
 type AppRequest<TBody = never, TParams = never> = ApiRequest<ClaudeApp, TBody, TParams>;
@@ -20,7 +20,7 @@ module.exports = {
             apiKey: homey.settings.get(SETTING_API_KEY) ?? null,
             customInstructions: homey.settings.get(SETTING_CUSTOM_INSTRUCTIONS) ?? null,
             defaultEffort: homey.settings.get(SETTING_DEFAULT_EFFORT) ?? DEFAULT_EFFORT,
-            defaultModel: homey.settings.get(SETTING_DEFAULT_MODEL) ?? DEFAULT_MODEL,
+            defaultModel: replaceRemovedModel(homey.settings.get(SETTING_DEFAULT_MODEL) ?? DEFAULT_MODEL),
             defaultSystemPrompt: homey.settings.get(SETTING_DEFAULT_SYSTEM_PROMPT) ?? null,
             maxTokens: homey.settings.get(SETTING_MAX_TOKENS) ?? DEFAULT_MAX_TOKENS
         };
@@ -41,7 +41,7 @@ module.exports = {
 
         try {
             await client.messages.create({
-                model: 'claude-haiku-4-5-20251001',
+                model: UTILITY_MODEL,
                 max_tokens: 16,
                 messages: [{role: 'user', content: 'Hi'}]
             });
@@ -162,17 +162,19 @@ module.exports = {
         const client = new Anthropic({apiKey});
 
         const response = await client.messages.create({
-            model: 'claude-haiku-4-5-20251001',
-            max_tokens: 1024,
+            model: UTILITY_MODEL,
+            max_tokens: 4096,
+            output_config: {effort: 'low'},
             messages: [{
                 role: 'user',
                 content: `Convert the following natural language instructions into a clear, well-structured system prompt for an AI assistant. Keep it concise, actionable, and well-organized. Output only the system prompt, nothing else.\n\nInstructions:\n${body.instructions}`
             }]
         });
 
-        const content = response.content[0];
+        // Haiku 5.5 always thinks, so the answer follows a thinking block.
+        const content = response.content.find(block => block.type === 'text');
 
-        if (content.type !== 'text') {
+        if (!content) {
             throw new Error('Unexpected response from Claude.');
         }
 

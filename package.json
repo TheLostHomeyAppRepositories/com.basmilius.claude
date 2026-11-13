@@ -10,7 +10,7 @@
         "@basmilius/homey-common": "^1.25.0"
     },
     "devDependencies": {
-        "@anthropic-ai/sdk": "^0.132.1",
+        "@anthropic-ai/sdk": "^1.8.0",
         "@tsconfig/node22": "^22.0.6",
         "@types/bun": "^1.4.2",
         "@types/homey": "npm:homey-apps-sdk-v3-types@^0.3.12",

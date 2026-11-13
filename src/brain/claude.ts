@@ -2,7 +2,7 @@ import Anthropic from '@anthropic-ai/sdk';
 import type { Base64ImageSource } from '@anthropic-ai/sdk/resources/messages/messages';
 import type { BetaRequestMCPServerURLDefinition } from '@anthropic-ai/sdk/resources/beta/messages/messages';
 import { Shortcuts } from '@basmilius/homey-common';
-import { DEFAULT_EFFORT, DEFAULT_MAX_TOKENS, DEFAULT_MODEL, MAX_SERVER_TOOL_TURNS, MAX_WEB_CONTENT_TOKENS, MAX_WEB_FETCHES, MAX_WEB_SEARCHES, MODELS, SETTING_API_KEY, SETTING_DEFAULT_EFFORT, SETTING_DEFAULT_MODEL, SETTING_DEFAULT_SYSTEM_PROMPT, SETTING_MAX_TOKENS, type Effort } from '../const';
+import { DEFAULT_EFFORT, DEFAULT_MAX_TOKENS, DEFAULT_MODEL, MAX_SERVER_TOOL_TURNS, MAX_WEB_CONTENT_TOKENS, MAX_WEB_FETCHES, MAX_WEB_SEARCHES, MODELS, SETTING_API_KEY, SETTING_DEFAULT_EFFORT, SETTING_DEFAULT_MODEL, SETTING_DEFAULT_SYSTEM_PROMPT, SETTING_MAX_TOKENS, replaceRemovedModel, type Effort } from '../const';
 import type { ClaudeApp, ConversationMessage, StoredSkill } from '../types';
 
 /**
@@ -119,9 +119,9 @@ export default class Claude extends Shortcuts<ClaudeApp> {
     }
 
     #buildParams(systemPrompt?: string, model?: string, maxTokens?: number, effort?: string): RequestParams {
-        const resolvedModel = model && model !== 'default'
+        const resolvedModel = replaceRemovedModel(model && model !== 'default'
             ? model
-            : (this.settings.get(SETTING_DEFAULT_MODEL) as string | null ?? DEFAULT_MODEL);
+            : (this.settings.get(SETTING_DEFAULT_MODEL) as string | null ?? DEFAULT_MODEL));
 
         const resolvedMaxTokens = maxTokens
             ?? (this.settings.get(SETTING_MAX_TOKENS) as number | null ?? DEFAULT_MAX_TOKENS);
@@ -226,7 +226,7 @@ function asFlowError(err: unknown): Error {
 
 /**
  * Returns the effort level to send, or null when the model does not take one. A level the
- * model lacks (`xhigh` on the 4.6 models) drops to the nearest lower level.
+ * model lacks drops to a lower level.
  */
 function effectiveEffort(model: string, requested: string): Effort | null {
     const efforts: readonly string[] = MODELS.find(entry => entry.id === model)?.efforts ?? [];

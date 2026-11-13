@@ -898,21 +898,21 @@
             },
             "values": [
               {
-                "id": "claude-fable-5-1",
+                "id": "claude-fable-5-2",
                 "label": {
-                  "en": "Claude Fable 5.1",
-                  "nl": "Claude Fable 5.1",
-                  "de": "Claude Fable 5.1",
-                  "fr": "Claude Fable 5.1",
-                  "it": "Claude Fable 5.1",
-                  "sv": "Claude Fable 5.1",
-                  "no": "Claude Fable 5.1",
-                  "es": "Claude Fable 5.1",
-                  "da": "Claude Fable 5.1",
-                  "ru": "Claude Fable 5.1",
-                  "pl": "Claude Fable 5.1",
-                  "ko": "Claude Fable 5.1",
-                  "ar": "Claude Fable 5.1"
+                  "en": "Claude Fable 5.2",
+                  "nl": "Claude Fable 5.2",
+                  "de": "Claude Fable 5.2",
+                  "fr": "Claude Fable 5.2",
+                  "it": "Claude Fable 5.2",
+                  "sv": "Claude Fable 5.2",
+                  "no": "Claude Fable 5.2",
+                  "es": "Claude Fable 5.2",
+                  "da": "Claude Fable 5.2",
+                  "ru": "Claude Fable 5.2",
+                  "pl": "Claude Fable 5.2",
+                  "ko": "Claude Fable 5.2",
+                  "ar": "Claude Fable 5.2"
                 }
               },
               {
@@ -967,6 +967,24 @@
                   "pl": "Claude Haiku 5.5",
                   "ko": "Claude Haiku 5.5",
                   "ar": "Claude Haiku 5.5"
+                }
+              },
+              {
+                "id": "claude-fable-5-1",
+                "label": {
+                  "en": "Claude Fable 5.1 (legacy)",
+                  "nl": "Claude Fable 5.1 (verouderd)",
+                  "de": "Claude Fable 5.1 (veraltet)",
+                  "fr": "Claude Fable 5.1 (ancien)",
+                  "it": "Claude Fable 5.1 (obsoleto)",
+                  "sv": "Claude Fable 5.1 (äldre)",
+                  "no": "Claude Fable 5.1 (eldre)",
+                  "es": "Claude Fable 5.1 (heredado)",
+                  "da": "Claude Fable 5.1 (ældre)",
+                  "ru": "Claude Fable 5.1 (устаревшая)",
+                  "pl": "Claude Fable 5.1 (starszy)",
+                  "ko": "Claude Fable 5.1 (레거시)",
+                  "ar": "Claude Fable 5.1 (قديم)"
                 }
               }
             ]
@@ -1410,21 +1428,21 @@
             },
             "values": [
               {
-                "id": "claude-fable-5-1",
+                "id": "claude-fable-5-2",
                 "label": {
-                  "en": "Claude Fable 5.1",
-                  "nl": "Claude Fable 5.1",
-                  "de": "Claude Fable 5.1",
-                  "fr": "Claude Fable 5.1",
-                  "it": "Claude Fable 5.1",
-                  "sv": "Claude Fable 5.1",
-                  "no": "Claude Fable 5.1",
-                  "es": "Claude Fable 5.1",
-                  "da": "Claude Fable 5.1",
-                  "ru": "Claude Fable 5.1",
-                  "pl": "Claude Fable 5.1",
-                  "ko": "Claude Fable 5.1",
-                  "ar": "Claude Fable 5.1"
+                  "en": "Claude Fable 5.2",
+                  "nl": "Claude Fable 5.2",
+                  "de": "Claude Fable 5.2",
+                  "fr": "Claude Fable 5.2",
+                  "it": "Claude Fable 5.2",
+                  "sv": "Claude Fable 5.2",
+                  "no": "Claude Fable 5.2",
+                  "es": "Claude Fable 5.2",
+                  "da": "Claude Fable 5.2",
+                  "ru": "Claude Fable 5.2",
+                  "pl": "Claude Fable 5.2",
+                  "ko": "Claude Fable 5.2",
+                  "ar": "Claude Fable 5.2"
                 }
               },
               {
@@ -1479,6 +1497,24 @@
                   "pl": "Claude Haiku 5.5",
                   "ko": "Claude Haiku 5.5",
                   "ar": "Claude Haiku 5.5"
+                }
+              },
+              {
+                "id": "claude-fable-5-1",
+                "label": {
+                  "en": "Claude Fable 5.1 (legacy)",
+                  "nl": "Claude Fable 5.1 (verouderd)",
+                  "de": "Claude Fable 5.1 (veraltet)",
+                  "fr": "Claude Fable 5.1 (ancien)",
+                  "it": "Claude Fable 5.1 (obsoleto)",
+                  "sv": "Claude Fable 5.1 (äldre)",
+                  "no": "Claude Fable 5.1 (eldre)",
+                  "es": "Claude Fable 5.1 (heredado)",
+                  "da": "Claude Fable 5.1 (ældre)",
+                  "ru": "Claude Fable 5.1 (устаревшая)",
+                  "pl": "Claude Fable 5.1 (starszy)",
+                  "ko": "Claude Fable 5.1 (레거시)",
+                  "ar": "Claude Fable 5.1 (قديم)"
                 }
               }
             ]
@@ -2076,21 +2112,21 @@
             },
             "values": [
               {
-                "id": "claude-fable-5-1",
+                "id": "claude-fable-5-2",
                 "label": {
-                  "en": "Claude Fable 5.1",
-                  "nl": "Claude Fable 5.1",
-                  "de": "Claude Fable 5.1",
-                  "fr": "Claude Fable 5.1",
-                  "it": "Claude Fable 5.1",
-                  "sv": "Claude Fable 5.1",
-                  "no": "Claude Fable 5.1",
-                  "es": "Claude Fable 5.1",
-                  "da": "Claude Fable 5.1",
-                  "ru": "Claude Fable 5.1",
-                  "pl": "Claude Fable 5.1",
-                  "ko": "Claude Fable 5.1",
-                  "ar": "Claude Fable 5.1"
+                  "en": "Claude Fable 5.2",
+                  "nl": "Claude Fable 5.2",
+                  "de": "Claude Fable 5.2",
+                  "fr": "Claude Fable 5.2",
+                  "it": "Claude Fable 5.2",
+                  "sv": "Claude Fable 5.2",
+                  "no": "Claude Fable 5.2",
+                  "es": "Claude Fable 5.2",
+                  "da": "Claude Fable 5.2",
+                  "ru": "Claude Fable 5.2",
+                  "pl": "Claude Fable 5.2",
+                  "ko": "Claude Fable 5.2",
+                  "ar": "Claude Fable 5.2"
                 }
               },
               {
@@ -2145,6 +2181,24 @@
                   "pl": "Claude Haiku 5.5",
                   "ko": "Claude Haiku 5.5",
                   "ar": "Claude Haiku 5.5"
+                }
+              },
+              {
+                "id": "claude-fable-5-1",
+                "label": {
+                  "en": "Claude Fable 5.1 (legacy)",
+                  "nl": "Claude Fable 5.1 (verouderd)",
+                  "de": "Claude Fable 5.1 (veraltet)",
+                  "fr": "Claude Fable 5.1 (ancien)",
+                  "it": "Claude Fable 5.1 (obsoleto)",
+                  "sv": "Claude Fable 5.1 (äldre)",
+                  "no": "Claude Fable 5.1 (eldre)",
+                  "es": "Claude Fable 5.1 (heredado)",
+                  "da": "Claude Fable 5.1 (ældre)",
+                  "ru": "Claude Fable 5.1 (устаревшая)",
+                  "pl": "Claude Fable 5.1 (starszy)",
+                  "ko": "Claude Fable 5.1 (레거시)",
+                  "ar": "Claude Fable 5.1 (قديم)"
                 }
               }
             ]
@@ -2626,21 +2680,21 @@
             },
             "values": [
               {
-                "id": "claude-fable-5-1",
+                "id": "claude-fable-5-2",
                 "label": {
-                  "en": "Claude Fable 5.1",
-                  "nl": "Claude Fable 5.1",
-                  "de": "Claude Fable 5.1",
-                  "fr": "Claude Fable 5.1",
-                  "it": "Claude Fable 5.1",
-                  "sv": "Claude Fable 5.1",
-                  "no": "Claude Fable 5.1",
-                  "es": "Claude Fable 5.1",
-                  "da": "Claude Fable 5.1",
-                  "ru": "Claude Fable 5.1",
-                  "pl": "Claude Fable 5.1",
-                  "ko": "Claude Fable 5.1",
-                  "ar": "Claude Fable 5.1"
+                  "en": "Claude Fable 5.2",
+                  "nl": "Claude Fable 5.2",
+                  "de": "Claude Fable 5.2",
+                  "fr": "Claude Fable 5.2",
+                  "it": "Claude Fable 5.2",
+                  "sv": "Claude Fable 5.2",
+                  "no": "Claude Fable 5.2",
+                  "es": "Claude Fable 5.2",
+                  "da": "Claude Fable 5.2",
+                  "ru": "Claude Fable 5.2",
+                  "pl": "Claude Fable 5.2",
+                  "ko": "Claude Fable 5.2",
+                  "ar": "Claude Fable 5.2"
                 }
               },
               {
@@ -2695,6 +2749,24 @@
                   "pl": "Claude Haiku 5.5",
                   "ko": "Claude Haiku 5.5",
                   "ar": "Claude Haiku 5.5"
+                }
+              },
+              {
+                "id": "claude-fable-5-1",
+                "label": {
+                  "en": "Claude Fable 5.1 (legacy)",
+                  "nl": "Claude Fable 5.1 (verouderd)",
+                  "de": "Claude Fable 5.1 (veraltet)",
+                  "fr": "Claude Fable 5.1 (ancien)",
+                  "it": "Claude Fable 5.1 (obsoleto)",
+                  "sv": "Claude Fable 5.1 (äldre)",
+                  "no": "Claude Fable 5.1 (eldre)",
+                  "es": "Claude Fable 5.1 (heredado)",
+                  "da": "Claude Fable 5.1 (ældre)",
+                  "ru": "Claude Fable 5.1 (устаревшая)",
+                  "pl": "Claude Fable 5.1 (starszy)",
+                  "ko": "Claude Fable 5.1 (레거시)",
+                  "ar": "Claude Fable 5.1 (قديم)"
                 }
               }
             ]
@@ -3138,21 +3210,21 @@
             },
             "values": [
               {
-                "id": "claude-fable-5-1",
+                "id": "claude-fable-5-2",
                 "label": {
-                  "en": "Claude Fable 5.1",
-                  "nl": "Claude Fable 5.1",
-                  "de": "Claude Fable 5.1",
-                  "fr": "Claude Fable 5.1",
-                  "it": "Claude Fable 5.1",
-                  "sv": "Claude Fable 5.1",
-                  "no": "Claude Fable 5.1",
-                  "es": "Claude Fable 5.1",
-                  "da": "Claude Fable 5.1",
-                  "ru": "Claude Fable 5.1",
-                  "pl": "Claude Fable 5.1",
-                  "ko": "Claude Fable 5.1",
-                  "ar": "Claude Fable 5.1"
+                  "en": "Claude Fable 5.2",
+                  "nl": "Claude Fable 5.2",
+                  "de": "Claude Fable 5.2",
+                  "fr": "Claude Fable 5.2",
+                  "it": "Claude Fable 5.2",
+                  "sv": "Claude Fable 5.2",
+                  "no": "Claude Fable 5.2",
+                  "es": "Claude Fable 5.2",
+                  "da": "Claude Fable 5.2",
+                  "ru": "Claude Fable 5.2",
+                  "pl": "Claude Fable 5.2",
+                  "ko": "Claude Fable 5.2",
+                  "ar": "Claude Fable 5.2"
                 }
               },
               {
@@ -3207,6 +3279,24 @@
                   "pl": "Claude Haiku 5.5",
                   "ko": "Claude Haiku 5.5",
                   "ar": "Claude Haiku 5.5"
+                }
+              },
+              {
+                "id": "claude-fable-5-1",
+                "label": {
+                  "en": "Claude Fable 5.1 (legacy)",
+                  "nl": "Claude Fable 5.1 (verouderd)",
+                  "de": "Claude Fable 5.1 (veraltet)",
+                  "fr": "Claude Fable 5.1 (ancien)",
+                  "it": "Claude Fable 5.1 (obsoleto)",
+                  "sv": "Claude Fable 5.1 (äldre)",
+                  "no": "Claude Fable 5.1 (eldre)",
+                  "es": "Claude Fable 5.1 (heredado)",
+                  "da": "Claude Fable 5.1 (ældre)",
+                  "ru": "Claude Fable 5.1 (устаревшая)",
+                  "pl": "Claude Fable 5.1 (starszy)",
+                  "ko": "Claude Fable 5.1 (레거시)",
+                  "ar": "Claude Fable 5.1 (قديم)"
                 }
               }
             ]
@@ -3786,21 +3876,21 @@
             },
             "values": [
               {
-                "id": "claude-fable-5-1",
+                "id": "claude-fable-5-2",
                 "label": {
-                  "en": "Claude Fable 5.1",
-                  "nl": "Claude Fable 5.1",
-                  "de": "Claude Fable 5.1",
-                  "fr": "Claude Fable 5.1",
-                  "it": "Claude Fable 5.1",
-                  "sv": "Claude Fable 5.1",
-                  "no": "Claude Fable 5.1",
-                  "es": "Claude Fable 5.1",
-                  "da": "Claude Fable 5.1",
-                  "ru": "Claude Fable 5.1",
-                  "pl": "Claude Fable 5.1",
-                  "ko": "Claude Fable 5.1",
-                  "ar": "Claude Fable 5.1"
+                  "en": "Claude Fable 5.2",
+                  "nl": "Claude Fable 5.2",
+                  "de": "Claude Fable 5.2",
+                  "fr": "Claude Fable 5.2",
+                  "it": "Claude Fable 5.2",
+                  "sv": "Claude Fable 5.2",
+                  "no": "Claude Fable 5.2",
+                  "es": "Claude Fable 5.2",
+                  "da": "Claude Fable 5.2",
+                  "ru": "Claude Fable 5.2",
+                  "pl": "Claude Fable 5.2",
+                  "ko": "Claude Fable 5.2",
+                  "ar": "Claude Fable 5.2"
                 }
               },
               {
@@ -3855,6 +3945,24 @@
                   "pl": "Claude Haiku 5.5",
                   "ko": "Claude Haiku 5.5",
                   "ar": "Claude Haiku 5.5"
+                }
+              },
+              {
+                "id": "claude-fable-5-1",
+                "label": {
+                  "en": "Claude Fable 5.1 (legacy)",
+                  "nl": "Claude Fable 5.1 (verouderd)",
+                  "de": "Claude Fable 5.1 (veraltet)",
+                  "fr": "Claude Fable 5.1 (ancien)",
+                  "it": "Claude Fable 5.1 (obsoleto)",
+                  "sv": "Claude Fable 5.1 (äldre)",
+                  "no": "Claude Fable 5.1 (eldre)",
+                  "es": "Claude Fable 5.1 (heredado)",
+                  "da": "Claude Fable 5.1 (ældre)",
+                  "ru": "Claude Fable 5.1 (устаревшая)",
+                  "pl": "Claude Fable 5.1 (starszy)",
+                  "ko": "Claude Fable 5.1 (레거시)",
+                  "ar": "Claude Fable 5.1 (قديم)"
                 }
               }
             ]
@@ -4518,21 +4626,21 @@
             },
             "values": [
               {
-                "id": "claude-fable-5-1",
+                "id": "claude-fable-5-2",
                 "label": {
-                  "en": "Claude Fable 5.1",
-                  "nl": "Claude Fable 5.1",
-                  "de": "Claude Fable 5.1",
-                  "fr": "Claude Fable 5.1",
-                  "it": "Claude Fable 5.1",
-                  "sv": "Claude Fable 5.1",
-                  "no": "Claude Fable 5.1",
-                  "es": "Claude Fable 5.1",
-                  "da": "Claude Fable 5.1",
-                  "ru": "Claude Fable 5.1",
-                  "pl": "Claude Fable 5.1",
-                  "ko": "Claude Fable 5.1",
-                  "ar": "Claude Fable 5.1"
+                  "en": "Claude Fable 5.2",
+                  "nl": "Claude Fable 5.2",
+                  "de": "Claude Fable 5.2",
+                  "fr": "Claude Fable 5.2",
+                  "it": "Claude Fable 5.2",
+                  "sv": "Claude Fable 5.2",
+                  "no": "Claude Fable 5.2",
+                  "es": "Claude Fable 5.2",
+                  "da": "Claude Fable 5.2",
+                  "ru": "Claude Fable 5.2",
+                  "pl": "Claude Fable 5.2",
+                  "ko": "Claude Fable 5.2",
+                  "ar": "Claude Fable 5.2"
                 }
               },
               {
@@ -4587,6 +4695,24 @@
                   "pl": "Claude Haiku 5.5",
                   "ko": "Claude Haiku 5.5",
                   "ar": "Claude Haiku 5.5"
+                }
+              },
+              {
+                "id": "claude-fable-5-1",
+                "label": {
+                  "en": "Claude Fable 5.1 (legacy)",
+                  "nl": "Claude Fable 5.1 (verouderd)",
+                  "de": "Claude Fable 5.1 (veraltet)",
+                  "fr": "Claude Fable 5.1 (ancien)",
+                  "it": "Claude Fable 5.1 (obsoleto)",
+                  "sv": "Claude Fable 5.1 (äldre)",
+                  "no": "Claude Fable 5.1 (eldre)",
+                  "es": "Claude Fable 5.1 (heredado)",
+                  "da": "Claude Fable 5.1 (ældre)",
+                  "ru": "Claude Fable 5.1 (устаревшая)",
+                  "pl": "Claude Fable 5.1 (starszy)",
+                  "ko": "Claude Fable 5.1 (레거시)",
+                  "ar": "Claude Fable 5.1 (قديم)"
                 }
               }
             ]
@@ -5148,21 +5274,21 @@
             },
             "values": [
               {
-                "id": "claude-fable-5-1",
+                "id": "claude-fable-5-2",
                 "label": {
-                  "en": "Claude Fable 5.1",
-                  "nl": "Claude Fable 5.1",
-                  "de": "Claude Fable 5.1",
-                  "fr": "Claude Fable 5.1",
-                  "it": "Claude Fable 5.1",
-                  "sv": "Claude Fable 5.1",
-                  "no": "Claude Fable 5.1",
-                  "es": "Claude Fable 5.1",
-                  "da": "Claude Fable 5.1",
-                  "ru": "Claude Fable 5.1",
-                  "pl": "Claude Fable 5.1",
-                  "ko": "Claude Fable 5.1",
-                  "ar": "Claude Fable 5.1"
+                  "en": "Claude Fable 5.2",
+                  "nl": "Claude Fable 5.2",
+                  "de": "Claude Fable 5.2",
+                  "fr": "Claude Fable 5.2",
+                  "it": "Claude Fable 5.2",
+                  "sv": "Claude Fable 5.2",
+                  "no": "Claude Fable 5.2",
+                  "es": "Claude Fable 5.2",
+                  "da": "Claude Fable 5.2",
+                  "ru": "Claude Fable 5.2",
+                  "pl": "Claude Fable 5.2",
+                  "ko": "Claude Fable 5.2",
+                  "ar": "Claude Fable 5.2"
                 }
               },
               {
@@ -5217,6 +5343,24 @@
                   "pl": "Claude Haiku 5.5",
                   "ko": "Claude Haiku 5.5",
                   "ar": "Claude Haiku 5.5"
+                }
+              },
+              {
+                "id": "claude-fable-5-1",
+                "label": {
+                  "en": "Claude Fable 5.1 (legacy)",
+                  "nl": "Claude Fable 5.1 (verouderd)",
+                  "de": "Claude Fable 5.1 (veraltet)",
+                  "fr": "Claude Fable 5.1 (ancien)",
+                  "it": "Claude Fable 5.1 (obsoleto)",
+                  "sv": "Claude Fable 5.1 (äldre)",
+                  "no": "Claude Fable 5.1 (eldre)",
+                  "es": "Claude Fable 5.1 (heredado)",
+                  "da": "Claude Fable 5.1 (ældre)",
+                  "ru": "Claude Fable 5.1 (устаревшая)",
+                  "pl": "Claude Fable 5.1 (starszy)",
+                  "ko": "Claude Fable 5.1 (레거시)",
+                  "ar": "Claude Fable 5.1 (قديم)"
                 }
               }
             ]
@@ -6179,21 +6323,21 @@
             },
             "values": [
               {
-                "id": "claude-fable-5-1",
+                "id": "claude-fable-5-2",
                 "label": {
-                  "en": "Claude Fable 5.1",
-                  "nl": "Claude Fable 5.1",
-                  "de": "Claude Fable 5.1",
-                  "fr": "Claude Fable 5.1",
-                  "it": "Claude Fable 5.1",
-                  "sv": "Claude Fable 5.1",
-                  "no": "Claude Fable 5.1",
-                  "es": "Claude Fable 5.1",
-                  "da": "Claude Fable 5.1",
-                  "ru": "Claude Fable 5.1",
-                  "pl": "Claude Fable 5.1",
-                  "ko": "Claude Fable 5.1",
-                  "ar": "Claude Fable 5.1"
+                  "en": "Claude Fable 5.2",
+                  "nl": "Claude Fable 5.2",
+                  "de": "Claude Fable 5.2",
+                  "fr": "Claude Fable 5.2",
+                  "it": "Claude Fable 5.2",
+                  "sv": "Claude Fable 5.2",
+                  "no": "Claude Fable 5.2",
+                  "es": "Claude Fable 5.2",
+                  "da": "Claude Fable 5.2",
+                  "ru": "Claude Fable 5.2",
+                  "pl": "Claude Fable 5.2",
+                  "ko": "Claude Fable 5.2",
+                  "ar": "Claude Fable 5.2"
                 }
               },
               {
@@ -6248,6 +6392,24 @@
                   "pl": "Claude Haiku 5.5",
                   "ko": "Claude Haiku 5.5",
                   "ar": "Claude Haiku 5.5"
+                }
+              },
+              {
+                "id": "claude-fable-5-1",
+                "label": {
+                  "en": "Claude Fable 5.1 (legacy)",
+                  "nl": "Claude Fable 5.1 (verouderd)",
+                  "de": "Claude Fable 5.1 (veraltet)",
+                  "fr": "Claude Fable 5.1 (ancien)",
+                  "it": "Claude Fable 5.1 (obsoleto)",
+                  "sv": "Claude Fable 5.1 (äldre)",
+                  "no": "Claude Fable 5.1 (eldre)",
+                  "es": "Claude Fable 5.1 (heredado)",
+                  "da": "Claude Fable 5.1 (ældre)",
+                  "ru": "Claude Fable 5.1 (устаревшая)",
+                  "pl": "Claude Fable 5.1 (starszy)",
+                  "ko": "Claude Fable 5.1 (레거시)",
+                  "ar": "Claude Fable 5.1 (قديم)"
                 }
               }
             ]
@@ -6759,21 +6921,21 @@
             },
             "values": [
               {
-                "id": "claude-fable-5-1",
+                "id": "claude-fable-5-2",
                 "label": {
-                  "en": "Claude Fable 5.1",
-                  "nl": "Claude Fable 5.1",
-                  "de": "Claude Fable 5.1",
-                  "fr": "Claude Fable 5.1",
-                  "it": "Claude Fable 5.1",
-                  "sv": "Claude Fable 5.1",
-                  "no": "Claude Fable 5.1",
-                  "es": "Claude Fable 5.1",
-                  "da": "Claude Fable 5.1",
-                  "ru": "Claude Fable 5.1",
-                  "pl": "Claude Fable 5.1",
-                  "ko": "Claude Fable 5.1",
-                  "ar": "Claude Fable 5.1"
+                  "en": "Claude Fable 5.2",
+                  "nl": "Claude Fable 5.2",
+                  "de": "Claude Fable 5.2",
+                  "fr": "Claude Fable 5.2",
+                  "it": "Claude Fable 5.2",
+                  "sv": "Claude Fable 5.2",
+                  "no": "Claude Fable 5.2",
+                  "es": "Claude Fable 5.2",
+                  "da": "Claude Fable 5.2",
+                  "ru": "Claude Fable 5.2",
+                  "pl": "Claude Fable 5.2",
+                  "ko": "Claude Fable 5.2",
+                  "ar": "Claude Fable 5.2"
                 }
               },
               {
@@ -6828,6 +6990,24 @@
                   "pl": "Claude Haiku 5.5",
                   "ko": "Claude Haiku 5.5",
                   "ar": "Claude Haiku 5.5"
+                }
+              },
+              {
+                "id": "claude-fable-5-1",
+                "label": {
+                  "en": "Claude Fable 5.1 (legacy)",
+                  "nl": "Claude Fable 5.1 (verouderd)",
+                  "de": "Claude Fable 5.1 (veraltet)",
+                  "fr": "Claude Fable 5.1 (ancien)",
+                  "it": "Claude Fable 5.1 (obsoleto)",
+                  "sv": "Claude Fable 5.1 (äldre)",
+                  "no": "Claude Fable 5.1 (eldre)",
+                  "es": "Claude Fable 5.1 (heredado)",
+                  "da": "Claude Fable 5.1 (ældre)",
+                  "ru": "Claude Fable 5.1 (устаревшая)",
+                  "pl": "Claude Fable 5.1 (starszy)",
+                  "ko": "Claude Fable 5.1 (레거시)",
+                  "ar": "Claude Fable 5.1 (قديم)"
                 }
               }
             ]

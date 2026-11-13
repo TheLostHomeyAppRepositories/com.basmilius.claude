@@ -22,6 +22,11 @@ export const DEFAULT_MODEL = 'claude-sonnet-5-5';
 export const DEFAULT_EFFORT = 'medium';
 export const DEFAULT_MAX_TOKENS = 4096;
 
+/**
+ * The model behind the settings page: the connection test and the system prompt generator.
+ */
+export const UTILITY_MODEL = 'claude-haiku-5-5';
+
 export const MAX_SERVER_TOOL_TURNS = 8;
 export const MAX_SKILL_NAME_LENGTH = 64;
 export const MAX_SKILL_DESCRIPTION_LENGTH = 1024;
@@ -32,7 +37,6 @@ export const MAX_WEB_SEARCHES = 5;
 export type Effort = 'low' | 'medium' | 'high' | 'xhigh' | 'max';
 
 const ALL_EFFORTS = ['low', 'medium', 'high', 'xhigh', 'max'] as const;
-const EFFORTS_WITHOUT_XHIGH = ['low', 'medium', 'high', 'max'] as const;
 
 /**
  * `filtersWebResults` marks the models that run the web tools from inside code execution,
@@ -43,13 +47,25 @@ const EFFORTS_WITHOUT_XHIGH = ['low', 'medium', 'high', 'max'] as const;
  * because they reject the parameter.
  */
 export const MODELS = [
-    {id: 'claude-fable-5-1', name: 'Claude Fable 5.1', filtersWebResults: false, efforts: ALL_EFFORTS},
+    {id: 'claude-fable-5-2', name: 'Claude Fable 5.2', filtersWebResults: false, efforts: ALL_EFFORTS},
     {id: 'claude-opus-5-5', name: 'Claude Opus 5.5', filtersWebResults: true, efforts: ALL_EFFORTS},
     {id: 'claude-sonnet-5-5', name: 'Claude Sonnet 5.5', filtersWebResults: true, efforts: ALL_EFFORTS},
     {id: 'claude-haiku-5-5', name: 'Claude Haiku 5.5', filtersWebResults: false, efforts: ALL_EFFORTS},
+    {id: 'claude-fable-5-1', name: 'Claude Fable 5.1 (legacy)', filtersWebResults: false, efforts: ALL_EFFORTS},
     {id: 'claude-opus-5', name: 'Claude Opus 5', filtersWebResults: true, efforts: ALL_EFFORTS},
-    {id: 'claude-opus-4-6', name: 'Claude Opus 4.6 (deprecated)', filtersWebResults: true, efforts: EFFORTS_WITHOUT_XHIGH},
     {id: 'claude-sonnet-5', name: 'Claude Sonnet 5', filtersWebResults: true, efforts: ALL_EFFORTS},
-    {id: 'claude-sonnet-4-6', name: 'Claude Sonnet 4.6 (deprecated)', filtersWebResults: true, efforts: EFFORTS_WITHOUT_XHIGH},
     {id: 'claude-haiku-4-5-20251001', name: 'Claude Haiku 4.5', filtersWebResults: false, efforts: []}
 ] as const;
+
+/**
+ * Models that left the list, with the model that takes their place. A saved setting or Flow
+ * that still names one of them runs on the replacement.
+ */
+const REPLACED_MODELS: Readonly<Record<string, string>> = {
+    'claude-opus-4-6': 'claude-opus-5-5',
+    'claude-sonnet-4-6': 'claude-sonnet-5-5'
+};
+
+export function replaceRemovedModel(model: string): string {
+    return REPLACED_MODELS[model] ?? model;
+}
